@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.niceImage {
+  filter: grayscale(0.5);
+  transition: 0.5s ease-in-out filter;
+}
+
+.niceImage:hover,
+.niceImage:focus {
+  filter: grayscale(0);
+}

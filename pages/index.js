@@ -15,6 +15,10 @@ import Gr from '../components/Gr';
 import Menu from '../components/Menu';
 import { sections } from '../config/content';
 
+function getHSL(length, index, opacity = 1) {
+  return `hsla(${(360 / (length + 1)) * (index + 1)}, 62%, 56%, ${opacity})`;
+}
+
 const IndexPage = () => {
   const [activeSection, setActiveSection] = useState('Intro');
 
@@ -26,44 +30,72 @@ const IndexPage = () => {
           return (
             <Container>
               <Row>
-                <Box direction="row">
-                  <Box alignSelf="center">
-                    <Heading level={1}>Cocoso</Heading>
-                    <Text>Digital Tools for Local Engagement</Text>
+                <Col lg={2.5} />
+                <Col lg={5.5}>
+                  <Box direction="row">
+                    <Box alignSelf="center">
+                      <Heading level={1} color="dark-1">
+                        Community Cooperation Software
+                      </Heading>
+                      <Text color="dark-1">
+                        with Digital Tools for Local Engagement
+                      </Text>
+                    </Box>
                   </Box>
-                </Box>
+                </Col>
               </Row>
 
               <Row>
-                <Col lg={3}>
+                <Col lg={2.5}>
                   <Menu
                     activeSection={activeSection}
                     setActiveSection={(section) => setActiveSection(section)}
                     large={large}
                   />
                 </Col>
-                <Col lg={5}>
-                  <Main>
+                <Col lg={5.5}>
+                  <Main margin={{ bottom: '500px' }}>
                     {sections.map((s) => (
-                      <Box key={s.title} id={s.title} pad={{ top: 'xlarge' }}>
-                        <Heading level={2}>{s.title}</Heading>
+                      <Box key={s.title} id={s.title} pad={{ top: 'large' }}>
+                        <Heading color="dark-1" level={2}>
+                          {s.title}
+                        </Heading>
                         {s.content.map((p) => (
-                          <Paragraph key={p.substring(0, 10)}>{p}</Paragraph>
+                          <Paragraph
+                            size="large"
+                            color="dark-1"
+                            key={p.substring(0, 10)}
+                          >
+                            {p}
+                          </Paragraph>
                         ))}
                       </Box>
                     ))}
                   </Main>
                 </Col>
-                <Col lg={4}>
-                  <Box style={{ position: 'fixed' }}>
-                    <Box height="small" width="medium" overflow="hidden">
-                      <Image
-                        fit="cover"
-                        src={
-                          sections.find((s) => s.title === activeSection).image
-                        }
-                      />
-                    </Box>
+                <Col
+                  lg={4}
+                  style={{ display: 'flex', justifyContent: 'flex-end' }}
+                >
+                  <Box
+                    width={screenClass === 'md' ? '200px' : '300px'}
+                    height="900px"
+                    justify="start"
+                    style={
+                      large || screenClass === 'md'
+                        ? { position: 'fixed', top: '-150px' }
+                        : null
+                    }
+                  >
+                    <Image
+                      fit="contain"
+                      fill
+                      // alignSelf="start"
+                      className={'niceImage'}
+                      src={
+                        sections.find((s) => s.title === activeSection).image
+                      }
+                    />
                   </Box>
                 </Col>
               </Row>

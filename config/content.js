@@ -49,13 +49,48 @@ const publicActsList = [
 ];
 
 const sections = [
-  { title: `Intro`, content: intro },
-  { title: `Activities`, content: activities },
-  { title: `Resources`, content: resources },
-  { title: `Calendar`, content: calendar },
-  { title: `Processes`, content: processes },
-  { title: `Members`, content: members },
-  { title: `Info`, content: info },
+  {
+    title: `Intro`,
+    content: intro,
+    image:
+      'https://mikroklima-landingpages.s3.eu-central-1.amazonaws.com/cocoso-landingpage/mcgill-library-rxZLty9pnh4-unsplash.jpg',
+  },
+  {
+    title: `Activities`,
+    content: activities,
+    image:
+      'https://mikroklima-landingpages.s3.eu-central-1.amazonaws.com/cocoso-landingpage/mcgill-library-1Rbv8ubJix0-unsplash.jpg',
+  },
+  {
+    title: `Resources`,
+    content: resources,
+    image:
+      'https://mikroklima-landingpages.s3.eu-central-1.amazonaws.com/cocoso-landingpage/mcgill-library---DJjEqekIM-unsplash.jpg',
+  },
+  {
+    title: `Calendar`,
+    content: calendar,
+    image:
+      'https://mikroklima-landingpages.s3.eu-central-1.amazonaws.com/cocoso-landingpage/birmingham-museums-trust-RpELX3wVm_U-unsplash.jpg',
+  },
+  {
+    title: `Processes`,
+    content: processes,
+    image:
+      'https://mikroklima-landingpages.s3.eu-central-1.amazonaws.com/cocoso-landingpage/british-library-b8vYa2-83pw-unsplash.jpg',
+  },
+  {
+    title: `Members`,
+    content: members,
+    image:
+      'https://mikroklima-landingpages.s3.eu-central-1.amazonaws.com/cocoso-landingpage/mcgill-library-eMw-fVXNpME-unsplash.jpg',
+  },
+  {
+    title: `Info`,
+    content: info,
+    image:
+      'https://mikroklima-landingpages.s3.eu-central-1.amazonaws.com/cocoso-landingpage/boston-public-library-awhvI865NQk-unsplash.jpg',
+  },
 ];
 
 export {

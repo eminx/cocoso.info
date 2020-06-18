@@ -1,9 +1,11 @@
 import { deepFreeze, deepMerge } from 'grommet/utils';
 import { base } from 'grommet';
 
+const mainColor = 'hsla(6, 62%, 56%, 1)';
+
 const colors = {
-  background: '#ffffff',
-  brand: 'hsla(22, 100%, 35%, 0.91)',
+  background: 'hsla(88, 62%, 90%, 0.1)',
+  brand: mainColor,
   active: {
     light: '#57b457',
     dark: '#52b7f9',
@@ -12,7 +14,7 @@ const colors = {
     dark: '#52b7f9',
     light: '#4a984a',
   },
-  focus: '#5ec660',
+  focus: 'brand',
   'accent-1': '#367bd5',
   'accent-2': '#5ec660',
   'accent-3': '#d4293d',
@@ -83,6 +85,9 @@ const theme = deepFreeze(
     },
     heading: {
       weight: 800,
+      extend: () => {
+        color: mainColor;
+      },
     },
     icon: {
       size: {
