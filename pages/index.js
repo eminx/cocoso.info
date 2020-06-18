@@ -1,66 +1,79 @@
+import React, { useState } from 'react';
 import {
+  Anchor,
   Box,
-  Header,
   Footer,
   Heading,
+  Image,
   Main,
-  Text,
   Paragraph,
-  Markdown,
+  Text,
 } from 'grommet';
 import { Container, Row, Col, ScreenClassRender } from 'react-grid-system';
 
-import Nav from '../components/Nav';
 import Gr from '../components/Gr';
-import { intro, userAccounts } from '../config/content'
+import Menu from '../components/Menu';
+import { sections } from '../config/content';
 
-const sections = [`Intro`, `Activities`, `Resources`, `Calendar`, `Processes`, `Members`, `Info`]
+const IndexPage = () => {
+  const [activeSection, setActiveSection] = useState('Intro');
 
-const IndexPage = () => (
-  <Gr>
-    <ScreenClassRender
-      render={(screenClass) => {
-        const large = ['lg', 'xl'].includes(screenClass);
-        return (
-          <Container>
-            <Row>
-              <Box direction="row">
-                <Box alignSelf="center">
-                  <Heading level={1}>Cocoso</Heading>
-                  <Text>Digital Tools for Local Engagement</Text>
+  return (
+    <Gr>
+      <ScreenClassRender
+        render={(screenClass) => {
+          const large = ['lg', 'xl'].includes(screenClass);
+          return (
+            <Container>
+              <Row>
+                <Box direction="row">
+                  <Box alignSelf="center">
+                    <Heading level={1}>Cocoso</Heading>
+                    <Text>Digital Tools for Local Engagement</Text>
+                  </Box>
                 </Box>
-              </Box>
-            </Row>
+              </Row>
 
-            <Row>
-              <Col lg={3}>
-                <Box pad="medium" style={{ position: 'fixed' }}>
-                  {sections.map(s => <Box pad="xsmall">
-                    <Text size="large">{s}</Text>
-                  </Box>)}
-                </Box>
-              </Col>
-              <Col lg={5}>
-                <Box>
-                  <Heading level={2}>Intro</Heading>
-                  {intro.map(p => <Paragraph>{p}</Paragraph>)}
-                </Box>
-
-                <Box>
-                  <Heading level={2}>User Accounts</Heading>
-                  {userAccounts.map(p => <Paragraph>{p}</Paragraph>)}
-                </Box>
-              </Col>
-              <Col lg={4}>
-
-              </Col>
-            </Row>
-            <Footer></Footer>
-          </Container>
-        )
-      }}
-    />
-  </Gr>
-);
+              <Row>
+                <Col lg={3}>
+                  <Menu
+                    activeSection={activeSection}
+                    setActiveSection={(section) => setActiveSection(section)}
+                    large={large}
+                  />
+                </Col>
+                <Col lg={5}>
+                  <Main>
+                    {sections.map((s) => (
+                      <Box key={s.title} id={s.title} pad={{ top: 'xlarge' }}>
+                        <Heading level={2}>{s.title}</Heading>
+                        {s.content.map((p) => (
+                          <Paragraph key={p.substring(0, 10)}>{p}</Paragraph>
+                        ))}
+                      </Box>
+                    ))}
+                  </Main>
+                </Col>
+                <Col lg={4}>
+                  <Box style={{ position: 'fixed' }}>
+                    <Box height="small" width="medium" overflow="hidden">
+                      <Image
+                        fit="cover"
+                        src={
+                          sections.find((s) => s.title === activeSection).image
+                        }
+                      />
+                    </Box>
+                  </Box>
+                </Col>
+              </Row>
+              <Footer></Footer>
+            </Container>
+          );
+        }}
+      />
+    </Gr>
+  );
+};
 
 export default IndexPage;
