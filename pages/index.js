@@ -1,14 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Anchor,
-  Box,
-  Footer,
-  Heading,
-  Image,
-  Main,
-  Paragraph,
-  Text,
-} from 'grommet';
+import { Box, Footer, Heading, Image, Main, Paragraph, Text } from 'grommet';
 import { Container, Row, Col, ScreenClassRender } from 'react-grid-system';
 
 import Gr from '../components/Gr';
@@ -30,8 +21,8 @@ const IndexPage = () => {
           return (
             <Container>
               <Row>
-                <Col lg={2.5} />
-                <Col lg={5.5}>
+                <Col lg={2} />
+                <Col lg={5}>
                   <Box direction="row">
                     <Box alignSelf="center">
                       <Heading level={1} color="dark-1">
@@ -46,14 +37,14 @@ const IndexPage = () => {
               </Row>
 
               <Row>
-                <Col lg={2.5}>
+                <Col lg={2}>
                   <Menu
                     activeSection={activeSection}
                     setActiveSection={(section) => setActiveSection(section)}
                     large={large}
                   />
                 </Col>
-                <Col lg={5.5}>
+                <Col lg={5}>
                   <Main margin={{ bottom: '500px' }}>
                     {sections.map((s) => (
                       <Box key={s.title} id={s.title} pad={{ top: 'large' }}>
@@ -62,7 +53,7 @@ const IndexPage = () => {
                         </Heading>
                         {s.content.map((p) => (
                           <Paragraph
-                            size="large"
+                            // size="large"
                             color="dark-1"
                             key={p.substring(0, 10)}
                           >
@@ -74,21 +65,23 @@ const IndexPage = () => {
                   </Main>
                 </Col>
                 <Col
-                  lg={4}
+                  lg={5}
                   style={{ display: 'flex', justifyContent: 'flex-end' }}
                 >
                   <Box
-                    width={screenClass === 'md' ? '200px' : '300px'}
-                    height="900px"
+                    onMouseEnter={() => console.log('geldi')}
+                    onMouseLeave={() => console.log('gitti')}
+                    width={screenClass === 'md' ? '200px' : '450px'}
+                    height="100vh"
                     justify="start"
                     style={
                       large || screenClass === 'md'
-                        ? { position: 'fixed', top: '-150px' }
+                        ? { position: 'fixed', top: '0', right: 0 }
                         : null
                     }
                   >
                     <Image
-                      fit="contain"
+                      fit={large ? 'cover' : 'contain'}
                       fill
                       // alignSelf="start"
                       className={'niceImage'}

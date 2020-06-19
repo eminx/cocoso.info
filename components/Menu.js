@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Anchor, Box, Menu as GrMenu, SkipLink, Text } from 'grommet';
+import { Anchor, Box, Menu as GrMenu, Text } from 'grommet';
 import { Link } from 'react-scroll';
 import { sections } from '../config/content';
 
@@ -38,9 +38,9 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
               }}
             >
               <Anchor
-                color={isActive ? 'brand' : 'dark-2'}
+                color={isActive ? 'brand' : 'dark-3'}
                 as="span"
-                size="large"
+                // size="large"
                 style={{ fontWeight: '500' }}
               >
                 {s.title}

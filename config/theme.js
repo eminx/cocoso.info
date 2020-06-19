@@ -24,6 +24,9 @@ const colors = {
   'neutral-3': '#607D8B',
   'neutral-4': '#9cb6d7',
   'neutral-5': '#FF9800',
+  'dark-1': 'rgba(0, 0, 0, .8)',
+  'dark-2': 'rgba(20, 20, 20, .8)',
+  'dark-3': 'rgba(50, 50, 50, .8)',
 };
 
 var baseSpacing = 16;
@@ -85,9 +88,6 @@ const theme = deepFreeze(
     },
     heading: {
       weight: 800,
-      extend: () => {
-        color: mainColor;
-      },
     },
     icon: {
       size: {
@@ -133,6 +133,12 @@ const theme = deepFreeze(
           dark: '#3a82b1',
           light: '#52b7f9',
         },
+      },
+    },
+    paragraph: {
+      medium: {
+        size: '20px',
+        height: '26px',
       },
     },
   })
