@@ -27,19 +27,11 @@ const IndexPage = () => {
     <Gr>
       <ScreenClassRender
         render={(screenClass) => {
-          const large = ['xxl', 'xl'].includes(screenClass);
+          const large = ['xxl', 'xl', 'lg'].includes(screenClass);
           return (
             <Container>
               <Row>
                 <Col lg={2}>
-                  {/* <Box margin={{ top: 'xlarge', bottom: 'xlarge' }}>
-                    <Image
-                      className="logo niceImage"
-                      src="/cocoso-logo.png"
-                      width="168px"
-                      height="30px"
-                    />
-                  </Box> */}
                   <Box>
                     <Menu
                       activeSection={activeSection}
@@ -51,7 +43,7 @@ const IndexPage = () => {
                 <Col lg={5}>
                   <Box
                     margin={{
-                      top: large ? '100px' : '30px',
+                      top: large ? '155px' : '100px',
                       bottom: large ? 'xlarge' : 'none',
                     }}
                   >
@@ -60,7 +52,7 @@ const IndexPage = () => {
                       fit="contain"
                       src="/cocoso-logo.png"
                       width={large ? '500px' : 'medium'}
-                      height="90px"
+                      // height="90px"
                     />
                   </Box>
 
