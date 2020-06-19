@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
-import { Box, Footer, Heading, Image, Main, Paragraph, Text } from 'grommet';
+import {
+  Box,
+  Footer,
+  Heading,
+  Image,
+  Button,
+  Main,
+  Paragraph,
+  Text,
+} from 'grommet';
+import { Github } from 'grommet-icons';
 import { Container, Row, Col, ScreenClassRender } from 'react-grid-system';
 
 import Gr from '../components/Gr';
@@ -17,7 +27,7 @@ const IndexPage = () => {
     <Gr>
       <ScreenClassRender
         render={(screenClass) => {
-          const large = ['lg', 'xl'].includes(screenClass);
+          const large = ['xxl', 'xl'].includes(screenClass);
           return (
             <Container>
               <Row>
@@ -30,7 +40,7 @@ const IndexPage = () => {
                       height="30px"
                     />
                   </Box> */}
-                  <Box margin={{ top: 'xlarge' }}>
+                  <Box>
                     <Menu
                       activeSection={activeSection}
                       setActiveSection={(section) => setActiveSection(section)}
@@ -39,26 +49,36 @@ const IndexPage = () => {
                   </Box>
                 </Col>
                 <Col lg={5}>
-                  <Box margin={{ top: 'xlarge', bottom: 'xlarge' }}>
+                  <Box
+                    margin={{
+                      top: large ? '100px' : 'none',
+                      bottom: large ? 'xlarge' : 'none',
+                    }}
+                  >
                     <Image
-                      // className="logo niceImage"
+                      className="niceImage"
+                      fit="contain"
                       src="/cocoso-logo.png"
-                      width="500px"
+                      width={large ? '500px' : 'medium'}
                       height="90px"
                     />
                   </Box>
 
-                  <Box direction="row">
-                    <Box alignSelf="center">
-                      <Heading level={1} color="dark-1">
-                        Community Cooperation Software.
-                      </Heading>
-                      <Heading level={3} color="accent-3" size="large">
-                        Digital Tools for Local Engagement
-                      </Heading>
-                    </Box>
+                  <Box margin={{ bottom: '120px' }}>
+                    <Heading level={1} color="dark-1" textAlign="center">
+                      Community Cooperation Software.
+                    </Heading>
+                    <Text
+                      size="large"
+                      level={3}
+                      color="accent-3"
+                      size="large"
+                      textAlign="center"
+                    >
+                      Digital Tools for Local Engagement
+                    </Text>
                   </Box>
-                  <Main margin={{ bottom: '500px' }}>
+                  <Main margin={{ bottom: '300px' }}>
                     {sections.map((s) => (
                       <Box key={s.title} id={s.title} pad={{ top: 'large' }}>
                         <Heading color="dark-1" level={2}>
@@ -92,6 +112,7 @@ const IndexPage = () => {
                         ? { position: 'fixed', top: '0', right: 0 }
                         : null
                     }
+                    animation="slideLeft"
                   >
                     <Image
                       fit={large ? 'cover' : 'contain'}

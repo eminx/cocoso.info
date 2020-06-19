@@ -11,43 +11,45 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
       style={{
         position: 'fixed',
         zIndex: 10,
-        top: !large && 0,
+        top: large ? 150 : 0,
         left: !large && 0,
       }}
     >
       {large ? (
-        sections.map((s, i) => {
-          const isActive = s.title === activeSection;
-          return (
-            <Link
-              key={s.title}
-              href={`#${s.title}`}
-              activeClass="menuitem-active"
-              className="menuitem"
-              to={s.title}
-              spy
-              hashSpy
-              smooth
-              // offset={-150}
-              duration={500}
-              onSetActive={(section) => setActiveSection(section)}
-              style={{
-                textDecoration: 'none',
-                paddingTop: 6,
-                paddingBottom: 6,
-              }}
-            >
-              <Anchor
-                color={isActive ? 'brand' : 'dark-3'}
-                as="span"
-                // size="large"
-                style={{ fontWeight: '500' }}
+        <Box>
+          {sections.map((s, i) => {
+            const isActive = s.title === activeSection;
+            return (
+              <Link
+                key={s.title}
+                href={`#${s.title}`}
+                activeClass="menuitem-active"
+                className="menuitem"
+                to={s.title}
+                spy
+                hashSpy
+                smooth
+                // offset={-150}
+                duration={500}
+                onSetActive={(section) => setActiveSection(section)}
+                style={{
+                  textDecoration: 'none',
+                  paddingTop: 6,
+                  paddingBottom: 6,
+                }}
               >
-                {s.title}
-              </Anchor>
-            </Link>
-          );
-        })
+                <Anchor
+                  color={isActive ? 'brand' : 'dark-2'}
+                  as="span"
+                  // size="large"
+                  style={{ fontWeight: '500' }}
+                >
+                  {s.title}
+                </Anchor>
+              </Link>
+            );
+          })}
+        </Box>
       ) : (
         <Box pad="xsmall" width="100%">
           <GrMenu
