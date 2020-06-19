@@ -21,30 +21,43 @@ const IndexPage = () => {
           return (
             <Container>
               <Row>
-                <Col lg={2} />
+                <Col lg={2}>
+                  {/* <Box margin={{ top: 'xlarge', bottom: 'xlarge' }}>
+                    <Image
+                      className="logo niceImage"
+                      src="/cocoso-logo.png"
+                      width="168px"
+                      height="30px"
+                    />
+                  </Box> */}
+                  <Box margin={{ top: 'xlarge' }}>
+                    <Menu
+                      activeSection={activeSection}
+                      setActiveSection={(section) => setActiveSection(section)}
+                      large={large}
+                    />
+                  </Box>
+                </Col>
                 <Col lg={5}>
+                  <Box margin={{ top: 'xlarge', bottom: 'xlarge' }}>
+                    <Image
+                      // className="logo niceImage"
+                      src="/cocoso-logo.png"
+                      width="500px"
+                      height="90px"
+                    />
+                  </Box>
+
                   <Box direction="row">
                     <Box alignSelf="center">
                       <Heading level={1} color="dark-1">
-                        Community Cooperation Software
+                        Community Cooperation Software.
                       </Heading>
-                      <Text color="dark-1">
-                        with Digital Tools for Local Engagement
-                      </Text>
+                      <Heading level={3} color="accent-3" size="large">
+                        Digital Tools for Local Engagement
+                      </Heading>
                     </Box>
                   </Box>
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={2}>
-                  <Menu
-                    activeSection={activeSection}
-                    setActiveSection={(section) => setActiveSection(section)}
-                    large={large}
-                  />
-                </Col>
-                <Col lg={5}>
                   <Main margin={{ bottom: '500px' }}>
                     {sections.map((s) => (
                       <Box key={s.title} id={s.title} pad={{ top: 'large' }}>

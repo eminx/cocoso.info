@@ -11,3 +11,7 @@ body {
 .niceImage:focus {
   filter: grayscale(0);
 }
+
+.logo {
+  filter: grayscale(1);
+}
