@@ -51,7 +51,7 @@ const IndexPage = () => {
                 <Col lg={5}>
                   <Box
                     margin={{
-                      top: large ? '100px' : 'none',
+                      top: large ? '100px' : '30px',
                       bottom: large ? 'xlarge' : 'none',
                     }}
                   >
