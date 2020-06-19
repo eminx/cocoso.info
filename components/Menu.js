@@ -49,6 +49,17 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
               </Link>
             );
           })}
+
+          <Anchor
+            margin={{ top: 'large' }}
+            target="_blank"
+            href="https://github.com/eminx/cocoso"
+          >
+            Source
+          </Anchor>
+          <Anchor target="_blank" href="mailto:emin@infinitesimals.space">
+            Contact
+          </Anchor>
         </Box>
       ) : (
         <Box pad="xsmall" width="100%">
