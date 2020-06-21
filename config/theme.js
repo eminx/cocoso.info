@@ -88,6 +88,9 @@ const theme = deepFreeze(
     },
     heading: {
       weight: 800,
+      font: {
+        family: "'Inknut Antiqua', serif;",
+      },
     },
     icon: {
       size: {

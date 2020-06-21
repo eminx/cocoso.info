@@ -39,10 +39,12 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
                 }}
               >
                 <Anchor
-                  color={isActive ? 'brand' : 'dark-2'}
+                  // color={isActive ? 'brand' : 'dark-2'}
+                  color="dark-2"
+                  weight={isActive ? 'bold' : 'normal'}
                   as="span"
                   // size="large"
-                  style={{ fontWeight: '500' }}
+                  style={{ fontWeight: isActive ? 800 : 400 }}
                 >
                   {s.title}
                 </Anchor>

@@ -17,16 +17,16 @@ const activities = [
 const resources = [
   `It is possible to list (by admins) a set of shared resources for them to be timely claimed/booked by verified users. Every each booking is automatically displayed on the calendar. This is very similar to the widespread usage of Google & Outlook calendars in typical shared resource contexts like in a e.g. company office.`,
   `However, with Cocoso, the way this works is much more simplified. You make a booking and that's it. It's so far not possible to make calendar invites etc, because we think those become unnecessary automations turning working people into robots feeding machines and become dictated about how the digital systems work rather than digital systems helping people proceed in their workflows. We like to think that people talk to each other more in work places rather than work around tools to prevent that.`,
-  `Resource Sharing and Calendar work with one another very tightly. Indeed Calendar is the visual language enabling Resource Sharing, as well as what's happening in the community.`,
+  `Resource Sharing and Calendar work with one another very tightly. Indeed Calendar is the visual language enabling Resource Sharing, as well as displaying what's happening in the community.`,
 ];
 
 const calendar = [
   `The calendar is shown with Month (default), Week, Day and Agenda views using Big Calendar, open source React component library. One can navigate to previous or next month/week/day with a click. It's just like the calendar app you're using but embedded on a webpage.`,
-  `Each entry in calendar could be assigned a different category such as a resource booked or a type of activity such as yoga. It'd be useful for both presenting different kinds of entries as well different kinds of bookings. Like every each feature in Cocoso, intentionally made very abstract so that it can be applied to different use cases.`,
+  `Each entry in calendar could be assigned a different category such as a resource booked or a type of activity such as yoga. It'd be useful for both presenting different kinds of entries as well as different kinds of bookings. Like every each feature in Cocoso, i's intentionally made very abstract so that it can be applied to different use cases.`,
 ];
 
 const processes = [
-  `A process is a concept and a series of virtual or actual activities by a group of individuals to facilitate a purposeful conceptual activity together and keep track of relevant information such as meeting date&time occurrences, documents, members, discussions etc.`,
+  `A process is a concept and a series of virtual or actual activities by a group of individuals to facilitate a purposeful conceptual activity together and practically keep track of relevant information such as meeting date&time occurrences, documents, members, discussions etc.`,
   `Maybe this explanation was too abstract?`,
   `This feature basically includes most of the digital tools for running, for example a learning, training, cocreation or facilitation process. Like a school, or a continuous/recurrent yoga session, or a cooperative activity of any kind.`,
   `You can basically keep your main information (image and text), members list, a simple discussion forum, documents, and meeting dates all in one page.`,

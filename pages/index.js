@@ -32,6 +32,26 @@ const IndexPage = () => {
             <Container>
               <Row>
                 <Col lg={2}>
+                  {large && (
+                    <Box
+                      margin={{
+                        bottom: large ? 'medium' : 'small',
+                      }}
+                      style={{ position: 'fixed' }}
+                    >
+                      <Image
+                        className="niceImage"
+                        fit="contain"
+                        src="/cocoso-logo.png"
+                        width="80px"
+                        margin={{
+                          top: 'large',
+                          bottom: 'medium',
+                        }}
+                        style={{ filter: 'grayscale(.8)' }}
+                      />
+                    </Box>
+                  )}
                   <Box>
                     <Menu
                       activeSection={activeSection}
@@ -51,30 +71,44 @@ const IndexPage = () => {
                       className="niceImage"
                       fit="contain"
                       src="/cocoso-logo.png"
-                      width={large ? '500px' : 'medium'}
+                      width={large ? '320px' : 'medium'}
                       // height="90px"
                     />
                   </Box>
 
-                  <Box margin={{ bottom: '120px' }}>
-                    <Heading level={1} color="dark-1" textAlign="center">
-                      Community Cooperation Software.
+                  <Box margin={{ bottom: '140px' }}>
+                    <Heading
+                      level={1}
+                      color="dark-2"
+                      // textAlign="center"
+                      style={{
+                        letterSpacing: '-1px',
+                        textTransform: 'uppercase',
+                        fontSize: 36,
+                        lineHeight: 1.3,
+                      }}
+                    >
+                      Community Cooperation Software
                     </Heading>
-                    <Text
+                    {/* <Text
                       size="large"
                       level={3}
-                      color="accent-3"
+                      // color="accent-3"
                       size="large"
                       textAlign="center"
                     >
                       Digital Tools for Local Engagement
-                    </Text>
+                    </Text> */}
                   </Box>
                   <Main margin={{ bottom: '300px' }}>
                     {sections.map((s) => (
                       <Box key={s.title} id={s.title} pad={{ top: 'large' }}>
-                        <Heading color="dark-1" level={2}>
-                          {s.title}
+                        <Heading
+                          color="dark-2"
+                          level={2}
+                          style={{ fontSize: 24, letterSpacing: '-1px' }}
+                        >
+                          {s.title.toUpperCase()}
                         </Heading>
                         {s.content.map((p) => (
                           <Paragraph
