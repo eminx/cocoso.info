@@ -4,13 +4,16 @@ import {
   Footer,
   Heading,
   Image,
-  Button,
   Main,
   Paragraph,
-  Text,
+  Form,
+  FormField,
+  TextInput,
+  TextArea,
+  Button,
 } from 'grommet';
-import { Github } from 'grommet-icons';
 import { Container, Row, Col, ScreenClassRender } from 'react-grid-system';
+import { Link } from 'react-scroll';
 
 import Gr from '../components/Gr';
 import Menu from '../components/Menu';
@@ -22,6 +25,23 @@ function getHSL(length, index, opacity = 1) {
 
 const IndexPage = () => {
   const [activeSection, setActiveSection] = useState('Intro');
+  const [success, setSuccess] = useState(null);
+  const [error, setError] = useState(null);
+
+  const handleSubmit = ({ value }) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://formspree.io/xvowqleb');
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        setSuccess(true);
+      } else {
+        setError(true);
+      }
+    };
+    xhr.send(value);
+  };
 
   return (
     <Gr>
@@ -33,24 +53,24 @@ const IndexPage = () => {
               <Row>
                 <Col lg={2}>
                   {large && (
-                    <Box
-                      margin={{
-                        bottom: large ? 'medium' : 'small',
-                      }}
-                      style={{ position: 'fixed' }}
+                    <Link
+                      style={{ position: 'fixed', paddingBottom: 30 }}
+                      className="header-logo-container"
+                      to="start"
+                      href="#"
+                      spy
+                      hashSpy
+                      smooth
+                      duration={500}
                     >
-                      <Image
-                        className="niceImage"
-                        fit="contain"
-                        src="/cocoso-logo.png"
-                        width="80px"
+                      <Box
+                        className="header-logo"
                         margin={{
                           top: 'large',
                           bottom: 'medium',
                         }}
-                        style={{ filter: 'grayscale(.8)' }}
                       />
-                    </Box>
+                    </Link>
                   )}
                   <Box>
                     <Menu
@@ -60,7 +80,8 @@ const IndexPage = () => {
                     />
                   </Box>
                 </Col>
-                <Col lg={5}>
+
+                <Col lg={5} name="start">
                   <Box
                     margin={{
                       top: large ? '155px' : '100px',
@@ -72,7 +93,6 @@ const IndexPage = () => {
                       fit="contain"
                       src="/cocoso-logo.png"
                       width={large ? '320px' : 'medium'}
-                      // height="90px"
                     />
                   </Box>
 
@@ -80,7 +100,6 @@ const IndexPage = () => {
                     <Heading
                       level={1}
                       color="dark-2"
-                      // textAlign="center"
                       style={{
                         letterSpacing: '-1px',
                         textTransform: 'uppercase',
@@ -90,16 +109,8 @@ const IndexPage = () => {
                     >
                       Community Cooperation Software
                     </Heading>
-                    {/* <Text
-                      size="large"
-                      level={3}
-                      // color="accent-3"
-                      size="large"
-                      textAlign="center"
-                    >
-                      Digital Tools for Local Engagement
-                    </Text> */}
                   </Box>
+
                   <Main margin={{ bottom: '300px' }}>
                     {sections.map((s) => (
                       <Box key={s.title} id={s.title} pad={{ top: 'large' }}>
@@ -111,16 +122,48 @@ const IndexPage = () => {
                           {s.title.toUpperCase()}
                         </Heading>
                         {s.content.map((p) => (
-                          <Paragraph
-                            // size="large"
-                            color="dark-1"
-                            key={p.substring(0, 10)}
-                          >
+                          <Paragraph key={p.substring(0, 20)} color="dark-1">
                             {p}
                           </Paragraph>
                         ))}
                       </Box>
                     ))}
+                    <Box
+                      background="dark-3"
+                      pad="medium"
+                      margin={{ top: '100px' }}
+                    >
+                      <Heading
+                        color="light-1"
+                        level={2}
+                        style={{
+                          letterSpacing: '-.5px',
+                          fontFamily: 'Sarabun',
+                        }}
+                      >
+                        We can work together
+                      </Heading>
+                      <Paragraph size="small">
+                        Do you have a project that you may have use of Cocoso?
+                        Drop us a message here, and we'll get back to you!
+                      </Paragraph>
+
+                      <form
+                        action="https://formspree.io/xvowqleb"
+                        method="POST"
+                      >
+                        <FormField label="Your email address">
+                          <TextInput name="email" type="email" />
+                        </FormField>
+                        <FormField label="Subject">
+                          <TextInput name="subject" />
+                        </FormField>
+                        <FormField label="Message">
+                          <TextArea name="message" />
+                        </FormField>
+                        <Button type="submit" label="Send" />
+                      </form>
+                    </Box>
                   </Main>
                 </Col>
                 <Col

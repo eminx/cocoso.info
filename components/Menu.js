@@ -14,6 +14,7 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
         top: large ? 150 : 0,
         left: !large && 0,
       }}
+      {...otherProps}
     >
       {large ? (
         <Box>
@@ -22,28 +23,25 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
             return (
               <Link
                 key={s.title}
-                href={`#${s.title}`}
                 activeClass="menuitem-active"
                 className="menuitem"
                 to={s.title}
                 spy
                 hashSpy
                 smooth
-                // offset={-150}
                 duration={500}
                 onSetActive={(section) => setActiveSection(section)}
                 style={{
+                  display: 'block',
                   textDecoration: 'none',
                   paddingTop: 6,
                   paddingBottom: 6,
                 }}
               >
                 <Anchor
-                  // color={isActive ? 'brand' : 'dark-2'}
                   color="dark-2"
                   weight={isActive ? 'bold' : 'normal'}
                   as="span"
-                  // size="large"
                   style={{ fontWeight: isActive ? 800 : 400 }}
                 >
                   {s.title}
