@@ -89,7 +89,7 @@ const IndexPage = () => {
                     }}
                   >
                     <Image
-                      className="niceImage"
+                      className="mainImage niceImage"
                       fit="contain"
                       src="/cocoso-logo.png"
                       width={large ? '320px' : 'medium'}
