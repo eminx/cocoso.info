@@ -12,6 +12,16 @@ body {
   filter: grayscale(0.5);
 }
 
+.mainImage {
+  filter: grayscale(0.5);
+  transition: 0.5s ease-in-out filter;
+}
+
+.mainImage:hover,
+.mainImage:focus {
+  filter: grayscale(0);
+}
+
 .header-logo {
   width: 80px;
   height: 14px;

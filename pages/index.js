@@ -25,23 +25,6 @@ function getHSL(length, index, opacity = 1) {
 
 const IndexPage = () => {
   const [activeSection, setActiveSection] = useState('Intro');
-  const [success, setSuccess] = useState(null);
-  const [error, setError] = useState(null);
-
-  const handleSubmit = ({ value }) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://formspree.io/xvowqleb');
-    xhr.setRequestHeader('Accept', 'application/json');
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        setSuccess(true);
-      } else {
-        setError(true);
-      }
-    };
-    xhr.send(value);
-  };
 
   return (
     <Gr>
@@ -89,7 +72,7 @@ const IndexPage = () => {
                     }}
                   >
                     <Image
-                      className="mainImage niceImage"
+                      className="mainImage"
                       fit="contain"
                       src="/cocoso-logo.png"
                       width={large ? '320px' : 'medium'}
@@ -187,7 +170,7 @@ const IndexPage = () => {
                       fit={large ? 'cover' : 'contain'}
                       fill
                       // alignSelf="start"
-                      className={'niceImage'}
+                      className="niceImage"
                       src={
                         sections.find((s) => s.title === activeSection).image
                       }
