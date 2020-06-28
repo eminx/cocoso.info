@@ -104,6 +104,7 @@ const IndexPage = () => {
                         >
                           {s.title.toUpperCase()}
                         </Heading>
+
                         <Box direction="row" gap="small" wrap>
                           {s.tags.map((tag, tagIndex) => (
                             <Tag
@@ -115,6 +116,13 @@ const IndexPage = () => {
                             />
                           ))}
                         </Box>
+
+                        {s.image && (
+                          <Box width="100%" border={{ color: 'accent-3' }}>
+                            <Image src={s.image} fit="contain" fill />
+                          </Box>
+                        )}
+
                         <Box>
                           {s.content.map((p) => (
                             <Paragraph key={p.substring(0, 20)} color="dark-1">
@@ -125,7 +133,7 @@ const IndexPage = () => {
                       </Box>
                     ))}
                     <Box
-                      background="dark-3"
+                      background="accent-1"
                       pad="medium"
                       margin={{ top: '100px' }}
                     >
@@ -157,7 +165,9 @@ const IndexPage = () => {
                         <FormField label="Message">
                           <TextArea name="message" />
                         </FormField>
-                        <Button type="submit" label="Send" />
+                        <Box pad={{ top: 'medium' }}>
+                          <Button type="submit" label="Send" alignSelf="end" />
+                        </Box>
                       </form>
                     </Box>
                   </Main>
@@ -185,7 +195,8 @@ const IndexPage = () => {
                       // alignSelf="start"
                       className="niceImage"
                       src={
-                        sections.find((s) => s.title === activeSection).image
+                        sections.find((s) => s.title === activeSection)
+                          .sliderImage
                       }
                     />
                   </Box>
