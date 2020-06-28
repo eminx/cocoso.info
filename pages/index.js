@@ -6,7 +6,6 @@ import {
   Image,
   Main,
   Paragraph,
-  Form,
   FormField,
   TextInput,
   TextArea,
@@ -17,10 +16,11 @@ import { Link } from 'react-scroll';
 
 import Gr from '../components/Gr';
 import Menu from '../components/Menu';
+import Tag from '../components/Tag';
 import { sections } from '../config/content';
 
 function getHSL(length, index, opacity = 1) {
-  return `hsla(${(360 / (length + 1)) * (index + 1)}, 62%, 56%, ${opacity})`;
+  return `hsla(${(360 / (length + 1)) * (index + 1)}, 62%, 80%, ${opacity})`;
 }
 
 const IndexPage = () => {
@@ -104,11 +104,24 @@ const IndexPage = () => {
                         >
                           {s.title.toUpperCase()}
                         </Heading>
-                        {s.content.map((p) => (
-                          <Paragraph key={p.substring(0, 20)} color="dark-1">
-                            {p}
-                          </Paragraph>
-                        ))}
+                        <Box direction="row" gap="small" wrap>
+                          {s.tags.map((tag, tagIndex) => (
+                            <Tag
+                              label={tag}
+                              key={tag}
+                              margin={{ bottom: 'small' }}
+                              background={getHSL(s.tags.length, tagIndex)}
+                              color="dark-2"
+                            />
+                          ))}
+                        </Box>
+                        <Box>
+                          {s.content.map((p) => (
+                            <Paragraph key={p.substring(0, 20)} color="dark-1">
+                              {p}
+                            </Paragraph>
+                          ))}
+                        </Box>
                       </Box>
                     ))}
                     <Box

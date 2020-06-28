@@ -140,7 +140,7 @@ const theme = deepFreeze(
     },
     paragraph: {
       medium: {
-        size: '20px',
+        size: '18px',
         height: '26px',
       },
     },
