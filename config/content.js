@@ -52,7 +52,7 @@ const calendarTags = [
 
 const processes = [
   `Process is an abstract term to cover multiple activities conducted by a group -- either virtual or in the real world. It allows members of a process to log all their relevant data from creating till proceeding a meaningful process together to share a space, document, or conduct a meeting with another member.`,
-  `Process enables management of processes such as training, social creation or learning activities -- such as recurring yoga sessions, or school training sessions. Just add the details of your CoProcess and your simple forum, documents list and dates are ready in one page.`,
+  `Process enables management of processes such as training, social creation or learning activities -- such as recurring yoga sessions, or school training sessions. Just add the details of your process and your simple forum, documents list and dates are ready in one page.`,
   `This feature basically includes most of the digital tools for running, for example a learning, training, cocreation or facilitation process. Like a school, or a continuous/recurrent yoga session, or a cooperative activity of any kind.`,
   `You can basically keep your main information (image and text), members list, a simple discussion forum, documents, and meeting dates all in one page.`,
 ];
@@ -67,7 +67,7 @@ const processTags = [
 ];
 
 const works = [
-  `A Work is a visual (or audiovisual) creation of an artist, researcher, designer, craftsperson or reseller to be showcased to the community. Details of the work, with images, sound files and videos can be shared within a category of creator’s choice. A CoWork is a unique entry, associated with its creator -- a perfect tool for portfolios, and marketplaces.`,
+  `A Work is a visual (or audiovisual) creation of an artist, researcher, designer, craftsperson or reseller to be showcased to the community. Details of the work, with images, sound files and videos can be shared within a category of creator’s choice. A work is a unique entry, associated with its creator -- a perfect tool for portfolios, and marketplaces.`,
   `One can also create a work and save it privately for internal use and documentation. The primary purpose it is built for is to enable artists and craftspeople to publish and communicate what they do with the rest of the world, as well as document for their own reference`,
   `Images to be uploaded are automatically resized on the client browser before they are uploaded to AWS S3 buckets.`,
 ];
@@ -122,7 +122,6 @@ const sections = [
     tags: introTags,
     content: intro,
     sliderImage: '/slider/intro-mcgill-library-rxZLty9pnh4-unsplash.jpg',
-    image: '/intro.jpeg',
   },
   {
     title: `Activities`,
@@ -151,7 +150,7 @@ const sections = [
     tags: processTags,
     content: processes,
     sliderImage: '/slider/processes-mcgill-library-IpZCihceRkQ-unsplash.jpg',
-    image: '/processes.jpg',
+    image: '/processes.png',
   },
   {
     title: `Works`,
@@ -165,14 +164,13 @@ const sections = [
     tags: memberTags,
     content: members,
     sliderImage: '/slider/members-mcgill-library-eMw-fVXNpME-unsplash.jpg',
-    image: '/members.jpg',
+    image: '/members.png',
   },
   {
     title: `Info`,
     tags: infoTags,
     content: info,
     sliderImage: '/slider/info-british-library-b8vYa2-83pw-unsplash.jpg',
-    image: '/info.jpg',
   },
 ];
 
