@@ -26,6 +26,13 @@ function getHSL(length, index, opacity = 1) {
 const IndexPage = () => {
   const [activeSection, setActiveSection] = useState('Intro');
 
+  const handleSetActiveSection = (section) => {
+    if (section === activeSection) {
+      return;
+    }
+    setActiveSection(section);
+  };
+
   return (
     <Gr>
       <ScreenClassRender
@@ -58,7 +65,9 @@ const IndexPage = () => {
                   <Box>
                     <Menu
                       activeSection={activeSection}
-                      setActiveSection={(section) => setActiveSection(section)}
+                      setActiveSection={(section) =>
+                        handleSetActiveSection(section)
+                      }
                       large={large}
                     />
                   </Box>
