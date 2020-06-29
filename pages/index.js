@@ -118,7 +118,11 @@ const IndexPage = () => {
                         </Box>
 
                         {s.image && (
-                          <Box width="100%" border={{ color: 'accent-3' }}>
+                          <Box
+                            width="100%"
+                            border={{ color: 'accent-3' }}
+                            margin={{ top: 'large', bottom: 'large' }}
+                          >
                             <Image src={s.image} fit="contain" fill />
                           </Box>
                         )}
@@ -133,12 +137,12 @@ const IndexPage = () => {
                       </Box>
                     ))}
                     <Box
-                      background="accent-1"
+                      background="white"
+                      border={{ color: 'accent-2' }}
                       pad="medium"
                       margin={{ top: '100px' }}
                     >
                       <Heading
-                        color="light-1"
                         level={2}
                         style={{
                           letterSpacing: '-.5px',
@@ -147,7 +151,7 @@ const IndexPage = () => {
                       >
                         We can work together
                       </Heading>
-                      <Paragraph size="small">
+                      <Paragraph size="large">
                         Do you have a project that you may have use of Cocoso?
                         Drop us a message here, and we'll get back to you!
                       </Paragraph>
