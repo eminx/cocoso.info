@@ -1,16 +1,21 @@
 const intro = [
-  `Cocoso is a standalong tool to create your website; as well as an intranet to keep track of all your practicalities in one place.`,
+  `Cocoso is a set of tools to create your public website; as well as an intranet to keep track of all your practicalities in one place.`,
   `Cocoso is a web based, open-source software for collaboratively facilitating internal/external operations within a community. It empowers web presence and accessibility regarding autonomous actions, artistic/cultural activities and sharing of common resources. It's made for autonomous and creative groups, suitable for any type of collaboration such as: festivals, artist-run initiatives, non-for-profits, families, small or medium businesses, yoga spaces, alternative schools, permaculture sites, yoga spaces or your grandmother’s farm that will turn into an open air museum.`,
   `Cocoso is a community-driven, resource-aware and open source project. Strong artistic aspirations, social motives and economic inclusion needs paved the path at its earlier stages. Currently, it learns from multiple communities where it's used to help build and maintain their unique projects. These communities are made up of artists, artist-run initiatives, alternative currency projects - and hopefully yours.`,
   `Cocoso doesn't feature tools for spying on users for tracking their data. Each member of any community owns their data, and are free to share only as much as they wish. No information is shared with any third party service or organisation, the data is owned by the community. You run projects of your community and their data on your own terms.`,
 ];
 
 const introTags = [
+  'Online Platforms',
   'Cooperatives',
   'Non-Profits',
   'Festivals',
+  'Conferences',
   'Artist Run Spaces',
+  'Businesses',
+  'Eco Villages',
   'Communities',
+  'Camp Sites',
 ];
 
 const activities = [
@@ -21,11 +26,13 @@ const activities = [
 const activityTags = [
   'Public Events',
   'RSVP',
-  'Internal',
   'Work-in-Progresses',
   'Performances',
   'Exhibitions',
-  'Vernissages',
+  'Concerts',
+  'Conferences',
+  'Maintenance',
+  'Internals',
 ];
 
 const resources = [

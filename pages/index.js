@@ -114,14 +114,13 @@ const IndexPage = () => {
                           {s.title.toUpperCase()}
                         </Heading>
 
-                        <Box direction="row" gap="small" wrap>
+                        <Box direction="row" wrap>
                           {s.tags.map((tag, tagIndex) => (
                             <Tag
                               label={tag}
                               key={tag}
-                              margin={{ bottom: 'small' }}
+                              margin={{ bottom: 'small', right: 'small' }}
                               background={getHSL(s.tags.length, tagIndex)}
-                              color="dark-2"
                             />
                           ))}
                         </Box>

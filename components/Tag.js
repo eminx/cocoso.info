@@ -17,7 +17,7 @@ const Tag = ({
     direction="row"
     align="center"
     round="2px"
-    pad="2px 4px"
+    pad="2px 8px"
     gap="small"
     {...otherProps}
   >
@@ -26,7 +26,10 @@ const Tag = ({
         size="12px"
         weight="bold"
         color={color}
-        style={{ textShadow: '0 .5px 2px #fff' }}
+        style={{
+          textShadow: '.5px .5px 1px #e7f5d61a',
+          fontFamily: '"Inknut Antiqua", serif',
+        }}
       >
         {label && label.toUpperCase()}
       </Text>
