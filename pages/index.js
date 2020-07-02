@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+  Anchor,
   Box,
   Footer,
   Heading,
@@ -7,12 +8,13 @@ import {
   Main,
   Paragraph,
   FormField,
+  Text,
   TextInput,
   TextArea,
-  Button,
+  Button
 } from 'grommet';
 import { Container, Row, Col, ScreenClassRender } from 'react-grid-system';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 import Gr from '../components/Gr';
 import Menu from '../components/Menu';
@@ -25,25 +27,27 @@ function getHSL(length, index, opacity = 1) {
 
 const IndexPage = () => {
   const [activeSection, setActiveSection] = useState('Intro');
+  const [showCaption, setShowCaption] = useState(false);
 
-  const handleSetActiveSection = (section) => {
+  const handleSetActiveSection = section => {
     if (section === activeSection) {
       return;
     }
+    console.log(section, activeSection);
     setActiveSection(section);
   };
 
   return (
     <Gr>
       <ScreenClassRender
-        render={(screenClass) => {
+        render={screenClass => {
           const large = ['xxl', 'xl', 'lg'].includes(screenClass);
           return (
             <Container>
               <Row>
                 <Col lg={2}>
                   {large && (
-                    <Link
+                    <ScrollLink
                       style={{ position: 'fixed', paddingBottom: 30 }}
                       className="header-logo-container"
                       to="start"
@@ -57,17 +61,15 @@ const IndexPage = () => {
                         className="header-logo"
                         margin={{
                           top: 'large',
-                          bottom: 'medium',
+                          bottom: 'medium'
                         }}
                       />
-                    </Link>
+                    </ScrollLink>
                   )}
                   <Box>
                     <Menu
                       activeSection={activeSection}
-                      setActiveSection={(section) =>
-                        handleSetActiveSection(section)
-                      }
+                      setActiveSection={handleSetActiveSection}
                       large={large}
                     />
                   </Box>
@@ -77,7 +79,7 @@ const IndexPage = () => {
                   <Box
                     margin={{
                       top: large ? '155px' : '100px',
-                      bottom: large ? 'xlarge' : 'none',
+                      bottom: large ? 'xlarge' : 'none'
                     }}
                   >
                     <Image
@@ -96,7 +98,7 @@ const IndexPage = () => {
                         letterSpacing: '-1px',
                         textTransform: 'uppercase',
                         fontSize: 36,
-                        lineHeight: 1.3,
+                        lineHeight: 1.3
                       }}
                     >
                       Community Cooperation Software
@@ -104,7 +106,7 @@ const IndexPage = () => {
                   </Box>
 
                   <Main margin={{ bottom: '300px' }}>
-                    {sections.map((s) => (
+                    {sections.map(s => (
                       <Box key={s.title} id={s.title} pad={{ top: 'large' }}>
                         <Heading
                           color="dark-2"
@@ -136,7 +138,7 @@ const IndexPage = () => {
                         )}
 
                         <Box>
-                          {s.content.map((p) => (
+                          {s.content.map(p => (
                             <Paragraph key={p.substring(0, 20)} color="dark-1">
                               {p}
                             </Paragraph>
@@ -154,7 +156,7 @@ const IndexPage = () => {
                         level={2}
                         style={{
                           letterSpacing: '-.5px',
-                          fontFamily: 'Sarabun',
+                          fontFamily: 'Sarabun'
                         }}
                       >
                         We can work together
@@ -186,11 +188,15 @@ const IndexPage = () => {
                 </Col>
                 <Col
                   lg={5}
-                  style={{ display: 'flex', justifyContent: 'flex-end' }}
+                  style={{
+                    position: 'relative',
+                    display: 'flex',
+                    justifyContent: 'flex-end'
+                  }}
                 >
                   <Box
-                    onMouseEnter={() => console.log('geldi')}
-                    onMouseLeave={() => console.log('gitti')}
+                    onMouseEnter={() => setShowCaption(true)}
+                    onMouseLeave={() => setShowCaption(false)}
                     width={screenClass === 'md' ? '200px' : '450px'}
                     height="100vh"
                     justify="start"
@@ -207,10 +213,40 @@ const IndexPage = () => {
                       // alignSelf="start"
                       className="niceImage"
                       src={
-                        sections.find((s) => s.title === activeSection)
+                        sections.find(s => s.title === activeSection)
                           .sliderImage
                       }
                     />
+                    {showCaption && (
+                      <Box
+                        style={{
+                          position: 'absolute',
+                          top: 16,
+                          left: 16,
+                          paddingLeft: 12,
+                          paddingRight: 12,
+                          backgroundColor: 'rgba(255, 255, 255, 0.8)'
+                        }}
+                      >
+                        <Paragraph size="large" color="dark-1">
+                          {
+                            sections.find(s => s.title === activeSection)
+                              .sliderCaption.title
+                          }
+                        </Paragraph>
+                        <Anchor
+                          target="_blank"
+                          href={
+                            sections.find(s => s.title === activeSection)
+                              .sliderCaption.link
+                          }
+                          alignSelf="end"
+                          margin={{ bottom: 'medium', right: 'medium' }}
+                        >
+                          <Text>Source</Text>
+                        </Anchor>
+                      </Box>
+                    )}
                   </Box>
                 </Col>
               </Row>
