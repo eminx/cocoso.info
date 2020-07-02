@@ -146,6 +146,7 @@ const IndexPage = () => {
                       </Box>
                     ))}
                     <Box
+                      id="contact"
                       background="white"
                       border={{ color: 'accent-2' }}
                       pad="medium"
@@ -162,7 +163,8 @@ const IndexPage = () => {
                       </Heading>
                       <Paragraph size="large">
                         Do you have a project that you may have use of Cocoso?
-                        Drop us a message here, and we'll get back to you!
+                        Or you just wanna say hi and become friends? Drop us a
+                        message here, and we'll get back to you!
                       </Paragraph>
 
                       <form

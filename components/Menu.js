@@ -49,16 +49,19 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
               </Link>
             );
           })}
-
-          <Anchor
-            margin={{ top: 'large' }}
-            target="_blank"
-            href="https://github.com/eminx/cocoso"
+          <Link
+            as="span"
+            to="contact"
+            smooth
+            duration={500}
+            style={{ marginTop: 24 }}
           >
-            Source
-          </Anchor>
-          <Anchor target="_blank" href="mailto:emin@infinitesimals.space">
-            Contact
+            <Anchor target="_blank" href="mailto:emin@infinitesimals.space">
+              Contact
+            </Anchor>
+          </Link>
+          <Anchor target="_blank" href="https://github.com/eminx/cocoso">
+            Source Code
           </Anchor>
         </Box>
       ) : (
