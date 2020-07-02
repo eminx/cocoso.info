@@ -12,7 +12,7 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
         position: 'fixed',
         zIndex: 10,
         top: large ? 150 : 0,
-        left: !large && 0,
+        left: !large && 0
       }}
       {...otherProps}
     >
@@ -30,12 +30,12 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
                 hashSpy
                 smooth
                 duration={500}
-                onSetActive={(section) => setActiveSection(section)}
+                onSetActive={section => setActiveSection(section)}
                 style={{
                   display: 'block',
                   textDecoration: 'none',
                   paddingTop: 6,
-                  paddingBottom: 6,
+                  paddingBottom: 6
                 }}
               >
                 <Anchor
@@ -66,11 +66,11 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
           <GrMenu
             alignSelf="center"
             tabIndex="0"
-            label={<Text size="large">Features</Text>}
-            items={sections.map((s) => ({
+            label={<Text>FEATURES</Text>}
+            items={sections.map(s => ({
               label: s.title,
               href: `#${s.title}`,
-              size: 'large',
+              size: 'large'
             }))}
           />
         </Box>
@@ -81,7 +81,7 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
 
 Menu.propTypes = {
   setActiveSection: PropTypes.func.isRequired,
-  large: PropTypes.bool.isRequired,
+  large: PropTypes.bool.isRequired
 };
 
 export default Menu;

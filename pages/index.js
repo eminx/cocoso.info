@@ -33,7 +33,6 @@ const IndexPage = () => {
     if (section === activeSection) {
       return;
     }
-    console.log(section, activeSection);
     setActiveSection(section);
   };
 
@@ -197,7 +196,7 @@ const IndexPage = () => {
                   <Box
                     onMouseEnter={() => setShowCaption(true)}
                     onMouseLeave={() => setShowCaption(false)}
-                    width={screenClass === 'md' ? '200px' : '450px'}
+                    width={screenClass === 'md' ? '0' : '450px'}
                     height="100vh"
                     justify="start"
                     style={
@@ -210,7 +209,6 @@ const IndexPage = () => {
                     <Image
                       fit={large ? 'cover' : 'contain'}
                       fill
-                      // alignSelf="start"
                       className="niceImage"
                       src={
                         sections.find(s => s.title === activeSection)
