@@ -74,7 +74,11 @@ const IndexPage = () => {
                   </Box>
                 </Col>
 
-                <Col lg={5} name="start">
+                <Col
+                  lg={5}
+                  name="start"
+                  style={{ backgroundColor: 'rgba(255, 255, 255, .5)' }}
+                >
                   <Box
                     margin={{
                       top: large ? '155px' : '100px',
