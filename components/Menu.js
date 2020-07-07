@@ -56,9 +56,7 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
             duration={500}
             style={{ marginTop: 24 }}
           >
-            <Anchor target="_blank" href="mailto:emin@infinitesimals.space">
-              Contact
-            </Anchor>
+            <Anchor>Contact</Anchor>
           </Link>
           <Anchor target="_blank" href="https://github.com/eminx/cocoso">
             Source Code
