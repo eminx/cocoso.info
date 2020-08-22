@@ -11,7 +11,7 @@ import {
   Text,
   TextInput,
   TextArea,
-  Button
+  Button,
 } from 'grommet';
 import { Container, Row, Col, ScreenClassRender } from 'react-grid-system';
 import { Link as ScrollLink } from 'react-scroll';
@@ -29,7 +29,7 @@ const IndexPage = () => {
   const [activeSection, setActiveSection] = useState('Intro');
   const [showCaption, setShowCaption] = useState(false);
 
-  const handleSetActiveSection = section => {
+  const handleSetActiveSection = (section) => {
     if (section === activeSection) {
       return;
     }
@@ -39,7 +39,7 @@ const IndexPage = () => {
   return (
     <Gr>
       <ScreenClassRender
-        render={screenClass => {
+        render={(screenClass) => {
           const large = ['xxl', 'xl', 'lg'].includes(screenClass);
           return (
             <Container>
@@ -52,7 +52,7 @@ const IndexPage = () => {
                       to="start"
                       href="#"
                       spy
-                      hashSpy
+                      // hashSpy
                       smooth
                       duration={500}
                     >
@@ -60,7 +60,7 @@ const IndexPage = () => {
                         className="header-logo"
                         margin={{
                           top: 'large',
-                          bottom: 'medium'
+                          bottom: 'medium',
                         }}
                       />
                     </ScrollLink>
@@ -82,7 +82,7 @@ const IndexPage = () => {
                   <Box
                     margin={{
                       top: large ? '155px' : '100px',
-                      bottom: large ? 'xlarge' : 'none'
+                      bottom: large ? 'xlarge' : 'none',
                     }}
                   >
                     <Image
@@ -101,7 +101,7 @@ const IndexPage = () => {
                         letterSpacing: '-1px',
                         textTransform: 'uppercase',
                         fontSize: 36,
-                        lineHeight: 1.3
+                        lineHeight: 1.3,
                       }}
                     >
                       Community Cooperation Software
@@ -109,7 +109,7 @@ const IndexPage = () => {
                   </Box>
 
                   <Main margin={{ bottom: '300px' }}>
-                    {sections.map(s => (
+                    {sections.map((s) => (
                       <Box key={s.title} id={s.title} pad={{ top: 'large' }}>
                         <Heading
                           color="dark-2"
@@ -141,7 +141,7 @@ const IndexPage = () => {
                         )}
 
                         <Box>
-                          {s.content.map(p => (
+                          {s.content.map((p) => (
                             <Paragraph key={p.substring(0, 20)} color="dark-1">
                               {p}
                             </Paragraph>
@@ -160,7 +160,7 @@ const IndexPage = () => {
                         level={2}
                         style={{
                           letterSpacing: '-.5px',
-                          fontFamily: 'Sarabun'
+                          fontFamily: 'Sarabun',
                         }}
                       >
                         We can work together
@@ -196,7 +196,7 @@ const IndexPage = () => {
                   style={{
                     position: 'relative',
                     display: 'flex',
-                    justifyContent: 'flex-end'
+                    justifyContent: 'flex-end',
                   }}
                 >
                   <Box
@@ -217,7 +217,7 @@ const IndexPage = () => {
                       fill
                       className="niceImage"
                       src={
-                        sections.find(s => s.title === activeSection)
+                        sections.find((s) => s.title === activeSection)
                           .sliderImage
                       }
                     />
@@ -229,21 +229,18 @@ const IndexPage = () => {
                           left: 16,
                           paddingLeft: 12,
                           paddingRight: 12,
-                          backgroundColor: 'rgba(255, 255, 255, 0.8)'
+                          backgroundColor: 'rgba(255, 255, 255, 0.8)',
                         }}
                       >
                         <Paragraph size="large" color="dark-1">
                           {
-                            sections.find(s => s.title === activeSection)
+                            sections.find((s) => s.title === activeSection)
                               .sliderCaption.title
                           }
                         </Paragraph>
                         <Anchor
                           target="_blank"
-                          href={
-                            sections.find(s => s.title === activeSection)
-                              .sliderCaption.link
-                          }
+                          href="https://github.com/eminx/cocoso"
                           alignSelf="end"
                           margin={{ bottom: 'medium', right: 'medium' }}
                         >
