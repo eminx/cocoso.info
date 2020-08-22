@@ -18,5 +18,8 @@
     "react-scroll": "^1.7.16",
     "styled-components": "^5.1.1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.11.1"
+  }
 }
