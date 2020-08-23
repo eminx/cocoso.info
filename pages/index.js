@@ -240,7 +240,10 @@ const IndexPage = () => {
                         </Paragraph>
                         <Anchor
                           target="_blank"
-                          href="https://github.com/eminx/cocoso"
+                          href={
+                            sections.find((s) => s.title === activeSection)
+                              .sliderCaption.link
+                          }
                           alignSelf="end"
                           margin={{ bottom: 'medium', right: 'medium' }}
                         >
