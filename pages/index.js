@@ -151,18 +151,90 @@ const IndexPage = () => {
                     ))}
 
                     <Box
+                      id="credits"
                       margin={{ vertical: 'large' }}
-                      background="accent-4"
                       pad="medium"
+                      border={{ color: 'accent-3' }}
                     >
-                      <Text textAlign="center">
-                        Cocoso has been developed in a fantastic collaboration
-                        with{' '}
-                        <Anchor href="https://www.skogen.pm">Skogen</Anchor>, an
-                        artistrun-space in Gothenburg
-                      </Text>
-                      <Box width="medium" pad="small" alignSelf="center">
-                        <Image src="/credits/skogen.png" />
+                      <Box pad={{ vertical: 'medium' }}>
+                        <Text textAlign="center">
+                          Developed in a fantastic collaboration with{' '}
+                          <Anchor href="https://www.skogen.pm" target="_blank">
+                            Skogen
+                          </Anchor>
+                        </Text>
+                        <Box pad="small" alignSelf="center">
+                          <Image
+                            width="260px"
+                            height="130px"
+                            src="/credits/skogen.png"
+                          />
+                        </Box>
+                      </Box>
+
+                      <Box pad={{ vertical: 'medium' }}>
+                        <Text textAlign="center">Supported by </Text>
+                        <Box width="small" alignSelf="center">
+                          <Image
+                            height="120px"
+                            src="/credits/CCA.svg"
+                            alignSelf="center"
+                          />
+                        </Box>
+                        <Box alignSelf="center" margin={{ bottom: 'medium' }}>
+                          <Anchor
+                            href="https://currency.community"
+                            target="_blank"
+                          >
+                            Community Currency Alliance
+                          </Anchor>
+                        </Box>
+
+                        <Box alignSelf="center" margin={{ bottom: 'medium' }}>
+                          <Image
+                            width="185px"
+                            height="120px"
+                            src="/credits/ge.png"
+                          />
+                          <Anchor
+                            href="https://www.grassrootseconomics.org"
+                            target="_blank"
+                            style={{ textAlign: 'center' }}
+                          >
+                            Grassroots Economics
+                          </Anchor>
+                        </Box>
+
+                        <Box width="medium" pad="small" alignSelf="center">
+                          <Image
+                            height="100px"
+                            margin={{ bottom: 'small' }}
+                            src="/credits/circles.svg"
+                          />
+                          <Box alignSelf="center">
+                            <Anchor
+                              href="https://joincircles.net"
+                              target="_blank"
+                            >
+                              Circles UBI
+                            </Anchor>
+                          </Box>
+                        </Box>
+
+                        <Box pad="small" alignSelf="center">
+                          <Image
+                            width="223px"
+                            height="132px"
+                            src="/credits/lilo.png"
+                          />
+                          <Anchor
+                            href="https://www.laborislove.se"
+                            target="_blank"
+                            style={{ textAlign: 'center' }}
+                          >
+                            Labor is Love
+                          </Anchor>
+                        </Box>
                       </Box>
                     </Box>
 

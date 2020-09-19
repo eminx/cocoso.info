@@ -49,7 +49,10 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
               </Link>
             );
           })}
-          <Link to="contact" smooth duration={500} style={{ marginTop: 24 }}>
+          <Link to="credits" smooth duration={500} style={{ marginTop: 24 }}>
+            <Anchor as="span">Credits</Anchor>
+          </Link>
+          <Link to="contact" smooth duration={500}>
             <Anchor as="span">Contact</Anchor>
           </Link>
           <Anchor target="_blank" href="https://github.com/eminx/cocoso">
