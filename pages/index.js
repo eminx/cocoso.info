@@ -149,6 +149,23 @@ const IndexPage = () => {
                         </Box>
                       </Box>
                     ))}
+
+                    <Box
+                      margin={{ vertical: 'large' }}
+                      background="accent-4"
+                      pad="medium"
+                    >
+                      <Text textAlign="center">
+                        Cocoso has been developed in a fantastic collaboration
+                        with{' '}
+                        <Anchor href="https://www.skogen.pm">Skogen</Anchor>, an
+                        artistrun-space in Gothenburg
+                      </Text>
+                      <Box width="medium" pad="small" alignSelf="center">
+                        <Image src="/credits/skogen.png" />
+                      </Box>
+                    </Box>
+
                     <Box
                       id="contact"
                       background="white"
