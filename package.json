@@ -8,12 +8,11 @@
   },
   "author": "Emin Durak <emin@tuta.io>",
   "dependencies": {
-    "grommet": "^2.14.0",
-    "grommet-controls": "^2.0.4",
-    "grommet-icons": "^4.4.0",
-    "next": "latest",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "grommet": "^2.16.0",
+    "grommet-icons": "^4.5.0",
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-grid-system": "^7.0.2",
     "react-scroll": "^1.7.16",
     "styled-components": "^5.1.1"
