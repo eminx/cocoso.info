@@ -296,7 +296,7 @@ const IndexPage = () => {
                   <Box
                     onMouseEnter={() => setShowCaption(true)}
                     onMouseLeave={() => setShowCaption(false)}
-                    width={screenClass === 'md' ? '0' : '450px'}
+                    width={screenClass === 'md' ? '0' : '38%'}
                     height="100vh"
                     justify="start"
                     style={
