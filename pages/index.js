@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import {
   Anchor,
   Box,
@@ -38,6 +39,10 @@ const IndexPage = () => {
 
   return (
     <Gr>
+      <Head>
+        Community Cooperation Software | calendar, resources, events management,
+        activities, workshops, processes, education, time plannning
+      </Head>
       <ScreenClassRender
         render={(screenClass) => {
           const large = ['xxl', 'xl', 'lg'].includes(screenClass);
