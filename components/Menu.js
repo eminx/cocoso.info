@@ -1,15 +1,23 @@
-import PropTypes from 'prop-types';
-import { Anchor, Box, Menu as GrMenu, Text } from 'grommet';
-import { Link } from 'react-scroll';
-import { sections } from '../config/content';
+import PropTypes from "prop-types";
+import useTranslation from "next-translate/useTranslation";
+import { Anchor, Box, Menu as GrMenu, Text } from "grommet";
+import { Link } from "react-scroll";
+import { getSections } from "../config/content";
 
-const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
+function Menu({ setActiveSection, activeSection, large, ...otherProps }) {
+  const { t, lang } = useTranslation("common");
+
+  const sections = getSections(t);
+  if (!sections) {
+    return null;
+  }
+
   return (
     <Box
-      width={!large ? '100%' : 'small '}
-      background={large ? 'none' : 'white'}
+      width={!large ? "100%" : "small "}
+      background={large ? "none" : "white"}
       style={{
-        position: 'fixed',
+        position: "fixed",
         zIndex: 10,
         top: large ? 150 : 0,
         left: !large && 0,
@@ -32,15 +40,15 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
                 duration={500}
                 onSetActive={(section) => setActiveSection(section)}
                 style={{
-                  display: 'block',
-                  textDecoration: 'none',
+                  display: "block",
+                  textDecoration: "none",
                   paddingTop: 6,
                   paddingBottom: 6,
                 }}
               >
                 <Anchor
                   color="dark-2"
-                  weight={isActive ? 'bold' : 'normal'}
+                  weight={isActive ? "bold" : "normal"}
                   as="span"
                   style={{ fontWeight: isActive ? 800 : 400 }}
                 >
@@ -50,13 +58,13 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
             );
           })}
           <Link to="credits" smooth duration={500} style={{ marginTop: 24 }}>
-            <Anchor as="span">Credits</Anchor>
+            <Anchor as="span">{t("credits")}</Anchor>
           </Link>
           <Link to="contact" smooth duration={500}>
-            <Anchor as="span">Contact</Anchor>
+            <Anchor as="span">{t("contact")}</Anchor>
           </Link>
           <Anchor target="_blank" href="https://github.com/eminx/cocoso">
-            Source Code
+            {t("sourceCode")}
           </Anchor>
         </Box>
       ) : (
@@ -64,18 +72,18 @@ const Menu = ({ setActiveSection, activeSection, large, ...otherProps }) => {
           <GrMenu
             alignSelf="center"
             tabIndex="0"
-            label={<Text>FEATURES</Text>}
+            label={<Text>{t("features").toUpperCase()}</Text>}
             items={sections.map((s) => ({
               label: s.title,
               href: `#${s.title}`,
-              size: 'large',
+              size: "large",
             }))}
           />
         </Box>
       )}
     </Box>
   );
-};
+}
 
 Menu.propTypes = {
   setActiveSection: PropTypes.func.isRequired,

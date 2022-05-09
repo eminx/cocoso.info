@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import Head from 'next/head';
+import React, { useState } from "react";
+import Head from "next/head";
+import useTranslation from "next-translate/useTranslation";
 import {
   Anchor,
   Box,
@@ -13,21 +14,22 @@ import {
   TextInput,
   TextArea,
   Button,
-} from 'grommet';
-import { Container, Row, Col, ScreenClassRender } from 'react-grid-system';
-import { Link as ScrollLink } from 'react-scroll';
+} from "grommet";
+import { Container, Row, Col, ScreenClassRender } from "react-grid-system";
+import { Link as ScrollLink } from "react-scroll";
 
-import Gr from '../components/Gr';
-import Menu from '../components/Menu';
-import Tag from '../components/Tag';
-import { sections } from '../config/content';
+import Grommet from "../components/Gr";
+import Menu from "../components/Menu";
+import Tag from "../components/Tag";
+import { getSections } from "../config/content";
 
 function getHSL(length, index, opacity = 1) {
   return `hsla(${(360 / (length + 1)) * (index + 1)}, 62%, 80%, ${opacity})`;
 }
 
-const IndexPage = () => {
-  const [activeSection, setActiveSection] = useState('Intro');
+function IndexPage() {
+  const { t, lang } = useTranslation("common");
+  const [activeSection, setActiveSection] = useState("Intro");
   const [showCaption, setShowCaption] = useState(false);
 
   const handleSetActiveSection = (section) => {
@@ -37,22 +39,28 @@ const IndexPage = () => {
     setActiveSection(section);
   };
 
+  const sections = getSections(t);
+
+  if (!sections) {
+    return null;
+  }
+
   return (
-    <Gr>
+    <Grommet>
       <Head>
         Community Cooperation Software | calendar, resources, events management,
         activities, workshops, processes, education, time plannning
       </Head>
       <ScreenClassRender
         render={(screenClass) => {
-          const large = ['xxl', 'xl', 'lg'].includes(screenClass);
+          const large = ["xxl", "xl", "lg"].includes(screenClass);
           return (
             <Container>
               <Row>
                 <Col lg={2}>
                   {large && (
                     <ScrollLink
-                      style={{ position: 'fixed', paddingBottom: 30 }}
+                      style={{ position: "fixed", paddingBottom: 30 }}
                       className="header-logo-container"
                       to="start"
                       href="#"
@@ -64,8 +72,8 @@ const IndexPage = () => {
                       <Box
                         className="header-logo"
                         margin={{
-                          top: 'large',
-                          bottom: 'medium',
+                          top: "large",
+                          bottom: "medium",
                         }}
                       />
                     </ScrollLink>
@@ -82,54 +90,54 @@ const IndexPage = () => {
                 <Col
                   lg={5}
                   name="start"
-                  style={{ backgroundColor: 'rgba(255, 255, 255, .5)' }}
+                  style={{ backgroundColor: "rgba(255, 255, 255, .5)" }}
                 >
                   <Box
                     margin={{
-                      top: large ? '155px' : '100px',
-                      bottom: large ? 'xlarge' : 'none',
+                      top: large ? "155px" : "100px",
+                      bottom: large ? "xlarge" : "none",
                     }}
                   >
                     <Image
                       className="mainImage"
                       fit="contain"
                       src="/cocoso-logo.png"
-                      width={large ? '320px' : 'medium'}
+                      width={large ? "320px" : "medium"}
                     />
                   </Box>
 
-                  <Box margin={{ bottom: '140px' }}>
+                  <Box margin={{ bottom: "140px" }}>
                     <Heading
                       level={1}
                       color="dark-2"
                       style={{
-                        letterSpacing: '-1px',
-                        textTransform: 'uppercase',
+                        letterSpacing: "-1px",
+                        textTransform: "uppercase",
                         fontSize: 36,
                         lineHeight: 1.3,
                       }}
                     >
-                      Community Cooperation Software
+                      {t("slogan")}
                     </Heading>
                   </Box>
 
-                  <Main margin={{ bottom: '300px' }}>
+                  <Main margin={{ bottom: "300px" }}>
                     {sections.map((s) => (
-                      <Box key={s.title} id={s.title} pad={{ top: 'large' }}>
+                      <Box key={s.title} id={s.title} pad={{ top: "large" }}>
                         <Heading
                           color="dark-2"
                           level={2}
-                          style={{ fontSize: 24, letterSpacing: '-1px' }}
+                          style={{ fontSize: 24, letterSpacing: "-1px" }}
                         >
                           {s.title.toUpperCase()}
                         </Heading>
 
                         <Box direction="row" wrap>
-                          {s.tags.map((tag, tagIndex) => (
+                          {s.tags?.map((tag, tagIndex) => (
                             <Tag
                               label={tag}
                               key={tag}
-                              margin={{ bottom: 'small', right: 'small' }}
+                              margin={{ bottom: "small", right: "small" }}
                               background={getHSL(s.tags.length, tagIndex)}
                             />
                           ))}
@@ -138,15 +146,15 @@ const IndexPage = () => {
                         {s.image && (
                           <Box
                             width="100%"
-                            border={{ color: 'accent-3' }}
-                            margin={{ top: 'large', bottom: 'large' }}
+                            border={{ color: "accent-3" }}
+                            margin={{ top: "large", bottom: "large" }}
                           >
                             <Image src={s.image} fit="contain" fill />
                           </Box>
                         )}
 
                         <Box>
-                          {s.content.map((p) => (
+                          {s.content?.map((p) => (
                             <Paragraph key={p.substring(0, 20)} color="dark-1">
                               {p}
                             </Paragraph>
@@ -157,13 +165,13 @@ const IndexPage = () => {
 
                     <Box
                       id="credits"
-                      margin={{ vertical: 'large' }}
+                      margin={{ vertical: "large" }}
                       pad="medium"
-                      border={{ color: 'accent-3' }}
+                      border={{ color: "accent-3" }}
                     >
-                      <Box pad={{ vertical: 'medium' }}>
+                      <Box pad={{ vertical: "medium" }}>
                         <Text textAlign="center">
-                          Developed in a fantastic collaboration with{' '}
+                          {t("creditsFirst")}
                           <Anchor href="https://www.skogen.pm" target="_blank">
                             Skogen
                           </Anchor>
@@ -177,8 +185,8 @@ const IndexPage = () => {
                         </Box>
                       </Box>
 
-                      <Box pad={{ vertical: 'medium' }}>
-                        <Text textAlign="center">Supported by </Text>
+                      <Box pad={{ vertical: "medium" }}>
+                        <Text textAlign="center">{t("creditsSecond")} </Text>
                         <Box width="small" alignSelf="center">
                           <Image
                             height="120px"
@@ -186,7 +194,7 @@ const IndexPage = () => {
                             alignSelf="center"
                           />
                         </Box>
-                        <Box alignSelf="center" margin={{ bottom: 'medium' }}>
+                        <Box alignSelf="center" margin={{ bottom: "medium" }}>
                           <Anchor
                             href="https://currency.community"
                             target="_blank"
@@ -195,7 +203,7 @@ const IndexPage = () => {
                           </Anchor>
                         </Box>
 
-                        <Box alignSelf="center" margin={{ bottom: 'medium' }}>
+                        <Box alignSelf="center" margin={{ bottom: "medium" }}>
                           <Image
                             width="185px"
                             height="120px"
@@ -204,7 +212,7 @@ const IndexPage = () => {
                           <Anchor
                             href="https://www.grassrootseconomics.org"
                             target="_blank"
-                            style={{ textAlign: 'center' }}
+                            style={{ textAlign: "center" }}
                           >
                             Grassroots Economics
                           </Anchor>
@@ -213,7 +221,7 @@ const IndexPage = () => {
                         <Box width="medium" pad="small" alignSelf="center">
                           <Image
                             height="100px"
-                            margin={{ bottom: 'small' }}
+                            margin={{ bottom: "small" }}
                             src="/credits/circles.svg"
                           />
                           <Box alignSelf="center">
@@ -235,7 +243,7 @@ const IndexPage = () => {
                           <Anchor
                             href="https://www.laborislove.se"
                             target="_blank"
-                            style={{ textAlign: 'center' }}
+                            style={{ textAlign: "center" }}
                           >
                             Labor is Love
                           </Anchor>
@@ -246,24 +254,20 @@ const IndexPage = () => {
                     <Box
                       id="contact"
                       background="white"
-                      border={{ color: 'accent-2' }}
+                      border={{ color: "accent-2" }}
                       pad="medium"
-                      margin={{ top: '100px' }}
+                      margin={{ top: "100px" }}
                     >
                       <Heading
                         level={2}
                         style={{
-                          letterSpacing: '-.5px',
-                          fontFamily: 'Sarabun',
+                          letterSpacing: "-.5px",
+                          fontFamily: "Sarabun",
                         }}
                       >
-                        We can work together
+                        {t("contactTitle")}
                       </Heading>
-                      <Paragraph size="large">
-                        Do you have a project that you may have use of Cocoso?
-                        Or you just wanna say hi and become friends? Drop us a
-                        message here, and we'll get back to you!
-                      </Paragraph>
+                      <Paragraph size="large">{t("contactBody")}</Paragraph>
 
                       <form
                         action="https://formspree.io/xvowqleb"
@@ -278,7 +282,7 @@ const IndexPage = () => {
                         <FormField label="Message">
                           <TextArea name="message" />
                         </FormField>
-                        <Box pad={{ top: 'medium' }}>
+                        <Box pad={{ top: "medium" }}>
                           <Button type="submit" label="Send" alignSelf="end" />
                         </Box>
                       </form>
@@ -288,26 +292,26 @@ const IndexPage = () => {
                 <Col
                   lg={5}
                   style={{
-                    position: 'relative',
-                    display: 'flex',
-                    justifyContent: 'flex-end',
+                    position: "relative",
+                    display: "flex",
+                    justifyContent: "flex-end",
                   }}
                 >
                   <Box
                     onMouseEnter={() => setShowCaption(true)}
                     onMouseLeave={() => setShowCaption(false)}
-                    width={screenClass === 'md' ? '0' : '38%'}
+                    width={screenClass === "md" ? "0" : "38%"}
                     height="100vh"
                     justify="start"
                     style={
-                      large || screenClass === 'md'
-                        ? { position: 'fixed', top: '0', right: 0 }
+                      large || screenClass === "md"
+                        ? { position: "fixed", top: "0", right: 0 }
                         : null
                     }
                     animation="slideLeft"
                   >
                     <Image
-                      fit={large ? 'cover' : 'contain'}
+                      fit={large ? "cover" : "contain"}
                       fill
                       className="niceImage"
                       src={
@@ -318,12 +322,12 @@ const IndexPage = () => {
                     {showCaption && (
                       <Box
                         style={{
-                          position: 'absolute',
+                          position: "absolute",
                           top: 16,
                           left: 16,
                           paddingLeft: 12,
                           paddingRight: 12,
-                          backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                          backgroundColor: "rgba(255, 255, 255, 0.8)",
                         }}
                       >
                         <Paragraph size="large" color="dark-1">
@@ -339,9 +343,9 @@ const IndexPage = () => {
                               .sliderCaption.link
                           }
                           alignSelf="end"
-                          margin={{ bottom: 'medium', right: 'medium' }}
+                          margin={{ bottom: "medium", right: "medium" }}
                         >
-                          <Text>Source</Text>
+                          <Text>{t("source")}</Text>
                         </Anchor>
                       </Box>
                     )}
@@ -353,8 +357,8 @@ const IndexPage = () => {
           );
         }}
       />
-    </Gr>
+    </Grommet>
   );
-};
+}
 
 export default IndexPage;
