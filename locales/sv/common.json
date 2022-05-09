@@ -69,11 +69,11 @@
     "Process möjliggör hantering av processer som träning, socialt skapande eller inlärningsaktiviteter - som återkommande yogasessioner eller skolträningssessioner, eller någon form av samskapande och kontinuerligt utvecklande process. Administratörer kan starta det genom att lägga till detaljer om konceptet med en bild och lite text. Sedan är ett enkelt forum, dokumentlista, medlemmar och datum redo på en sida.",
     "Denna funktion inkluderar i princip de flesta digitala verktyg för löpning, till exempel en inlärnings-, tränings-, cocreation- eller faciliteringsprocess. Som en skola, eller ett kontinuerligt/återkommande yogapass, eller en samarbetsaktivitet av något slag."
   ],
-  "workTitle": "Works",
-  "workTags": ["Portfolio", "Marketplace", "Documentation", "Presentation"],
+  "workTitle": "Arbetar",
+  "workTags": ["Portfölj", "Marknadsplats", "Dokumentation", "Presentation"],
   "works": [
-    "A Work is a visual (or audiovisual) creation of an artist, researcher, designer, craftsperson or reseller to be showcased to the community. Details of the work, with images, sound files and videos can be shared within a category of creator’s choice. A work is a unique entry, associated with its creator -- a perfect tool for portfolios, and marketplaces.",
-    "One can also create a work and save it privately for internal use and documentation. The primary purpose it is built for is to enable artists and craftspeople to publish and communicate what they do with the rest of the world, as well as document for their own reference."
+    "Ett verk är en visuell (eller audiovisuell) skapelse av en konstnär, forskare, designer, hantverkare eller återförsäljare som ska visas upp för samhället. Detaljer om verket, med bilder, ljudfiler och videor kan delas inom en kategori som skaparen väljer. . Ett verk är en unik post, förknippad med dess skapare -- ett perfekt verktyg för portföljer och marknadsplatser.",
+    "Man kan också skapa ett verk och spara det privat för internt bruk och dokumentation. Det primära syftet det är byggt för är att göra det möjligt för konstnärer och hantverkare att publicera och kommunicera vad de gör med resten av världen, samt dokumentera för deras egen referens."
   ],
   "memberTitle": "Arbetar",
   "memberTags": [
