@@ -90,7 +90,7 @@ function getSections(t) {
       image: "/members.png",
     },
     {
-      title: t("info"),
+      title: t("infoTitle"),
       tags: t("infoTags", {}, { returnObjects: true }),
       content: t("info", {}, { returnObjects: true }),
       sliderImage: "/slider/info-british-library-b8vYa2-83pw-unsplash.jpg",

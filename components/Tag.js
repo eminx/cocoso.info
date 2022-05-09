@@ -1,14 +1,14 @@
-import React from 'react';
-import { Box, Button, Text } from 'grommet';
-import { Close } from 'grommet-icons';
+import React from "react";
+import { Box, Button, Text } from "grommet";
+import { Close } from "grommet-icons";
 
 const Tag = ({
   label,
   onClick,
   removable = false,
   onRemove,
-  background = 'accent-4',
-  color = 'dark-1',
+  background = "accent-4",
+  color = "dark-1",
   ...otherProps
 }) => (
   <Box
@@ -27,11 +27,12 @@ const Tag = ({
         weight="bold"
         color={color}
         style={{
-          textShadow: '.5px .5px 1px #e7f5d61a',
           fontFamily: '"Inknut Antiqua", serif',
+          textShadow: ".5px .5px 1px #e7f5d61a",
+          textTransform: "uppercase",
         }}
       >
-        {label && label.toUpperCase()}
+        {label && label}
       </Text>
     </Box>
     {removable && (

@@ -128,9 +128,13 @@ function IndexPage() {
                         <Heading
                           color="dark-2"
                           level={2}
-                          style={{ fontSize: 24, letterSpacing: "-1px" }}
+                          style={{
+                            fontSize: 24,
+                            letterSpacing: "-1px",
+                            textTransform: "uppercase",
+                          }}
                         >
-                          {s.title.toUpperCase()}
+                          {s.title}
                         </Heading>
 
                         <Box direction="row" wrap>
