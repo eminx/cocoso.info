@@ -20,6 +20,7 @@
     "Cocoso is a community-driven, resource-aware and open source project. Strong artistic aspirations, social motives and economic inclusion needs have paved the path at its earlier stages. Currently, it builds up by learning from multiple communities where it's used to help build and maintain their unique projects. These communities are made up of artists, artist-run initiatives, alternative currency projects and cocreative places.",
     "Cocoso doesn't feature tools for spying on users for tracking their data. Each member of any community owns their data, and are free to share only as much as they wish. No information is shared with any third party service or organisation, the data is owned by the community. You run projects of your community and their data on your own terms."
   ],
+  "features": "Features",
   "activityTitle": "Activities",
   "activityTags": [
     "Public Events",
@@ -76,6 +77,8 @@
   ],
   "memberTitle": "Members",
   "memberTags": [
+    "Community",
+    "Employees",
     "Memberships",
     "User Accounts",
     "Followers",
@@ -113,5 +116,6 @@
     "message": "Message",
     "send": "Send"
   },
-  "sourceCode": "Source Code"
+  "sourceCode": "Source Code",
+  "source": "Source"
 }

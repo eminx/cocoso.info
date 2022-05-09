@@ -67,7 +67,7 @@ function getSections(t) {
       image: "/processes.png",
     },
     {
-      title: t("worksTitle"),
+      title: t("workTitle"),
       tags: t("workTags", {}, { returnObjects: true }),
       content: t("works", {}, { returnObjects: true }),
       sliderImage:
