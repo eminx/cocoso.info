@@ -29,7 +29,8 @@ function getHSL(length, index, opacity = 1) {
 
 function IndexPage() {
   const { t, lang } = useTranslation("common");
-  const [activeSection, setActiveSection] = useState("Intro");
+  const introTitle = t("introTitle");
+  const [activeSection, setActiveSection] = useState(introTitle);
   const [showCaption, setShowCaption] = useState(false);
 
   const handleSetActiveSection = (section) => {
@@ -173,6 +174,7 @@ function IndexPage() {
                         <Text textAlign="center">
                           {t("creditsFirst")}
                           <Anchor href="https://www.skogen.pm" target="_blank">
+                            {" "}
                             Skogen
                           </Anchor>
                         </Text>
@@ -273,17 +275,21 @@ function IndexPage() {
                         action="https://formspree.io/xvowqleb"
                         method="POST"
                       >
-                        <FormField label="Your email address">
+                        <FormField label={t("contactForm.email")}>
                           <TextInput name="email" type="email" />
                         </FormField>
-                        <FormField label="Subject">
+                        <FormField label={t("contactForm.subject")}>
                           <TextInput name="subject" />
                         </FormField>
-                        <FormField label="Message">
+                        <FormField label={t("contactForm.message")}>
                           <TextArea name="message" />
                         </FormField>
                         <Box pad={{ top: "medium" }}>
-                          <Button type="submit" label="Send" alignSelf="end" />
+                          <Button
+                            type="submit"
+                            label={t("contactForm.send")}
+                            alignSelf="end"
+                          />
                         </Box>
                       </form>
                     </Box>
@@ -316,7 +322,7 @@ function IndexPage() {
                       className="niceImage"
                       src={
                         sections.find((s) => s.title === activeSection)
-                          .sliderImage
+                          ?.sliderImage
                       }
                     />
                     {showCaption && (
@@ -333,7 +339,7 @@ function IndexPage() {
                         <Paragraph size="large" color="dark-1">
                           {
                             sections.find((s) => s.title === activeSection)
-                              .sliderCaption.title
+                              ?.sliderCaption.title
                           }
                         </Paragraph>
                         <Anchor
