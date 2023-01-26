@@ -16,9 +16,9 @@
   ],
   "intro": [
     "Cocoso, herkese açık bir web sitesi oluşturmak için bir dizi araç ve tüm pratikliklerinizi tek bir yerde takip etmek için bir intranettir.",
-    "Bir topluluk içinde iç/dış operasyonları işbirliği içinde kolaylaştırmak için web tabanlı, açık kaynaklı bir yazılımdır. Özerk eylemler, sanatsal/kültürel etkinlikler ve ortak kaynakların paylaşımı ile ilgili web varlığını ve erişilebilirliğini güçlendirir. Özerk ve yaratıcı gruplar için yapılmıştır. Konferanslar, festivaller, sanatçılar tarafından yürütülen girişimler, kar amacı gütmeyen kuruluşlar, aileler, küçük veya orta ölçekli işletmeler, alternatif okullar, permakültür siteleri, yoga alanları veya bir açık hava müzesine dönüşecek büyükannenizin çiftliği gibi her türlü işbirliği. ",
-    "Cocoso, topluluk odaklı, kaynaklara duyarlı ve açık kaynaklı bir projedir. Güçlü sanatsal özlemler, sosyal motifler ve ekonomik içerme ihtiyaçları, daha önceki aşamalarında yolu açmıştır. Şu anda, yardım etmek için kullanıldığı yerlerde birden fazla topluluktan öğrenerek geliştirilmektedir. benzersiz projelerini inşa et ve sürdür. Bu topluluklar sanatçılardan, sanatçı tarafından yürütülen girişimlerden, alternatif para projelerinden ve ortak yaratıcı yerlerden oluşur.",
-    "Cocoso, verilerini takip etmek için kullanıcıları gözetlemek için araçlara sahip değil. Herhangi bir topluluğun her üyesi kendi verilerine sahiptir ve yalnızca istedikleri kadar paylaşmakta özgürdür. Hiçbir üçüncü taraf hizmet veya kuruluşla hiçbir bilgi paylaşılmaz. veriler topluluğa aittir. Topluluğunuzun projelerini ve verilerini kendi koşullarınıza göre yürütürsünüz."
+    "Bir topluluk içinde iç/dış operasyonları işbirliği içinde kolaylaştırmak için web tabanlı, açık kaynaklı bir yazılımdır. Özerk eylemler, sanatsal/kültürel etkinlikler ve ortak kaynakların paylaşımı ile ilgili web varlığını ve erişilebilirliğini güçlendirir. Özerk ve yaratıcı gruplar için yapılmıştır. Konferanslar, festivaller, sanatçılar tarafından yürütülen girişimler, kar amacı gütmeyen kuruluşlar, aileler, küçük veya orta ölçekli işletmeler, alternatif okullar, permakültür çiftlikleri, yoga alanları veya bir açık hava müzesine dönüşecek büyükannenizin çiftliği gibi her türlü proje...",
+    "Cocoso, topluluk odaklı, kaynaklara duyarlı ve açık kaynaklı bir projedir. Güçlü sanatsal özlemler, sosyal motifler ve ekonomik içerme ihtiyaçları, daha önceki aşamalarında yolu açmıştır. Şu anda, yardım etmek için kullanıldığı yerlerde birden fazla topluluktan öğrenerek geliştirilmektedir. Bu topluluklar sanatçılardan, sanatçı tarafından yürütülen girişimlerden, alternatif para projelerinden ve ortak-yaratıcı yerlerden oluşur.",
+    "Cocoso, verilerini takip ederek kullanıcıları gözetlemek için araçlara sahip değildir. Herhangi bir topluluğun her bir üyesi kendi verilerine sahiptir ve yalnızca istedikleri kadar paylaşmakta özgürdür. Hiçbir üçüncü taraf hizmet veya kuruluşla hiçbir bilgi paylaşılmaz. Veriler bireylere ve topluluğa aittir. Topluluğunuzun projelerini ve verilerini kendi koşullarınıza göre yürütürsünüz."
   ],
   "features": "Özellikler",
   "activityTitle": "Aktiviteler",
@@ -33,14 +33,15 @@
     "Kaynak Ayırtma"
   ],
   "activities": [
-    "Cocoso'nun en eski versiyonu, önceden kayıtlı izleyiciler için birden fazla halka açık sahne performansına ev sahipliği yapan, sanatçılar tarafından işletilen bir dans tiyatrosu ve ortak öğrenme alanı için inşa edildi. Özelleştirilebilir ve tekrarlanan etkinliklerin yönetimi ve yayınlanması, RSVP gibi birkaç farklı özellik gerektirir. RSVP ile kayıtlar etkinlik yöneticileri herhangi bir etkinlik sırasında varışlarını doğrulama olanağına sahip olduklarından konuklara e-posta ile iletilir.",
-    "Bir resim, başlık, açıklama ve daha fazla bilgi ile içerik oluşturulabilir/düzenlenebilir/silinebilir; ayrıca isteğe bağlı olarak birden fazla tarih (ve saat) içeren bir dizi oluşum. Bu şekilde, yöneticilerin tümü için yeni giriş oluşturmasına gerek kalmaz. olaylar."
+    "Cocoso'nun en eski versiyonu, önceden kayıtlı izleyiciler için halka açık sahne performanslarına ev sahipliği yapan, sanatçılar tarafından işletilen bir dans tiyatrosu ve ortak öğrenme alanı olan Skogen için inşa edilmiş idi. Özelleştirilebilir ve tekrarlanan etkinliklerin yönetimi ve yayınlanması; kayıt, etkinliklerin her birinin sıralanması gibi farklı özellikler gerektirir. Etkinlik yöneticileri her kayıt olan bireyi direk görebildiği gibi kayıt olanlar da bunun onayını içeren epostayı otomatik olarak alırlar",
+    "Bir resim, başlık, açıklama ve daha fazla bilgi ile içerik oluşturulabilir/düzenlenebilir/silinebilir; ayrıca isteğe bağlı olarak birden fazla tarih (ve saat) içeren bir dizi aktivite yapılabilir. Bu şekilde, yöneticilerin tümü için yeni giriş oluşturmalarına gerek kalmaz.",
+    "Aynı zamanda her bir kaynağın özel amaçla kullanım amaçlı ayırtılması da uygun rolde olan her bir kullanıcı tarafından pekala mümkündür."
   ],
   "resourceTitle": "Kaynaklar",
   "resourceTags": ["Kaynak Paylaşımı", "Commons Yönetimi"],
   "resources": [
-    "Cocoso, kaynak paylaşım süreçlerinin zamanında planlanmasını ve gözden geçirilmesini sağlar. Doğrulanmış bir kullanıcı her fiziksel kaynak talep ettiğinde veya bir yer ayırttığında, bu bilgi takvim aracılığıyla kolektifin üyeleriyle paylaşılır. Takvim deneyimi kadar erişilebilir ve basittir. yaygın olarak kullanılan bulut tabanlı dijital takvim çözümleri -- bir farkla.",
-    "Cocoso yazılımında takvim daveti yok. Çünkü makinelerin yalnızca kendi iletişimimizi ve paylaşımımızı kolaylaştırmamıza yardımcı olması gerektiğine inanıyoruz - bizim için çalışıp hareket etmemeli. Cocoso'nun takvimi topluluk etkinliklerinin ve kaynak paylaşımının ana cephesidir. Biz de e-postalarımızı veri karmaşasından kurtardığımız gibi birbirimizle konuşalım."
+    "Cocoso, kaynak paylaşım süreçlerinin zamanında planlanmasını ve gözden geçirilmesini sağlar. Uygun role sahip bir kullanıcı her kaynak ayırttığında, bu bilgi takvim aracılığıyla kolektifin üyeleriyle paylaşılır. Takvim kullanıcı deneyimi açısından erişilebilir ve basittir. Yaygın olarak kullanılan bulut tabanlı dijital takvim çözümlerinden bir farkı vardır:",
+    "Cocoso yazılımında takvim daveti henüz yoktur. Çünkü makinelerin yalnızca kendi iletişimimizi ve paylaşımımızı kolaylaştırmamıza yardımcı olması gerektiğine inanıyoruz. Cocoso'nun takvimi topluluk etkinliklerinin ve kaynak paylaşımının ana cephesidir. Biz de e-postalarımızı veri karmaşasından kurtardığımız gibi davet etmek istediğimizde birbirimizle konuşmayı tercih ederiz."
   ],
   "calendarTitle": "Takvim",
   "calendarTags": [
@@ -51,8 +52,8 @@
     "Kaynakların Rezervasyonları"
   ],
   "calendar": [
-    "Cocoso'nun web takvimi, Aylık/Haftalık/Günlük etkinlikleri ve kaynak güncellemelerini göstermek için görüntülenebilir. Kullanıcılar tek bir dokunuşla bu zaman dilimleri arasında gezinebilir. Her takvim etkinliği, bir kaynak kullanım etkinliğine veya bir topluluk etkinliğine karşılık gelebilir. Çok sayıda kaynak ve etkinlikler takvimde kabul edilir.Takvim, Benzersiz ihtiyaçlara ve toplu senaryolara uyacak şekilde esneklik, şeffaflık ve basitlik için oluşturulmuştur.",
-    "Takvimdeki her girişe, rezerve edilmiş bir kaynak veya yoga gibi bir aktivite türü gibi farklı bir kategori atanabilir. Hem farklı türdeki genel etkinlik girişlerini hem de farklı dahili/özel rezervasyonları sunmak için kullanışlıdır. Her özellik gibi Cocoso, farklı kullanım durumlarına uygulanabilmesi için kasıtlı olarak çok soyut hale getirildi."
+    "Cocoso'nun özellikleri dahilindeki takvimi, Aylık/Haftalık/Günlük etkinlikleri ve kaynak güncellemelerini göstermek için görüntülenebilir. Kullanıcılar tek bir dokunuşla bu zaman dilimleri arasında gezinebilir. Her takvim etkinliği, bir kaynak kullanım etkinliğine veya bir topluluk etkinliğine karşılık gelebilir. Çok sayıda kaynak ve etkinlikler takvimde kabul edilir. Takvim, benzersiz ihtiyaçlara ve toplu senaryolara uyacak şekilde esneklik, şeffaflık ve basitlik için oluşturulmuştur.",
+    "Takvimdeki her girişe, rezerve edilmiş bir kaynak veya yoga gibi bir aktivite türü gibi farklı bir kategori atanabilir. Hem farklı türdeki genel etkinlik girişlerini hem de farklı dahili/özel rezervasyonları sunmak için kullanışlıdır. Her özellik gibi Cocoso'nun mimarisi, farklı kullanım durumlarına uygulanabilmesi için kasıtlı olarak çok soyut hale getirilmiştir"
   ],
   "processTitle": "Süreçler",
   "processTags": [
@@ -64,15 +65,15 @@
     "Üye Etkinlikleri"
   ],
   "processes": [
-    "Süreç, bir kavramı temsil etmek için soyut bir terimdir ve bir grup tarafından - sanal veya fiilen - yürütülen bu kavramı takip eden bir dizi kavramsal olarak yönlendirilen aktivitedir. Bir süreç altında, bireyler işbirlikçi faaliyetlere başlayabilir ve temel bilgiler gibi tüm pratik ayrıntılara sahip olabilir. ve tarihler bir sayfada belgelenmiştir.",
-    "Süreç, tekrar eden yoga seansları veya okul eğitim seansları veya her türlü birlikte yaratma ve sürekli gelişen süreç gibi eğitim, sosyal yaratma veya öğrenme faaliyetleri gibi süreçlerin yönetimini sağlar. Yöneticiler, kavramın ayrıntılarını ekleyerek başlatabilir. bir resim ve biraz metin.Ardından basit bir forum, döküman listesi, üyeler ve tarihler tek sayfada hazır.",
-    "Bu özellik, temel olarak, örneğin bir öğrenme, eğitim, birlikte yaratma veya kolaylaştırma süreci gibi koşu için dijital araçların çoğunu içerir. Bir okul veya sürekli/tekrarlayan bir yoga seansı veya herhangi bir tür işbirlikçi aktivite gibi."
+    "Süreç, bir kavramı temsil etmek için soyut bir terimdir ve bir grup tarafından - sanal veya fiilen - yürütülen bu kavramı takip eden bir dizi buluşmaların kaydının tutulduğu bir sayfadır. Bir süreç altında, bireyler işbirlikçi niyetlerle faaliyetlere başlayabilirler ve temel bilgiler gibi tüm pratik ayrıntılara sahip olabilirler. Tarihler bir sayfada belgelenmişlerdir.",
+    "Süreç, tekrar eden yoga seansları veya okul eğitim seansları veya her türlü birlikte yaratma ve sürekli gelişen süreç gibi eğitim, sosyal yaratma veya öğrenme faaliyetleri gibi süreçlerin yönetimini sağlar. Yöneticiler, kavramın ayrıntılarını ekleyerek başlatabilir; bir resim ve ilgili açıklayıcı metin ile kolayca oluşturabilirler. Dilerlerse ilgili dokümanları yaygın birçok farklı formatta yükleyebilir ve sürecin üyelerinin indirmesi için not alabilirler. Ardından basit bir mesajlaşma forumu, döküman listesi, üyeler ve tarihler tek sayfada hazır olur.",
+    "Bu özellik, temel olarak, örneğin bir öğrenme, eğitim, birlikte yaratma veya kolaylaştırma süreci gibi değişik faaliyetler için dijital araçların çoğunu içerir. Okullardaki öğrenim süreçleri veya tekrarlayarak ilerleyen herhangi işbirliği projesi gibi..."
   ],
-  "workTitle": "Çalışmalar",
+  "workTitle": "İşler",
   "workTags": ["Portföy", "Pazar yeri", "Dokümantasyon", "Sunum"],
   "works": [
-    "Bir çalışma, topluluğa sergilenmek üzere bir sanatçı, araştırmacı, tasarımcı, zanaatkar veya satıcının görsel (veya görsel-işitsel) bir yaratımıdır. Çalışmanın ayrıntıları, resimler, ses dosyaları ve videolar ile yaratıcının tercih ettiği bir kategori içinde paylaşılabilir. Bir eser, yaratıcısıyla ilişkilendirilen benzersiz bir giriştir - portföyler ve pazar yerleri için mükemmel bir araçtır.",
-    "Ayrıca bir eser yaratılabilir ve dahili kullanım ve dokümantasyon için özel olarak kaydedilebilir. Bunun için inşa edilmesinin temel amacı, sanatçıların ve zanaatkarların dünyanın geri kalanıyla yaptıklarını yayınlamalarını ve iletişim kurmalarını sağlamak ve aynı zamanda kendi belgeleri için belgelemektir. kendi referansı."
+    "Bir iş, topluluğa ve dünyaya sergilenmek üzere bir sanatçı, araştırmacı, tasarımcı, zanaatkar veya satıcının görsel (veya görsel-işitsel) bir yaratımıdır. Çalışmanın ayrıntıları, resimler, ses dosyaları ve videolar ile yaratıcının tercih ettiği bir kategori içinde paylaşılabilir. Bir eser, yaratıcısıyla ilişkilendirilen benzersiz bir giriştir - portföyler ve pazar yerleri için basit ve mükemmel bir araçtır.",
+    "Ayrıca bir iş oluşturulup, kullanıcının kendi kullanımı ve dokümantasyonu için özel olarak kaydedilebilir. Bunun böyle inşa edilmesinin temel amacı, sanatçıların ve zanaatkarların dünyanın geri kalanıyla yaptıklarını yayınlamalarını ve iletişim kurmalarını kolaylaştırarak sağlamak ve aynı zamanda kendi referansları için belgelemektir."
   ],
   "memberTitle": "Üyeler",
   "memberTags": [
@@ -85,9 +86,9 @@
     "Güç"
   ],
   "members": [
-    "Bir kuruluşun yöneticisiyseniz, kuruluşun üyelerini bulabilir ve filtreleyebilirsiniz. Programda/takvimde etkinlik oluşturma veya süreç oluşturma gibi belirli etkinlikleri yapabilmeleri için onları doğrulayabilir veya doğrulamasını kaldırabilirsiniz.",
-    "Örneğin bir yoga stüdyosu işletiyorsanız, hem öğretmenleriniz hem de öğrencileriniz tek bir platformda olacak. Ardından, ana sayfada etkinliklerini oluşturabilmeleri için öğretmenlerinizi doğrulayacaksınız, oysa öğrenciler yalnızca katılabilecekler. (RSVP) mevcut faaliyetlere/süreçlere.",
-    "Yani, zorunlu olarak, ayrıcalıklar topluluğunuz arasında anlamlı bir şekilde dağıtılabilir.",
+    "Bir kuruluşun yöneticisiyseniz, kuruluşun üyelerini bulabilir ve filtreleyebilirsiniz. Programda/takvimde etkinlik oluşturma veya süreç oluşturma gibi belirli etkinlikleri yapabilmeleri için onlara gerekli olan rolü temin edebilir veya rolünü değiştirebilirsiniz.",
+    "Örneğin bir okul işletiyorsanız, hem öğretmenleriniz hem de öğrencileriniz tek bir platformda olabilir. Ardından, ana sayfada etkinliklerini oluşturabilmeleri için öğretmenlerinize içerik sağlayıcı rolü verebilirsiniz. Böylelikle öğrenciler yalnızca derslere katılabilecekler ve öğretmenler dersleri bir süreç olarak oluşturup öğrencilerin kaydına sunabilir.",
+    "Yani, zorunlu olarak, ayrıcalıklar topluluğunuz arasında anlamlı bir şekilde kolaylıkla dağıtılabilir.",
     "Her kullanıcı kolayca bir hesap oluşturabilir ve işlemlerine oradan devam edebilir. Parolalar veritabanında otomatik olarak şifrelenir, böylece sistem yöneticileri onları izleyemez."
   ],
   "infoTitle": "Bilgi",
@@ -100,15 +101,15 @@
     "İletişim"
   ],
   "info": [
-    "Bu özellik temel olarak bir dizi basit, statik sayfa oluşturabilmektir. Aklınıza gelebilecek en basit CMS...",
-    "Bu özellik sayesinde, yalnızca bir başlık ve açıklama içeren bir sayfa kolayca oluşturulabilir (zengin metin düzenleme ile). Başlık, Hakkımızda /page/about-us olmak gibi küçük bir değişiklikle slug olur ve hemen hemen bu kadar. Her sayfa otomatik olarak başka bir statik sayfa olarak navigasyona eklenir."
+    "Bu özellik temel olarak bir dizi basit, statik sayfa oluşturabilmektir. Aklınıza gelebilecek en basit CMS... (İçerik Yönetim Sistemi)",
+    "Bu özellik sayesinde, yalnızca bir başlık, imajlar ve açıklama içeren bir sayfa kolayca oluşturulabilir (zengin metin düzenleme ile). Başlık, Hakkımızda: /page/about-us, olmak gibi küçük bir değişiklikle slug olur ve aslında bu kadar. Her sayfa otomatik olarak başka bir statik sayfa olarak navigasyona eklenir."
   ],
   "credits": "Destekleyenler",
   "creditsFirst": "Harika bir işbirliği ile geliştirildi: ",
   "creditsSecond": "Destekleyenler",
   "contact": "İletişim",
   "contactTitle": "Beraber çalışabiliriz",
-  "contactBody": "Cocoso'yu kullanabileceğiniz bir projeniz var mı? Yoksa sadece merhaba demek ve arkadaş olmak mı istiyorsun? Bize buradan bir mesaj bırakın, size geri dönelim!",
+  "contactBody": "Cocoso'yu kullanabileceğiniz bir projeniz var mı? Yoksa sadece merhaba demek ve arkadaş olmak mı istiyorsun? Bize buradan bir mesaj bırak, sana geri dönelim!",
   "contactForm": {
     "email": "Eposta adresiniz",
     "subject": "Konu",
