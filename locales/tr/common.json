@@ -101,7 +101,7 @@
     "İletişim"
   ],
   "info": [
-    "Bu özellik temel olarak bir dizi basit, statik sayfa oluşturabilmektir. Aklınıza gelebilecek en basit CMS... (İçerik Yönetim Sistemi)",
+    "Bu özellik temel olarak bir dizi basit statik sayfa oluşturabilmektir. Aklınıza gelebilecek en basit CMS... (İçerik Yönetim Sistemi)",
     "Bu özellik sayesinde, yalnızca bir başlık, imajlar ve açıklama içeren bir sayfa kolayca oluşturulabilir (zengin metin düzenleme ile). Başlık, Hakkımızda: /page/about-us, olmak gibi küçük bir değişiklikle slug olur ve aslında bu kadar. Her sayfa otomatik olarak başka bir statik sayfa olarak navigasyona eklenir."
   ],
   "credits": "Destekleyenler",
