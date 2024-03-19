@@ -8,6 +8,7 @@ import {
   Heading,
   Image,
   Main,
+  Menu as GMenu,
   Paragraph,
   FormField,
   Text,
@@ -17,6 +18,7 @@ import {
 } from "grommet";
 import { Container, Row, Col, ScreenClassRender } from "react-grid-system";
 import { Link as ScrollLink } from "react-scroll";
+import setLanguage from "next-translate/setLanguage";
 
 import Grommet from "../components/Gr";
 import Menu from "../components/Menu";
@@ -26,6 +28,12 @@ import { getSections } from "../config/content";
 function getHSL(length, index, opacity = 1) {
   return `hsla(${(360 / (length + 1)) * (index + 1)}, 62%, 80%, ${opacity})`;
 }
+
+const locales = [
+  { label: "English", value: "en" },
+  { label: "Svenska", value: "sv" },
+  { label: "Türkçe", value: "tr" },
+];
 
 function IndexPage() {
   const { t, lang } = useTranslation("common");
@@ -76,6 +84,18 @@ function IndexPage() {
                           top: "large",
                           bottom: "medium",
                         }}
+                      />
+
+                      <GMenu
+                        items={locales.map((item) => ({
+                          label: item.label,
+                          onClick: async () => await setLanguage(item.value),
+                        }))}
+                        label={
+                          locales.find((item) => item.value === lang).label
+                        }
+                        size="small"
+                        style={{ color: "darkolivegreen" }}
                       />
                     </ScrollLink>
                   )}
