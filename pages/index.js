@@ -296,7 +296,7 @@ function IndexPage() {
                       <Paragraph size="large">{t("contactBody")}</Paragraph>
 
                       <form
-                        action="https://formspree.io/xvowqleb"
+                        action="https://formspree.io/f/xpqrdwpl"
                         method="POST"
                       >
                         <FormField label={t("contactForm.email")}>
