@@ -1,121 +1,237 @@
 {
-  "title": "COCOSO",
-  "slogan": "Programvara för samhällssamarbete",
-  "introTitle": "Intro",
-  "introTags": [
-    "Onlineplattformar",
-    "Kooperativ",
-    "Icke-vinstdrivande",
-    "Festival",
-    "Konferenser",
-    "Konstnärsdrivna utrymmen",
-    "Företag",
-    "Ekobyar",
-    "Samhällen",
-    "Campingplatser"
-  ],
-  "intro": [
-    "Cocoso är en uppsättning verktyg för att skapa en offentlig webbplats, samt ett intranät för att hålla reda på alla dina praktiska saker på ett ställe.",
-    "Det är webbaserad programvara med öppen källkod för att samarbeta med intern/extern verksamhet inom en gemenskap. Den möjliggör webbnärvaro och tillgänglighet angående autonoma handlingar, konstnärliga/kulturella aktiviteter och delning av gemensamma resurser. Den är gjord för autonoma och kreativa grupper, lämplig för alla typer av samarbeten såsom: konferenser, festivaler, konstnärsdrivna initiativ, ideella organisationer, familjer, små eller medelstora företag, alternativa skolor, permakulturplatser, yogaplatser eller din mormors gård som kommer att förvandlas till ett friluftsmuseum. ",
-    "Cocoso är ett gemenskapsdrivet, resursmedvetet och öppen källkodsprojekt. Starka konstnärliga ambitioner, sociala motiv och behov av ekonomisk inkludering har banat vägen i dess tidigare skeden. För närvarande bygger det upp genom att lära sig från flera samhällen där det används för att hjälpa till. bygga och underhålla sina unika projekt. Dessa gemenskaper består av konstnärer, konstnärsdrivna initiativ, alternativa valutaprojekt och cocreative platser.",
-    "Cocoso har inga verktyg för att spionera på användare för att spåra deras data. Varje medlem i alla gemenskaper äger sin data och är fria att dela bara så mycket de vill. Ingen information delas med någon tredje parts tjänst eller organisation, data ägs av communityn. Du driver projekt för din community och deras data på dina egna villkor."
-  ],
-  "features": "Funktioner",
-  "activityTitle": "Aktiviteter",
-  "activityTags": [
-    "Offentliga evenemang",
-    "OSA",
-    "Pågående arbete",
-    "Föreställningar",
-    "Utställningar",
-    "Konserter",
-    "Konferenser",
-    "Internals",
-    "Bokning"
-  ],
-  "activities": [
-    "Den tidigaste versionen av Cocoso byggdes för en artistdriven dansteater och ett samlärande utrymme, som är värd för flera offentliga scenframträdanden för förregistrerad publik. Hantering och publicering av anpassningsbara och återkommande evenemang kräver flera olika funktioner som OSA. Registreringar med OSA kommuniceras till gästerna via e-post, eftersom evenemangsadministratörer har möjlighet att verifiera sin ankomst vid tidpunkten för varje evenemang.",
-    "Man kan skapa/redigera/ta bort innehåll med en bild, titel, beskrivning och ytterligare information, såväl som en uppsättning händelser med valfritt flera datum (och tider). På så sätt behöver administratörer inte skapa ny post för alla händelser."
-  ],
-  "resourceTitle": "Resurser",
-  "resourceTags": ["Resursdelning", "Management of Commons"],
-  "resources": [
-    "Cocoso möjliggör planering och överblick över resursdelningsprocesser i tid. Varje gång en verifierad användare gör anspråk på en fysisk resurs eller bokar ett utrymme delas denna information med medlemmar i kollektivet genom kalendern. Kalenderupplevelsen är lika tillgänglig och enkel som mycket använda molnbaserade digitala kalenderlösningar -- med en skillnad.",
-    "På Cocosos mjukvara finns det inga kalenderinbjudningar. Eftersom vi tror att maskiner bara ska hjälpa oss att underlätta vår egen kommunikation och delning - inte att fungera och agera för oss. Cocosos kalender är huvudfasaden för community-evenemang och resursdelning. Vi har också som så att vi pratar med varandra, på samma sätt som vi frigör våra e-postmeddelanden från datatrassel."
-  ],
-  "calendarTitle": "Kalender",
-  "calendarTags": [
-    "Schemaläggning",
-    "Dagordning",
-    "Sharing of Commons",
-    "Programmeringsaktiviteter",
-    "Resursbokningar"
-  ],
-  "calendar": [
-    "Cocosos webbkalender kan visas för att visa månatliga/veckovisa/dagliga händelser och resursuppdateringar. Användare kan navigera mellan dessa tidsramar med ett enda tryck. Varje kalenderaktivitet kan motsvara en resursanvändningsaktivitet eller en gemenskapshändelse. Mångfald av resurser och evenemang är välkomna i kalendern. Kalendern är byggd för flexibilitet, transparens och enkelhet för att passa unika behov och kollektiva scenarier.",
-    "Varje post i kalendern kan tilldelas en annan kategori, t.ex. en bokad resurs eller en typ av aktivitet som yoga. Det är användbart för både att presentera olika typer av offentliga aktivitetsposter såväl som olika interna/privata bokningar. Som varje funktion i Cocoso, det är avsiktligt gjort väldigt abstrakt så att det kan appliceras på olika användningsfall."
-  ],
-  "processTitle": "Processer",
-  "processTags": [
-    "Grupper",
-    "Skolor",
-    "Samskapande",
-    "Återkommande händelser",
-    "Delade dokument",
-    "Medlemsaktiviteter"
-  ],
-  "processes": [
-    "Process är en abstrakt term för att representera ett koncept, och en uppsättning konceptuellt drivna aktiviteter som driver det konceptet som utförs av en grupp - antingen virtuellt eller faktiskt. Under en process kan individer inleda samarbetsaktiviteter och har alla praktiska detaljer som grundläggande information och datum dokumenterade på en sida.",
-    "Process möjliggör hantering av processer som träning, socialt skapande eller inlärningsaktiviteter - som återkommande yogasessioner eller skolträningssessioner, eller någon form av samskapande och kontinuerligt utvecklande process. Administratörer kan starta det genom att lägga till detaljer om konceptet med en bild och lite text. Sedan är ett enkelt forum, dokumentlista, medlemmar och datum redo på en sida.",
-    "Denna funktion inkluderar i princip de flesta digitala verktyg för löpning, till exempel en inlärnings-, tränings-, cocreation- eller faciliteringsprocess. Som en skola, eller ett kontinuerligt/återkommande yogapass, eller en samarbetsaktivitet av något slag."
-  ],
-  "workTitle": "Arbetar",
-  "workTags": ["Portfölj", "Marknadsplats", "Dokumentation", "Presentation"],
-  "works": [
-    "Ett verk är en visuell (eller audiovisuell) skapelse av en konstnär, forskare, designer, hantverkare eller återförsäljare som ska visas upp för samhället. Detaljer om verket, med bilder, ljudfiler och videor kan delas inom en kategori som skaparen väljer. . Ett verk är en unik post, förknippad med dess skapare -- ett perfekt verktyg för portföljer och marknadsplatser.",
-    "Man kan också skapa ett verk och spara det privat för internt bruk och dokumentation. Det primära syftet det är byggt för är att göra det möjligt för konstnärer och hantverkare att publicera och kommunicera vad de gör med resten av världen, samt dokumentera för deras egen referens."
-  ],
-  "memberTitle": "Medlemmar",
-  "memberTags": [
-    "Gemenskap",
-    "Anställda",
-    "Medlemskap",
-    "Användarkonton",
-    "Följare",
-    "Ansvar",
-    "Kraft"
-  ],
-  "members": [
-    "Om du är administratör för en organisation kan du hitta och filtrera igenom medlemmar i organisationen. Du kan verifiera eller avverifiera dem för att kunna utföra vissa aktiviteter som att skapa aktiviteter i programmet/kalendern eller skapa en process.",
-    "Om du till exempel driver en yogastudio har du både dina lärare och elever på en plattform. Sedan kommer du att verifiera dina lärare för att de ska kunna skapa sina aktiviteter på hemsidan, medan eleverna bara kommer att kunna delta (RSVP) till befintliga aktiviteter/processer.",
-    "Så, med nödvändighet, kan privilegier fördelas meningsfullt mellan din gemenskap.",
-    "Varje användare kan enkelt skapa ett konto och fortsätta sin verksamhet därifrån. Lösenord krypteras automatiskt i databasen så att systemadministratörer inte kommer att kunna spåra dem."
-  ],
-  "infoTitle": "Info",
-  "infoTags": [
-    "CMS",
-    "Statiska sidor",
-    "Villkor",
-    "Integritetspolicy",
-    "Handla om",
-    "Kontakt"
-  ],
-  "info": [
-    "Denna funktion är i grunden att kunna skapa en uppsättning enkla, statiska sidor. Det enklaste CMS du någonsin kan tänka dig...",
-    "Med den här funktionen kan man enkelt skapa en sida endast med en titel och en beskrivning (med rik textredigering). Rubriken blir snigeln med en liten modifiering som Om oss blir /sida/om-oss och det är i stort sett allt. Varje sida läggs automatiskt till i navigeringen som bara ytterligare en statisk sida."
-  ],
-  "credits": "Krediter",
-  "creditsFirst": "Utvecklat i ett fantastiskt samarbete med",
-  "creditsSecond": "Stöds av",
-  "contact": "Kontakt",
-  "contactTitle": "Vi kan arbeta tillsammans",
-  "contactBody": "Har du ett projekt som du kan ha användning av Cocoso? Eller vill du bara säga hej och bli vänner? Skicka ett meddelande här, så återkommer vi till dig!",
-  "contactForm": {
-    "email": "din e-postadress",
+  "meta": {
+    "title": "Cocoso — Programvara för samhällssamarbete",
+    "description": "Programvara med öppen källkod för federationer av samhällen, kooperativ och gräsrotsgrupper — kalender, resurser, evenemang, grupper, komponerbara sidor och mer, alltid på dina egna villkor."
+  },
+  "brand": {
+    "title": "COCOSO",
+    "slogan": "Programvara för samhällssamarbete"
+  },
+  "nav": {
+    "home": "Hem",
+    "features": "Funktioner",
+    "contact": "Kontakt",
+    "credits": "Krediter",
+    "sourceCode": "Källkod",
+    "getStarted": "Utforska funktioner",
+    "demo": "Live-demo",
+    "language": "Språk"
+  },
+  "home": {
+    "leadTitle": "Programvara för autonoma, federerade samhällen",
+    "lead": [
+      "Cocoso är programvara med öppen källkod för autonoma samhällen: en offentlig webbplats och ett intranät, på ett och samma ställe. Den är byggd för kooperativ, ekobyar, konstnärsdrivna utrymmen, festivaler och gräsrotsgrupper som vill driva sin egen verksamhet, på sina egna villkor.",
+      "En inloggning. Många samhällen. Din data, alltid din."
+    ],
+    "leadTags": [
+      "Onlineplattformar",
+      "Kooperativ",
+      "Icke-vinstdrivande",
+      "Festivaler",
+      "Konferenser",
+      "Konstnärsdrivna utrymmen",
+      "Ekobyar",
+      "Samhällen",
+      "Campingplatser"
+    ],
+    "tripleTitle": "Mer än en webbplats",
+    "tripleTags": ["Offentlig webbplats", "Communitynätverk", "Produktivitetsverktyg"],
+    "triple": [
+      "Cocoso är en offentlig webbplats, så att världen kan se vilka ni är, vad ni gör och vad som är på gång — ingen separat webbplats behövs.",
+      "Det är också ett privat communitynätverk: medlemmar kan följa aktiviteter, dela uppdateringar och hålla varandra uppdaterade — utan annonser, algoritmer eller spårning. Sociala medier, minus utvinningen.",
+      "Och det är ett riktigt produktivitetsverktyg för den praktiska sidan av att driva ett samhälle: en delad kalender, resursbokningar, OSA och adminverktyg som håller alla på samma sida."
+    ],
+    "federationTitle": "Federation",
+    "federationTags": [
+      "Nätverk av samhällen",
+      "Portal",
+      "Gemensam upptäckt",
+      "Autonom som standard"
+    ],
+    "federation": [
+      "Cocoso är inte begränsat till en enda grupp. Ett driftsatt system kan vara värd för en hel federation av oberoende samhällen — vart och ett med sin egen domän, sin egen känsla och sina egna medlemmar — samtidigt som de är synliga som en del av ett större nätverk.",
+      "En federation kan utse ett samhälle till sin Portal: en gemensam ingång där besökare kan bläddra bland alla anslutna samhällen, filtrera aktiviteter över hela nätverket och hitta rätt. Alla behåller sin självständighet; nätverket behåller sin sammanhållning.",
+      "Det passar naturligt för en rörelse som består av många autonoma grupper — som ett nätverk av ekobyar, kooperativ eller gräsrotsinitiativ som vill stå tillsammans utan att ge upp det lokala självstyret."
+    ],
+    "samarbetetTitle": "Samarbetet",
+    "samarbetetTags": ["Sverige", "Levande federation", "Konstnärer & Kulturplatser"],
+    "samarbetet": [
+      "Samarbetet är en verklig federation byggd på Cocoso: ett ekosystem av konstnärer, konstplatser, gemenskaper, resurser och människor runt om i Sverige, sammankopplade i ett gemensamt nätverk.",
+      "Medlemmarna delar scener, trädgårdar, verkstäder och mötesplatser, driver egna program och butiker, och förblir självständiga samtidigt som de drar nytta av en gemensam ingång — precis det som Federation, ovan, ser ut i praktiken."
+    ],
+    "samarbetetLinkLabel": "Besök samarbetet.org",
+    "accountsTitle": "En inloggning, många samhällen",
+    "accountsTags": [
+      "Globala konton",
+      "Roller per samhälle",
+      "Portabel identitet",
+      "Verifierat medlemskap"
+    ],
+    "accounts": [
+      "Varje person har ett enda Cocoso-konto, oavsett var deras samhällen finns. Gå med i ett kooperativ här, en festival där, en ekoby någon annanstans — en identitet följer med dig, medan din roll och synlighet ställs in separat på varje plats.",
+      "Administratörer verifierar medlemmar samhälle för samhälle och ger rätt att publicera aktiviteter, driva en grupp eller hantera resurser lokalt — utan att någonsin behöva röra ett annat samhälles inställningar eller medlemmar."
+    ],
+    "dataTitle": "Din egen data",
+    "dataTags": [
+      "Ingen spårning",
+      "Inga tredje parter",
+      "Datasuveränitet",
+      "Integritet från grunden"
+    ],
+    "data": [
+      "Cocoso har inga verktyg för att spionera på användare eller spåra deras data. Ingen information delas med någon tredjepartstjänst eller annonsör — datan tillhör det samhälle som skapade den, punkt.",
+      "Varje medlem avgör hur mycket av sin egen information de vill dela, och varje samhälle avgör hur mycket av sin aktivitet som ska synas i den bredare federationen. Du driver dina projekt, och din data, på dina egna villkor."
+    ],
+    "openSourceTitle": "Öppen källkod",
+    "openSourceTags": [
+      "Kan självhostas",
+      "Samhällsdrivet",
+      "Transparent",
+      "Fri programvara"
+    ],
+    "openSource": [
+      "Cocoso är fri, öppen programvara utvecklad helt i öppenhet — du kan läsa varje rad kod, köra den på din egen server, eller lita på en värd du själv väljer. Ingen inlåsning, ingen svart låda.",
+      "Den formas av samhällena som använder den: konstnärer, kooperativ, alternativa valutaprojekt och samskapande platser som har gett verkliga behov tillbaka till projektet sedan dess tidigaste dagar."
+    ],
+    "ctaTitle": "Se allt Cocoso kan göra",
+    "ctaBody": "Från kalendern till adminpanelen — varje funktion är byggd för att användas av ett samhälle, inte en webbmaster. Utforska vad som finns.",
+    "ctaButton": "Utforska funktioner",
+    "ctaSecondary": "Eller säg bara hej"
+  },
+  "features": {
+    "pageTitle": "Funktioner",
+    "pageLead": "Cocoso i detalj — varje verktyg ditt samhälle kan använda, och hur det fungerar.",
+    "groupCommunityTitle": "För ditt samhälle",
+    "groupAdminTitle": "För administratörer",
+    "activityTitle": "Aktiviteter",
+    "activityTags": [
+      "Offentliga evenemang",
+      "OSA",
+      "Pågående arbete",
+      "Föreställningar",
+      "Utställningar",
+      "Konserter",
+      "Konferenser",
+      "Internt",
+      "Bokningar"
+    ],
+    "activities": [
+      "Den tidigaste versionen av Cocoso byggdes för en artistdriven dansteater och ett samlärande utrymme, som är värd för flera offentliga scenframträdanden för förregistrerad publik. Hantering och publicering av anpassningsbara och återkommande evenemang kräver flera olika funktioner, OSA bland dem. Registreringar kommuniceras till gästerna via e-post, och evenemangsadministratörer kan verifiera ankomster vid dörren.",
+      "Man kan skapa, redigera och ta bort innehåll med en bild, titel, beskrivning och ytterligare information, samt en uppsättning tillfällen med valfritt flera datum och tider — så administratörer behöver aldrig skapa en ny post för varje enskilt tillfälle."
+    ],
+    "resourceTitle": "Resurser",
+    "resourceTags": ["Resursdelning", "Förvaltning av allmänningar"],
+    "resources": [
+      "Cocoso möjliggör planering och överblick över resursdelningsprocesser i god tid. Varje gång en verifierad användare gör anspråk på en fysisk resurs eller bokar ett utrymme delas den informationen med medlemmar i kollektivet genom kalendern.",
+      "Det finns inga kalenderinbjudningar. Vi tror att maskiner ska hjälpa oss att underlätta vår egen kommunikation och delning — inte agera åt oss. Cocosos kalender är huvudfasaden för samhällets evenemang och resursdelning, så att vi fortsätter prata med varandra, på samma sätt som vi befriar våra e-postbrevlådor från datatrassel."
+    ],
+    "calendarTitle": "Kalender",
+    "calendarTags": [
+      "Schemaläggning",
+      "Dagordning",
+      "Delning av allmänningar",
+      "Programmering av aktiviteter",
+      "Bokning av resurser"
+    ],
+    "calendar": [
+      "Cocosos webbkalender kan visa månads-, vecko- eller dagshändelser och resursuppdateringar, och användare kan navigera mellan dessa tidsramar med ett enda tryck. Varje post kan motsvara en resursanvändningsaktivitet eller en samhällshändelse.",
+      "Varje post kan tilldelas en kategori — en bokad resurs, eller en typ av aktivitet som yoga — användbart för både offentliga aktivitetslistor och interna eller privata bokningar. Precis som alla funktioner i Cocoso är den avsiktligt abstrakt nog för att passa väldigt olika användningsfall."
+    ],
+    "groupTitle": "Grupper",
+    "groupTags": [
+      "Studiegrupper",
+      "Skolor",
+      "Samskapande",
+      "Återkommande händelser",
+      "Delade dokument",
+      "Medlemsaktiviteter"
+    ],
+    "groups": [
+      "En Grupp är ett koncept, och en uppsättning konceptuellt drivna aktiviteter som drivs av en uppsättning människor — virtuellt eller på plats. Under en grupp kan medlemmar genomföra samarbetsaktiviteter med alla praktiska detaljer, grundläggande information och datum dokumenterade på en sida.",
+      "Grupper gör det möjligt att hantera utbildning, sociala eller inlärningsaktiviteter — återkommande yogapass, skolterminer, eller vilken typ av samskapande och ständigt utvecklande process som helst. Administratörer startar en med en bild och lite text, och ett enkelt forum, dokumentlista, medlemslista och uppsättning datum är klart på en sida.",
+      "Det är i grunden verktygslådan för att driva en skola, ett återkommande pass, eller en samarbetsaktivitet av vilket slag som helst."
+    ],
+    "workTitle": "Verk",
+    "workTags": ["Portfölj", "Marknadsplats", "Dokumentation", "Presentation"],
+    "works": [
+      "Ett Verk är en visuell, eller audiovisuell, skapelse av en konstnär, forskare, designer, hantverkare eller återförsäljare, presenterad för samhället. Detaljer, bilder, ljudfiler och videor kan delas inom en kategori som skaparen väljer — ett verktyg byggt för både portföljer och marknadsplatser.",
+      "Ett verk kan också sparas privat för internt bruk och dokumentation. Det är byggt för att låta konstnärer och hantverkare publicera och kommunicera vad de gör med resten av världen, samt behålla ett register för egen referens."
+    ],
+    "memberTitle": "Medlemmar",
+    "memberTags": [
+      "Hantera medlemmar",
+      "Gemenskap",
+      "Medlemskap",
+      "Verifiering",
+      "Roller och behörigheter",
+      "Följare"
+    ],
+    "members": [
+      "Administratörer kan hitta, filtrera och hantera varje medlem i organisationen från ett och samma ställe: verifiera eller avverifiera personer för specifika förmågor, som att publicera aktiviteter i kalendern eller starta en grupp.",
+      "Om du driver en yogastudio har du till exempel både lärare och elever på samma plattform — verifiera dina lärare så de kan skapa sina egna aktiviteter, medan eleverna helt enkelt kan delta och anmäla sig.",
+      "Behörigheter fördelas meningsfullt över samhället, och varje användare skapar och hanterar sitt eget konto. Lösenord krypteras automatiskt, så systemadministratörer varken kan läsa eller spåra dem."
+    ],
+    "pagesTitle": "Komponerbara sidor",
+    "pagesTags": [
+      "Dra och släpp",
+      "Landningssidor",
+      "Kampanjer",
+      "Statiska sidor",
+      "Utan kod"
+    ],
+    "pages": [
+      "Bygg fritt en landningssida, en kampanjsida, eller vilken statisk sida ditt samhälle behöver — med dra-och-släpp-block för text, bilder och layout, helt utan kod. Det som en gång var Cocosos enklaste CMS är nu en riktig sidbyggare.",
+      "Varje sida blir automatiskt en del av din navigering. Använd den för en Om oss-sida, en uppsättning villkor, en enskild kampanj, eller en helt ny del av din webbplats — fritt komponerad, publicerad direkt."
+    ],
+    "adminTitle": "Adminpanel",
+    "adminTags": [
+      "Organisationsinställningar",
+      "Varumärke",
+      "Meny och navigering",
+      "Header och footer",
+      "Inställningar"
+    ],
+    "admin": [
+      "En dedikerad adminpanel för att sätta upp din organisation från grunden: namn, logotyp, kontaktuppgifter, och varje inställning som formar hur ditt samhälle presenterar sig — helt utan kod.",
+      "Skräddarsy din meny, header och footer, och bestäm exakt vad besökare ser först. Det är kontrollrummet bakom varje Cocoso-samhälle, byggt för administratörer, inte utvecklare."
+    ],
+    "designTitle": "Designinställningar",
+    "designTags": ["Färger", "Hörnradie", "Bakgrunder", "Utseende och känsla"],
+    "design": [
+      "Ge ditt samhälles webbplats en egen visuell identitet: välj dina färger, justera hörnradie, sätt en bakgrund — gör den tydligt din egen, utan att röra en enda rad CSS.",
+      "Designinställningar gäller över hela din webbplats på en gång, så att ditt samhälles närvaro förblir sammanhållen när det växer, från startsidan till kalendern till varje komponerbar sida."
+    ],
+    "newsletterTitle": "Nyhetsbrev och e-post",
+    "newsletterTags": [
+      "E-postnyhetsbrev",
+      "Automatiska e-postmeddelanden",
+      "Medlemskommunikation"
+    ],
+    "newsletter": [
+      "Nå varje medlem direkt med ett e-postnyhetsbrev — inget separat verktyg för e-postlistor behövs. Skriv en gång, skicka till hela ditt samhälle, och håll folk uppdaterade utan att förlita dig på ett socialt flöde.",
+      "Automatiska e-postmeddelanden sköter de rutinmässiga momenten åt dig: bekräftelser av registrering, verifiering av anmälningar och andra medlemsnotiser skickas av sig själva, så administratörer kan fokusera på samhället istället för inkorgen."
+    ]
+  },
+  "credits": {
+    "title": "Krediter",
+    "first": "Utvecklat i ett fantastiskt samarbete med",
+    "second": "Stöds av"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "heading": "Vi kan arbeta tillsammans",
+    "body": "Har du ett projekt som du kan ha användning av Cocoso till? Eller vill du bara säga hej och bli vänner? Skicka ett meddelande här, så återkommer vi till dig!",
+    "email": "Din e-postadress",
     "subject": "Ämne",
-    "message": "Meddeleande",
+    "message": "Meddelande",
     "send": "Skicka"
   },
-  "sourceCode": "Källkod",
+  "footer": {
+    "tagline": "Öppen källkodsprogramvara för federationer av samhällen, kooperativ och gräsrotsgrupper — en offentlig webbplats och ett intranät, alltid på dina egna villkor.",
+    "exploreTitle": "Utforska",
+    "projectTitle": "Projekt",
+    "license": "Fri och öppen källkod, licensierad under GNU GPLv3.",
+    "bottom": "© {{year}} Cocoso. Byggt för autonoma samhällen överallt."
+  },
   "source": "Källa"
 }

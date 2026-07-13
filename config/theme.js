@@ -1,7 +1,7 @@
 import { deepFreeze, deepMerge } from 'grommet/utils';
 import { base } from 'grommet';
 
-const mainColor = 'hsla(6, 62%, 56%, 1)';
+const mainColor = '#FF6F59';
 
 const colors = {
   background: 'hsla(88, 62%, 90%, 0.1)',
@@ -99,26 +99,26 @@ const theme = deepFreeze(
     },
     button: {
       border: {
-        radius: '1px',
+        radius: '999px',
+        width: '3px',
         color: {
-          dark: '#fbf9ff',
-          light: '#28599e'
+          dark: '#211a17',
+          light: '#211a17'
         }
       },
-      // color: { dark: undefined, light: undefined }
       primary: {
         color: {
-          dark: '#0093ff',
-          light: '#316cbe'
+          dark: '#FF6F59',
+          light: '#211a17'
         }
       }
     },
     anchor: {
       textDecoration: 'none',
-      fontWeight: 600,
+      fontWeight: 700,
       color: {
         dark: '#f7efff',
-        light: '#275596'
+        light: '#FF6F59'
       }
     },
     checkBox: {

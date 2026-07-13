@@ -1,107 +1,128 @@
-const publicActs = [
-  `Since Cocoso is primarily built for an artist run space that continuously hosts public stage performances for a limited audience who are required to register beforehand; creating and managing a public event was the number one requirement.`,
-  `There are a few components of public events that can be listed as below:`,
-];
-
-const publicActsList = [
-  `Create/edit/delete content with an image, title, description and further info; as well as a set of occurrences with optionally multiple dates (and times). By this way, admins do not need to create new entry for all occurrences`,
-  `RSVP registration: People can easily register and receive an email with confirmation`,
-  `RSVP verification : Admins can easily see who has signed up for each event under relevant occurrence section to verify attendees registration on arrival`,
-  `Auto-sync with Calendar: Each occurrence automatically populates in the calendar as well (see below)`,
-];
-
-function getSections(t) {
-  const sections = [
+function getHomeSections(t) {
+  return [
     {
-      title: t("introTitle"),
-      tags: t("introTags", {}, { returnObjects: true }),
-      content: t("intro", {}, { returnObjects: true }),
-      sliderImage: "/slider/intro-mcgill-library-rxZLty9pnh4-unsplash.jpg",
-      sliderCaption: {
-        title: `Art Deco - A colour plate entitled "L'Eau" from Falbalas & fanfreluches : almanach des modes présentes, passées et futures.`,
-        link: `https://unsplash.com/photos/rxZLty9pnh4`,
-      },
+      title: t("home.tripleTitle"),
+      tags: t("home.tripleTags", {}, { returnObjects: true }),
+      content: t("home.triple", {}, { returnObjects: true }),
+      sliderImage: "/slider/calendar-birmingham-museums-trust-RpELX3wVm_U-unsplash.jpg",
     },
     {
-      title: t("activityTitle"),
-      tags: t("activityTags", {}, { returnObjects: true }),
-      content: t("activities", {}, { returnObjects: true }),
+      title: t("home.federationTitle"),
+      tags: t("home.federationTags", {}, { returnObjects: true }),
+      content: t("home.federation", {}, { returnObjects: true }),
+      sliderImage: "/slider/members-mcgill-library-eMw-fVXNpME-unsplash.jpg",
+    },
+    {
+      title: t("home.samarbetetTitle"),
+      tags: t("home.samarbetetTags", {}, { returnObjects: true }),
+      content: t("home.samarbetet", {}, { returnObjects: true }),
+      logo: "/partners/samarbetet-logo.webp",
+      link: "https://www.samarbetet.org",
+      linkLabel: t("home.samarbetetLinkLabel"),
+      sliderImage: "/slider/processes-mcgill-library-IpZCihceRkQ-unsplash.jpg",
+    },
+    {
+      title: t("home.accountsTitle"),
+      tags: t("home.accountsTags", {}, { returnObjects: true }),
+      content: t("home.accounts", {}, { returnObjects: true }),
+      sliderImage: "/slider/intro-mcgill-library-rxZLty9pnh4-unsplash.jpg",
+    },
+    {
+      title: t("home.dataTitle"),
+      tags: t("home.dataTags", {}, { returnObjects: true }),
+      content: t("home.data", {}, { returnObjects: true }),
+      sliderImage: "/slider/info-british-library-b8vYa2-83pw-unsplash.jpg",
+    },
+    {
+      title: t("home.openSourceTitle"),
+      tags: t("home.openSourceTags", {}, { returnObjects: true }),
+      content: t("home.openSource", {}, { returnObjects: true }),
+      sliderImage:
+        "/slider/works-boston-public-library-awhvI865NQk-unsplash.jpg",
+    },
+  ];
+}
+
+function getFeatureSections(t) {
+  return [
+    {
+      group: "community",
+      title: t("features.activityTitle"),
+      tags: t("features.activityTags", {}, { returnObjects: true }),
+      content: t("features.activities", {}, { returnObjects: true }),
       sliderImage: "/slider/activities-mcgill-library-1Rbv8ubJix0-unsplash.jpg",
-      sliderCaption: {
-        title: `Persian Literary History. Isfandiyar kills Bidarafsh`,
-        link: `https://unsplash.com/photos/1Rbv8ubJix0`,
-      },
       image: "/activities.jpeg",
     },
     {
-      title: t("resourceTitle"),
-      tags: t("resourceTags", {}, { returnObjects: true }),
-      content: t("resources", {}, { returnObjects: true }),
+      group: "community",
+      title: t("features.resourceTitle"),
+      tags: t("features.resourceTags", {}, { returnObjects: true }),
+      content: t("features.resources", {}, { returnObjects: true }),
       sliderImage: "/slider/resources-mcgill-library---DJjEqekIM-unsplash.jpg",
-      sliderCaption: {
-        title: `Art Deco and the Decorative Arts in the 1920's and 1930's`,
-        link: `https://unsplash.com/photos/--DJjEqekIM`,
-      },
       image: "/resources.jpg",
     },
     {
-      title: t("calendarTitle"),
-      tags: t("calendarTags", {}, { returnObjects: true }),
-      content: t("calendar", {}, { returnObjects: true }),
+      group: "community",
+      title: t("features.calendarTitle"),
+      tags: t("features.calendarTags", {}, { returnObjects: true }),
+      content: t("features.calendar", {}, { returnObjects: true }),
       sliderImage: `/slider/calendar-birmingham-museums-trust-RpELX3wVm_U-unsplash.jpg`,
-      sliderCaption: {
-        title: `The Old Theatre Stores, New Street, Birmingham. By George Warren Blackham`,
-        link: `https://unsplash.com/photos/RpELX3wVm_U`,
-      },
       image: "/calendar.png",
     },
     {
-      title: t("processTitle"),
-      tags: t("processTags", {}, { returnObjects: true }),
-      content: t("processes", {}, { returnObjects: true }),
+      group: "community",
+      title: t("features.groupTitle"),
+      tags: t("features.groupTags", {}, { returnObjects: true }),
+      content: t("features.groups", {}, { returnObjects: true }),
       sliderImage: "/slider/processes-mcgill-library-IpZCihceRkQ-unsplash.jpg",
-      sliderCaption: {
-        title: `Cinderella`,
-        link: `https://unsplash.com/photos/IpZCihceRkQ`,
-      },
       image: "/processes.png",
     },
     {
-      title: t("workTitle"),
-      tags: t("workTags", {}, { returnObjects: true }),
-      content: t("works", {}, { returnObjects: true }),
+      group: "community",
+      title: t("features.workTitle"),
+      tags: t("features.workTags", {}, { returnObjects: true }),
+      content: t("features.works", {}, { returnObjects: true }),
       sliderImage:
         "/slider/works-boston-public-library-awhvI865NQk-unsplash.jpg",
-      sliderCaption: {
-        title: `Colored print of a costume for the original (1912) production of Richard Strauss's Ariadne auf Naxos`,
-        link: `https://unsplash.com/photos/awhvI865NQk`,
-      },
       image: "/works.jpg",
     },
     {
-      title: t("memberTitle"),
-      tags: t("memberTags", {}, { returnObjects: true }),
-      content: t("members", {}, { returnObjects: true }),
+      group: "admin",
+      title: t("features.memberTitle"),
+      tags: t("features.memberTags", {}, { returnObjects: true }),
+      content: t("features.members", {}, { returnObjects: true }),
       sliderImage: "/slider/members-mcgill-library-eMw-fVXNpME-unsplash.jpg",
-      sliderCaption: {
-        title: `Who killed cock robin?`,
-        link: `https://unsplash.com/photos/eMw-fVXNpME`,
-      },
       image: "/members.png",
     },
     {
-      title: t("infoTitle"),
-      tags: t("infoTags", {}, { returnObjects: true }),
-      content: t("info", {}, { returnObjects: true }),
+      group: "admin",
+      title: t("features.pagesTitle"),
+      tags: t("features.pagesTags", {}, { returnObjects: true }),
+      content: t("features.pages", {}, { returnObjects: true }),
       sliderImage: "/slider/info-british-library-b8vYa2-83pw-unsplash.jpg",
-      sliderCaption: {
-        title: `Valentine's Day`,
-        link: `https://unsplash.com/photos/b8vYa2-83pw`,
-      },
+    },
+    {
+      group: "admin",
+      title: t("features.adminTitle"),
+      tags: t("features.adminTags", {}, { returnObjects: true }),
+      content: t("features.admin", {}, { returnObjects: true }),
+      sliderImage: "/slider/intro-mcgill-library-rxZLty9pnh4-unsplash.jpg",
+    },
+    {
+      group: "admin",
+      title: t("features.designTitle"),
+      tags: t("features.designTags", {}, { returnObjects: true }),
+      content: t("features.design", {}, { returnObjects: true }),
+      sliderImage: "/slider/activities-mcgill-library-1Rbv8ubJix0-unsplash.jpg",
+    },
+    {
+      group: "admin",
+      title: t("features.newsletterTitle"),
+      tags: t("features.newsletterTags", {}, { returnObjects: true }),
+      content: t("features.newsletter", {}, { returnObjects: true }),
+      sliderImage: "/slider/resources-mcgill-library---DJjEqekIM-unsplash.jpg",
     },
   ];
-
-  return sections;
 }
 
-export { getSections };
+export { getHomeSections, getFeatureSections };
