@@ -666,6 +666,10 @@ body {
   overflow: hidden;
 }
 
+.story-bg--top {
+  background-position: top;
+}
+
 .story-bg::before {
   content: "";
   position: absolute;
@@ -811,6 +815,10 @@ body {
   max-width: 320px;
 }
 
+.story-logo-frame--dark {
+  background: var(--ink);
+}
+
 .story-logo {
   max-width: 100%;
   height: auto;
@@ -895,6 +903,14 @@ body {
 
 .credits-block + .credits-block {
   border-top: 2px dashed rgba(33, 26, 23, 0.2);
+}
+
+/* ---------- Credits (end of Examples page) ---------- */
+
+.credits-section {
+  max-width: 720px;
+  margin: 0 auto 120px;
+  padding: 20px;
 }
 
 /* ---------- Footer CTA card ---------- */

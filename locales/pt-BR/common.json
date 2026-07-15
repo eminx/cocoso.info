@@ -10,8 +10,8 @@
   "nav": {
     "home": "Início",
     "features": "Funcionalidades",
+    "examples": "Exemplos",
     "contact": "Contato",
-    "credits": "Créditos",
     "sourceCode": "Código-Fonte",
     "getStarted": "Explorar Funcionalidades",
     "demo": "Demo ao Vivo",
@@ -35,7 +35,11 @@
       "Campings"
     ],
     "tripleTitle": "Mais do que um Site",
-    "tripleTags": ["Site Público", "Rede Comunitária", "Ferramenta de Produtividade"],
+    "tripleTags": [
+      "Site Público",
+      "Rede Comunitária",
+      "Ferramenta de Produtividade"
+    ],
     "triple": [
       "O Cocoso é um site público, para que o mundo veja quem vocês são, o que fazem e o que está por vir — sem precisar de um site separado.",
       "Também é uma rede comunitária privada: os membros podem acompanhar atividades, compartilhar novidades e ficar em contato uns com os outros — sem anúncios, algoritmos ou rastreamento. Rede social, sem a exploração de dados.",
@@ -53,13 +57,6 @@
       "Uma federação pode escolher uma comunidade para ser o seu Portal: uma porta de entrada compartilhada, onde visitantes navegam por todas as comunidades membros, filtram atividades em toda a rede e encontram seu caminho. Cada uma mantém sua independência; a rede mantém sua coesão.",
       "É uma solução natural para um movimento formado por muitos grupos autônomos — como uma rede de ecovilas, cooperativas ou iniciativas de base que querem estar juntas sem abrir mão da autogestão local."
     ],
-    "samarbetetTitle": "Samarbetet",
-    "samarbetetTags": ["Suécia", "Federação Real", "Artistas e Espaços Culturais"],
-    "samarbetet": [
-      "O Samarbetet é uma federação de verdade, construída sobre o Cocoso: um ecossistema de artistas, espaços de arte, comunidades, recursos e pessoas por toda a Suécia, conectados em uma mesma rede compartilhada.",
-      "Os membros compartilham palcos, jardins, oficinas e espaços de encontro, tocam seus próprios programas e lojas, e continuam independentes enquanto aproveitam uma porta de entrada compartilhada — exatamente o que a Federação, acima, é na prática."
-    ],
-    "samarbetetLinkLabel": "Visitar samarbetet.org",
     "accountsTitle": "Um Login, Várias Comunidades",
     "accountsTags": [
       "Contas Globais",
@@ -211,6 +208,49 @@
       "Alcance cada membro diretamente com uma newsletter por e-mail — sem precisar de uma ferramenta separada de lista de e-mails. Escreva uma vez, envie para toda a sua comunidade, e mantenha todo mundo informado sem depender de uma rede social.",
       "E-mails automáticos cuidam dos momentos de rotina para você: confirmações de inscrição, verificações de presença e outras notificações para membros são enviadas sozinhas, para que os administradores possam focar na comunidade em vez da caixa de entrada."
     ]
+  },
+  "clients": {
+    "pageTitle": "Casos de Uso",
+    "pageLead": "Comunidades, estúdios e artistas de verdade que já usam o Cocoso — redes federadas, espaços de trabalho compartilhados, calendários de eventos e portfólios pessoais, cada um do seu jeito.",
+    "samarbetetTitle": "Samarbetet",
+    "samarbetetTags": ["Suécia", "Federação", "Artistas e Espaços Culturais"],
+    "samarbetet": [
+      "O Samarbetet é uma federação de comunidades independentes por toda a Suécia — artistas, espaços de arte, jardins, oficinas e pessoas, conectados em uma mesma rede compartilhada.",
+      "Os membros compartilham palcos, jardins, oficinas e espaços de encontro, tocam seus próprios programas e lojas, e continuam independentes enquanto aproveitam uma porta de entrada compartilhada para todo o ecossistema."
+    ],
+    "samarbetetLinkLabel": "Visitar samarbetet.org",
+    "kkvTitle": "KKV Estocolmo",
+    "kkvTags": ["Reserva de Recursos", "200+ Recursos", "400+ Membros"],
+    "kkv": [
+      "A KKV Estocolmo — Konstnärernas Kollektivverkstad — é um espaço de trabalho coletivo para artistas profissionais, dando a mais de 400 membros acesso compartilhado a mais de 200 equipamentos e espaços de oficina.",
+      "Os membros reservam recursos pelo calendário do Cocoso, publicam seus próprios portfólios e eventos públicos, e se encontram em uma página de membros compartilhada — uma oficina grande e agitada rodando tranquilamente em uma única plataforma."
+    ],
+    "kkvLinkLabel": "Visitar stockholm.kkv.nu",
+    "hojdenTitle": "höjden",
+    "hojdenTags": [
+      "Espaço Autogerido por Artistas",
+      "Reserva de Recursos",
+      "Portfólios"
+    ],
+    "hojden": [
+      "O höjden é um espaço autogerido por artistas em Estocolmo — estúdios, um palco, uma pista de dança, uma galeria e uma cozinha, tocado coletivamente pela cooperativa Släktet desde 2018.",
+      "Assim como a KKV, o höjden usa o Cocoso para gerenciar as reservas de seus espaços e equipamentos compartilhados, junto com portfólios de membros e uma programação pública de oficinas, apresentações e palestras."
+    ],
+    "hojdenLinkLabel": "Visitar hojden.house",
+    "gerlesborgTitle": "Gerlesborgs Kulturhus",
+    "gerlesborgTags": ["Centro Cultural", "Eventos Públicos", "Calendário"],
+    "gerlesborg": [
+      "O Gerlesborgs kulturhus é um centro cultural em Hamburgsund, na Suécia, que recebe exposições, shows, oficinas e um festival de literatura para a comunidade ao redor.",
+      "Ele usa o Cocoso de um jeito simples e eficaz para publicar sua programação pública — cada exposição, show e curso aparece direto no calendário, sem precisar de uma ferramenta de eventos separada."
+    ],
+    "gerlesborgLinkLabel": "Visitar gerlesborgskulturhus.se",
+    "minaTitle": "Mina Kocailik",
+    "minaTags": ["Portfólio", "Artista Independente"],
+    "mina": [
+      "Mina Kocailik é uma artista independente que usa o Cocoso simplesmente para publicar seu portfólio: uma vitrine limpa e autogerenciada do seu trabalho, sem nada extra para manter.",
+      "É o menor uso possível do Cocoso — a prova de que a mesma plataforma que atende federações com centenas de pessoas funciona igualmente bem para uma única prática criativa."
+    ],
+    "minaLinkLabel": "Visitar o portfólio dela"
   },
   "credits": {
     "title": "Créditos",

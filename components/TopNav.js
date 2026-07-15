@@ -100,8 +100,8 @@ function TopNav() {
   const navItems = [
     { label: t("nav.home"), href: "/" },
     { label: t("nav.features"), href: "/features" },
+    { label: t("nav.examples"), href: "/clients" },
     { label: t("nav.contact"), href: "/contact" },
-    { label: t("nav.credits"), href: "/credits" },
   ];
 
   const currentLocale = locales.find((item) => item.value === lang) || locales[0];

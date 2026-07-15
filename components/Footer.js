@@ -23,11 +23,11 @@ function Footer() {
           <Link href="/features">
             <a>{t("nav.features")}</a>
           </Link>
+          <Link href="/clients">
+            <a>{t("nav.examples")}</a>
+          </Link>
           <Link href="/contact">
             <a>{t("nav.contact")}</a>
-          </Link>
-          <Link href="/credits">
-            <a>{t("nav.credits")}</a>
           </Link>
         </div>
 

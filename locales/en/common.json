@@ -10,8 +10,8 @@
   "nav": {
     "home": "Home",
     "features": "Features",
+    "examples": "Examples",
     "contact": "Contact",
-    "credits": "Credits",
     "sourceCode": "Source Code",
     "getStarted": "Explore Features",
     "demo": "Live Demo",
@@ -53,13 +53,6 @@
       "A federation can designate one community as its Portal: a shared front door where visitors browse every member community, filter activities across the whole network, and find their way in. Everyone keeps their independence; the network keeps its cohesion.",
       "It's a natural fit for a movement made of many autonomous groups — like a network of ecovillages, cooperatives or grassroots initiatives that want to stand together without giving up local self-governance."
     ],
-    "samarbetetTitle": "Samarbetet",
-    "samarbetetTags": ["Sweden", "Live Federation", "Artists & Cultural Spaces"],
-    "samarbetet": [
-      "Samarbetet is a real federation built on Cocoso: an ecosystem of artists, art spaces, communities, resources and people across Sweden, connected under one shared network.",
-      "Its members pool stages, gardens, workshops and meeting spaces, run their own programs and shops, and stay independent while benefiting from a shared front door — exactly what Federation, above, looks like in practice."
-    ],
-    "samarbetetLinkLabel": "Visit samarbetet.org",
     "accountsTitle": "One Login, Many Communities",
     "accountsTags": [
       "Global Accounts",
@@ -211,6 +204,45 @@
       "Reach every member directly with an email newsletter — no separate mailing-list tool required. Write once, send to your whole community, and keep people in the loop without relying on a social feed.",
       "Automated emails handle the routine moments for you: registration confirmations, RSVP verifications and other member notifications go out on their own, so admins can focus on the community instead of the inbox."
     ]
+  },
+  "clients": {
+    "pageTitle": "Example Uses",
+    "pageLead": "Real communities, studios and artists already running on Cocoso — federated networks, shared workspaces, event calendars and personal portfolios, each shaped to fit.",
+    "samarbetetTitle": "Samarbetet",
+    "samarbetetTags": ["Sweden", "Federation", "Artists & Cultural Spaces"],
+    "samarbetet": [
+      "Samarbetet is a federation of independent communities across Sweden — artists, art spaces, gardens, workshops and people, connected under one shared network.",
+      "Its members pool stages, gardens, workshops and meeting spaces, run their own programs and shops, and stay independent while benefiting from a shared front door into the whole ecosystem."
+    ],
+    "samarbetetLinkLabel": "Visit samarbetet.org",
+    "kkvTitle": "KKV Stockholm",
+    "kkvTags": ["Resource Booking", "200+ Resources", "400+ Members"],
+    "kkv": [
+      "KKV Stockholm — Konstnärernas Kollektivverkstad — is a collective workspace for professional artists, giving over 400 members shared access to more than 200 pieces of equipment and workshop space.",
+      "Members book resources through Cocoso's calendar, publish their own portfolios and public events, and find each other on a shared members page — a big, busy workshop run smoothly on one platform."
+    ],
+    "kkvLinkLabel": "Visit stockholm.kkv.nu",
+    "hojdenTitle": "höjden",
+    "hojdenTags": ["Artist-Run Space", "Resource Booking", "Portfolios"],
+    "hojden": [
+      "höjden is an artist-run space in Stockholm — studios, a stage, a dance floor, a gallery and a kitchen, run collectively by the cooperative Släktet since 2018.",
+      "Like KKV, höjden uses Cocoso to manage bookings of its shared spaces and equipment, alongside member portfolios and a public program of workshops, performances and lectures."
+    ],
+    "hojdenLinkLabel": "Visit hojden.house",
+    "gerlesborgTitle": "Gerlesborgs Kulturhus",
+    "gerlesborgTags": ["Cultural Center", "Public Events", "Calendar"],
+    "gerlesborg": [
+      "Gerlesborgs kulturhus is a cultural centre in Hamburgsund, Sweden, hosting exhibitions, concerts, workshops and a literature festival for the surrounding community.",
+      "It uses Cocoso simply and effectively to publish its public program — every exhibition, concert and course appears straight on its calendar, no separate events tool required."
+    ],
+    "gerlesborgLinkLabel": "Visit gerlesborgskulturhus.se",
+    "minaTitle": "Mina Kocailik",
+    "minaTags": ["Portfolio", "Independent Artist"],
+    "mina": [
+      "Mina Kocailik is an independent artist who uses Cocoso simply to publish her portfolio: a clean, self-managed showcase of her work, with nothing extra to maintain.",
+      "It's the smallest possible use of Cocoso — proof that the same platform serving federations of hundreds works just as well for a single creative practice."
+    ],
+    "minaLinkLabel": "Visit her portfolio"
   },
   "credits": {
     "title": "Credits",

@@ -10,8 +10,8 @@
   "nav": {
     "home": "Hem",
     "features": "Funktioner",
+    "examples": "Exempel",
     "contact": "Kontakt",
-    "credits": "Krediter",
     "sourceCode": "Källkod",
     "getStarted": "Utforska funktioner",
     "demo": "Live-demo",
@@ -35,7 +35,11 @@
       "Campingplatser"
     ],
     "tripleTitle": "Mer än en webbplats",
-    "tripleTags": ["Offentlig webbplats", "Communitynätverk", "Produktivitetsverktyg"],
+    "tripleTags": [
+      "Offentlig webbplats",
+      "Communitynätverk",
+      "Produktivitetsverktyg"
+    ],
     "triple": [
       "Cocoso är en offentlig webbplats, så att världen kan se vilka ni är, vad ni gör och vad som är på gång — ingen separat webbplats behövs.",
       "Det är också ett privat communitynätverk: medlemmar kan följa aktiviteter, dela uppdateringar och hålla varandra uppdaterade — utan annonser, algoritmer eller spårning. Sociala medier, minus utvinningen.",
@@ -53,13 +57,6 @@
       "En federation kan utse ett samhälle till sin Portal: en gemensam ingång där besökare kan bläddra bland alla anslutna samhällen, filtrera aktiviteter över hela nätverket och hitta rätt. Alla behåller sin självständighet; nätverket behåller sin sammanhållning.",
       "Det passar naturligt för en rörelse som består av många autonoma grupper — som ett nätverk av ekobyar, kooperativ eller gräsrotsinitiativ som vill stå tillsammans utan att ge upp det lokala självstyret."
     ],
-    "samarbetetTitle": "Samarbetet",
-    "samarbetetTags": ["Sverige", "Levande federation", "Konstnärer & Kulturplatser"],
-    "samarbetet": [
-      "Samarbetet är en verklig federation byggd på Cocoso: ett ekosystem av konstnärer, konstplatser, gemenskaper, resurser och människor runt om i Sverige, sammankopplade i ett gemensamt nätverk.",
-      "Medlemmarna delar scener, trädgårdar, verkstäder och mötesplatser, driver egna program och butiker, och förblir självständiga samtidigt som de drar nytta av en gemensam ingång — precis det som Federation, ovan, ser ut i praktiken."
-    ],
-    "samarbetetLinkLabel": "Besök samarbetet.org",
     "accountsTitle": "En inloggning, många samhällen",
     "accountsTags": [
       "Globala konton",
@@ -211,6 +208,45 @@
       "Nå varje medlem direkt med ett e-postnyhetsbrev — inget separat verktyg för e-postlistor behövs. Skriv en gång, skicka till hela ditt samhälle, och håll folk uppdaterade utan att förlita dig på ett socialt flöde.",
       "Automatiska e-postmeddelanden sköter de rutinmässiga momenten åt dig: bekräftelser av registrering, verifiering av anmälningar och andra medlemsnotiser skickas av sig själva, så administratörer kan fokusera på samhället istället för inkorgen."
     ]
+  },
+  "clients": {
+    "pageTitle": "Exempel på användning",
+    "pageLead": "Verkliga samhällen, studior och konstnärer som redan kör på Cocoso — federerade nätverk, delade arbetsytor, evenemangskalendrar och personliga portföljer, alla anpassade efter behov.",
+    "samarbetetTitle": "Samarbetet",
+    "samarbetetTags": ["Sverige", "Federation", "Konstnärer & Kulturplatser"],
+    "samarbetet": [
+      "Samarbetet är en federation av oberoende samhällen runt om i Sverige — konstnärer, konstplatser, trädgårdar, verkstäder och människor, sammankopplade i ett gemensamt nätverk.",
+      "Medlemmarna delar scener, trädgårdar, verkstäder och mötesplatser, driver egna program och butiker, och förblir självständiga samtidigt som de drar nytta av en gemensam ingång till hela ekosystemet."
+    ],
+    "samarbetetLinkLabel": "Besök samarbetet.org",
+    "kkvTitle": "KKV Stockholm",
+    "kkvTags": ["Resursbokning", "200+ resurser", "400+ medlemmar"],
+    "kkv": [
+      "KKV Stockholm — Konstnärernas Kollektivverkstad — är en gemensam verkstad för yrkesverksamma konstnärer, som ger över 400 medlemmar delad tillgång till mer än 200 utrustningar och verkstadsytor.",
+      "Medlemmarna bokar resurser via Cocosos kalender, publicerar sina egna portföljer och offentliga evenemang, och hittar varandra på en gemensam medlemssida — en stor, livlig verkstad som drivs smidigt på en plattform."
+    ],
+    "kkvLinkLabel": "Besök stockholm.kkv.nu",
+    "hojdenTitle": "höjden",
+    "hojdenTags": ["Konstnärsdriven plats", "Resursbokning", "Portföljer"],
+    "hojden": [
+      "höjden är en konstnärsdriven plats i Stockholm — studior, en scen, ett dansgolv, ett galleri och ett kök, driven kollektivt av kooperativet Släktet sedan 2018.",
+      "Precis som KKV använder höjden Cocoso för att hantera bokningar av sina delade ytor och utrustning, tillsammans med medlemsportföljer och ett offentligt program av workshops, föreställningar och föreläsningar."
+    ],
+    "hojdenLinkLabel": "Besök hojden.house",
+    "gerlesborgTitle": "Gerlesborgs Kulturhus",
+    "gerlesborgTags": ["Kulturhus", "Offentliga evenemang", "Kalender"],
+    "gerlesborg": [
+      "Gerlesborgs kulturhus är ett kulturhus i Hamburgsund, som är värd för utställningar, konserter, workshops och en litteraturfestival för samhället runt omkring.",
+      "Det använder Cocoso enkelt och effektivt för att publicera sitt offentliga program — varje utställning, konsert och kurs dyker upp direkt i kalendern, utan något separat evenemangsverktyg."
+    ],
+    "gerlesborgLinkLabel": "Besök gerlesborgskulturhus.se",
+    "minaTitle": "Mina Kocailik",
+    "minaTags": ["Portfölj", "Oberoende konstnär"],
+    "mina": [
+      "Mina Kocailik är en oberoende konstnär som helt enkelt använder Cocoso för att publicera sin portfölj: en ren, självstyrd presentation av hennes arbete, utan något extra att underhålla.",
+      "Det är den minsta möjliga användningen av Cocoso — ett bevis på att samma plattform som betjänar federationer med hundratals människor fungerar lika bra för en enskild konstnärlig verksamhet."
+    ],
+    "minaLinkLabel": "Besök hennes portfölj"
   },
   "credits": {
     "title": "Krediter",

@@ -152,9 +152,11 @@ function StoryLayout({
               content={s.content}
               image={s.image}
               logo={s.logo}
+              logoDark={s.logoDark}
               link={s.link}
               linkLabel={s.linkLabel}
               sliderImage={s.sliderImage}
+              bgPosition={s.bgPosition}
               accent={getAccent(index)}
             />
           </React.Fragment>

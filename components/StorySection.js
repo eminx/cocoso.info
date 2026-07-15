@@ -10,20 +10,21 @@ function StorySection({
   content,
   image,
   logo,
+  logoDark,
   link,
   linkLabel,
   sliderImage,
+  bgPosition,
   accent,
 }) {
   return (
     <section id={id} className="story-section">
       <div
-        className="story-bg"
+        className={`story-bg${bgPosition === "top" ? " story-bg--top" : ""}`}
         style={{
-          backgroundImage: sliderImage ? `url(${sliderImage})` : undefined,
-          background: sliderImage
-            ? undefined
-            : `linear-gradient(155deg, ${accent.base}, ${accent.soft})`,
+          ...(sliderImage
+            ? { backgroundImage: `url(${sliderImage})` }
+            : { background: `linear-gradient(155deg, ${accent.base}, ${accent.soft})` }),
           "--accent": accent.base,
           "--accent-soft": accent.soft,
           "--accent-deep": accent.deep,
@@ -56,7 +57,9 @@ function StorySection({
           {image && <img className="story-image" src={image} alt={title} />}
 
           {logo && (
-            <div className="story-logo-frame">
+            <div
+              className={`story-logo-frame${logoDark ? " story-logo-frame--dark" : ""}`}
+            >
               <img className="story-logo" src={logo} alt={title} />
             </div>
           )}

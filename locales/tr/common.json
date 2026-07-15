@@ -10,8 +10,8 @@
   "nav": {
     "home": "Ana Sayfa",
     "features": "Özellikler",
+    "examples": "Örnekler",
     "contact": "İletişim",
-    "credits": "Destekleyenler",
     "sourceCode": "Kaynak kodu",
     "getStarted": "Özellikleri Keşfet",
     "demo": "Canlı Demo",
@@ -35,7 +35,11 @@
       "Kamp Siteleri"
     ],
     "tripleTitle": "Bir Web Sitesinden Çok Daha Fazlası",
-    "tripleTags": ["Herkese Açık Web Sitesi", "Topluluk Ağı", "Verimlilik Aracı"],
+    "tripleTags": [
+      "Herkese Açık Web Sitesi",
+      "Topluluk Ağı",
+      "Verimlilik Aracı"
+    ],
     "triple": [
       "Cocoso herkese açık bir web sitesidir; böylece dünya kim olduğunuzu, ne yaptığınızı ve yaklaşan etkinliklerinizi görebilir — ayrı bir siteye gerek kalmaz.",
       "Aynı zamanda özel bir topluluk ağıdır: üyeler etkinlikleri takip edebilir, güncellemeleri paylaşabilir ve birbirleriyle bağlantıda kalabilir — reklam, algoritma veya takip olmadan. Sömürüsü çıkarılmış bir sosyal medya.",
@@ -53,13 +57,6 @@
       "Bir federasyon, topluluklardan birini Portal olarak belirleyebilir: ziyaretçilerin her üye topluluğa göz atabildiği, etkinlikleri tüm ağ genelinde filtreleyebildiği ve yolunu bulabildiği ortak bir giriş kapısı. Herkes bağımsızlığını korur; ağ da bütünlüğünü korur.",
       "Birçok özerk gruptan oluşan bir hareket için doğal bir uyum sağlar — yerel öz yönetimden vazgeçmeden bir arada durmak isteyen bir eko köy, kooperatif veya gräsrot inisiyatifi ağı gibi."
     ],
-    "samarbetetTitle": "Samarbetet",
-    "samarbetetTags": ["İsveç", "Canlı Federasyon", "Sanatçılar ve Kültür Mekanları"],
-    "samarbetet": [
-      "Samarbetet, Cocoso üzerine kurulmuş gerçek bir federasyondur: İsveç genelinde sanatçılardan, sanat mekanlarından, topluluklardan, kaynaklardan ve insanlardan oluşan, tek bir ortak ağ altında birbirine bağlı bir ekosistem.",
-      "Üyeleri sahneleri, bahçeleri, atölyeleri ve toplantı alanlarını bir araya getirir, kendi programlarını ve mağazalarını yürütür, ortak bir giriş kapısından faydalanırken bağımsız kalırlar — yukarıdaki Federasyon'un pratikte tam olarak nasıl göründüğü budur."
-    ],
-    "samarbetetLinkLabel": "samarbetet.org'u ziyaret edin",
     "accountsTitle": "Tek Giriş, Birçok Topluluk",
     "accountsTags": [
       "Genel Hesaplar",
@@ -196,7 +193,12 @@
       "Menünüzü, üstbilginizi ve altbilginizi özelleştirin ve ziyaretçilerin ilk ne göreceğine tam olarak siz karar verin. Her Cocoso topluluğunun arkasındaki kontrol odası; geliştiriciler için değil, yöneticiler için tasarlandı."
     ],
     "designTitle": "Tasarım Tercihleri",
-    "designTags": ["Renkler", "Köşe Yuvarlaklığı", "Arka Planlar", "Görünüm ve His"],
+    "designTags": [
+      "Renkler",
+      "Köşe Yuvarlaklığı",
+      "Arka Planlar",
+      "Görünüm ve His"
+    ],
     "design": [
       "Topluluğunuzun web sitesine kendi görsel kimliğini verin: renklerinizi seçin, köşe yuvarlaklığını ayarlayın, bir arka plan belirleyin — tek bir satır CSS'e dokunmadan sitenizi belirgin şekilde kendinize özgü hale getirin.",
       "Tasarım tercihleri tüm siteniz genelinde aynı anda uygulanır; böylece topluluğunuzun varlığı büyürken bile ana sayfadan takvime, her esnek sayfaya kadar tutarlı kalır."
@@ -211,6 +213,49 @@
       "Ayrı bir e-posta listesi aracına gerek kalmadan bir e-posta bülteniyle her üyeye doğrudan ulaşın. Bir kere yazın, tüm topluluğunuza gönderin ve insanları bir sosyal medya akışına güvenmeden haberdar edin.",
       "Otomatik e-postalar rutin anları sizin için halleder: kayıt onayları, katılım doğrulamaları ve diğer üye bildirimleri kendi kendine gönderilir; böylece yöneticiler gelen kutusu yerine topluluğa odaklanabilir."
     ]
+  },
+  "clients": {
+    "pageTitle": "Kullanım Örnekleri",
+    "pageLead": "Cocoso'yu zaten kullanan gerçek topluluklar, atölyeler ve sanatçılar — federasyon ağları, paylaşılan çalışma alanları, etkinlik takvimleri ve kişisel portföyler, her biri kendine göre şekillendirilmiş.",
+    "samarbetetTitle": "Samarbetet",
+    "samarbetetTags": ["İsveç", "Federasyon", "Sanatçılar ve Kültür Mekanları"],
+    "samarbetet": [
+      "Samarbetet, İsveç genelinde bağımsız toplulukların bir federasyonudur — sanatçılar, sanat mekanları, bahçeler, atölyeler ve insanlar, tek bir ortak ağ altında birbirine bağlanır.",
+      "Üyeleri sahneleri, bahçeleri, atölyeleri ve toplantı alanlarını bir araya getirir, kendi programlarını ve mağazalarını yürütür, tüm ekosisteme ortak bir giriş kapısından faydalanırken bağımsız kalırlar."
+    ],
+    "samarbetetLinkLabel": "samarbetet.org'u ziyaret edin",
+    "kkvTitle": "KKV Stockholm",
+    "kkvTags": ["Kaynak Rezervasyonu", "200+ Kaynak", "400+ Üye"],
+    "kkv": [
+      "KKV Stockholm — Konstnärernas Kollektivverkstad — profesyonel sanatçılar için ortak bir çalışma alanıdır; 400'den fazla üyeye 200'den fazla ekipman ve atölye alanına paylaşımlı erişim sağlar.",
+      "Üyeler kaynakları Cocoso'nun takvimi üzerinden rezerve eder, kendi portföylerini ve herkese açık etkinliklerini yayınlar, ortak bir üye sayfasında birbirlerini bulurlar — tek bir platformda sorunsuzca yürütülen büyük, hareketli bir atölye."
+    ],
+    "kkvLinkLabel": "stockholm.kkv.nu'yu ziyaret edin",
+    "hojdenTitle": "höjden",
+    "hojdenTags": [
+      "Sanatçı Girişimi Mekan",
+      "Kaynak Rezervasyonu",
+      "Portföyler"
+    ],
+    "hojden": [
+      "höjden, Stockholm'de sanatçılar tarafından yürütülen bir mekandır — 2018'den beri Släktet kooperatifi tarafından kolektif olarak işletilen stüdyolar, bir sahne, bir dans pisti, bir galeri ve bir mutfaktan oluşur.",
+      "KKV gibi höjden de paylaşılan alanlarının ve ekipmanlarının rezervasyonlarını, üye portföylerini ve atölye çalışmaları, performanslar ve derslerden oluşan halka açık bir programı yönetmek için Cocoso'yu kullanır."
+    ],
+    "hojdenLinkLabel": "hojden.house'u ziyaret edin",
+    "gerlesborgTitle": "Gerlesborgs Kulturhus",
+    "gerlesborgTags": ["Kültür Merkezi", "Halka Açık Etkinlikler", "Takvim"],
+    "gerlesborg": [
+      "Gerlesborgs kulturhus, İsveç'in Hamburgsund kentinde bulunan ve çevresindeki topluluk için sergiler, konserler, atölye çalışmaları ve bir edebiyat festivaline ev sahipliği yapan bir kültür merkezidir.",
+      "Halka açık programını yayınlamak için Cocoso'yu basit ve etkili bir şekilde kullanır — her sergi, konser ve kurs doğrudan takviminde görünür, ayrı bir etkinlik aracına gerek kalmaz."
+    ],
+    "gerlesborgLinkLabel": "gerlesborgskulturhus.se'yi ziyaret edin",
+    "minaTitle": "Mina Kocailik",
+    "minaTags": ["Portföy", "Bağımsız Sanatçı"],
+    "mina": [
+      "Mina Kocailik, portföyünü yayınlamak için Cocoso'yu basitçe kullanan bağımsız bir sanatçıdır: bakımı gereken hiçbir ekstra olmadan, çalışmalarının temiz, kendi kendine yönetilen bir sergisi.",
+      "Bu, Cocoso'nun mümkün olan en küçük kullanımıdır — yüzlerce kişiye hizmet eden federasyonlara hizmet eden aynı platformun tek bir yaratıcı uygulama için de aynı derecede iyi çalıştığının kanıtı."
+    ],
+    "minaLinkLabel": "Portföyünü ziyaret edin"
   },
   "credits": {
     "title": "Destekleyenler",

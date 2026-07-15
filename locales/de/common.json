@@ -10,8 +10,8 @@
   "nav": {
     "home": "Start",
     "features": "Funktionen",
+    "examples": "Beispiele",
     "contact": "Kontakt",
-    "credits": "Credits",
     "sourceCode": "Quellcode",
     "getStarted": "Funktionen entdecken",
     "demo": "Live-Demo",
@@ -35,7 +35,11 @@
       "Zeltplätze"
     ],
     "tripleTitle": "Mehr als eine Website",
-    "tripleTags": ["Öffentliche Website", "Gemeinschaftsnetzwerk", "Produktivitätstool"],
+    "tripleTags": [
+      "Öffentliche Website",
+      "Gemeinschaftsnetzwerk",
+      "Produktivitätstool"
+    ],
     "triple": [
       "Cocoso ist eine öffentliche Website, damit die Welt sehen kann, wer Sie sind, was Sie tun und was ansteht — keine separate Seite nötig.",
       "Es ist zugleich ein privates Gemeinschaftsnetzwerk: Mitglieder können Aktivitäten folgen, Updates teilen und miteinander in Verbindung bleiben — ohne Werbung, Algorithmen oder Tracking. Soziale Medien, minus der Ausbeutung.",
@@ -53,13 +57,6 @@
       "Eine Föderation kann eine Gemeinschaft als ihr Portal bestimmen: eine gemeinsame Eingangstür, über die Besucher jede Mitgliedsgemeinschaft durchstöbern, Aktivitäten netzwerkweit filtern und ihren Weg finden. Jede Gemeinschaft bleibt unabhängig; das Netzwerk bleibt zusammenhängend.",
       "Das passt natürlich zu einer Bewegung aus vielen autonomen Gruppen — etwa einem Netzwerk aus Ökodörfern, Genossenschaften oder Basisinitiativen, die zusammenstehen wollen, ohne ihre lokale Selbstverwaltung aufzugeben."
     ],
-    "samarbetetTitle": "Samarbetet",
-    "samarbetetTags": ["Schweden", "Lebende Föderation", "Künstler & Kulturräume"],
-    "samarbetet": [
-      "Samarbetet ist eine echte Föderation, aufgebaut auf Cocoso: ein Ökosystem aus Künstler:innen, Kulturräumen, Gemeinschaften, Ressourcen und Menschen in ganz Schweden, verbunden in einem gemeinsamen Netzwerk.",
-      "Die Mitglieder teilen Bühnen, Gärten, Werkstätten und Treffpunkte, betreiben eigene Programme und Shops und bleiben dabei unabhängig — während sie von einer gemeinsamen Eingangstür profitieren. Genau das, was Föderation, oben beschrieben, in der Praxis bedeutet."
-    ],
-    "samarbetetLinkLabel": "samarbetet.org besuchen",
     "accountsTitle": "Ein Login, viele Gemeinschaften",
     "accountsTags": [
       "Globale Konten",
@@ -211,6 +208,53 @@
       "Erreichen Sie jedes Mitglied direkt mit einem E-Mail-Newsletter — kein separates Mailing-Tool nötig. Einmal schreiben, an die ganze Gemeinschaft senden, und Menschen auf dem Laufenden halten, ohne sich auf ein soziales Netzwerk zu verlassen.",
       "Automatische E-Mails übernehmen die Routineaufgaben für Sie: Anmeldebestätigungen, Verifizierungen von Zusagen und andere Mitgliederbenachrichtigungen gehen von selbst hinaus, sodass Admins sich auf die Gemeinschaft statt auf den Posteingang konzentrieren können."
     ]
+  },
+  "clients": {
+    "pageTitle": "Anwendungsbeispiele",
+    "pageLead": "Echte Gemeinschaften, Studios und Künstler:innen, die bereits mit Cocoso arbeiten — föderierte Netzwerke, gemeinsame Arbeitsräume, Veranstaltungskalender und persönliche Portfolios, jeweils passend zugeschnitten.",
+    "samarbetetTitle": "Samarbetet",
+    "samarbetetTags": ["Schweden", "Föderation", "Künstler & Kulturräume"],
+    "samarbetet": [
+      "Samarbetet ist eine Föderation unabhängiger Gemeinschaften in ganz Schweden — Künstler:innen, Kulturräume, Gärten, Werkstätten und Menschen, verbunden in einem gemeinsamen Netzwerk.",
+      "Die Mitglieder teilen Bühnen, Gärten, Werkstätten und Treffpunkte, betreiben eigene Programme und Shops und bleiben unabhängig, während sie von einer gemeinsamen Eingangstür zum gesamten Ökosystem profitieren."
+    ],
+    "samarbetetLinkLabel": "samarbetet.org besuchen",
+    "kkvTitle": "KKV Stockholm",
+    "kkvTags": ["Ressourcenbuchung", "200+ Ressourcen", "400+ Mitglieder"],
+    "kkv": [
+      "KKV Stockholm — Konstnärernas Kollektivverkstad — ist eine Gemeinschaftswerkstatt für professionelle Künstler:innen und gibt über 400 Mitgliedern gemeinsamen Zugang zu mehr als 200 Ausrüstungsgegenständen und Werkstattflächen.",
+      "Mitglieder buchen Ressourcen über den Kalender von Cocoso, veröffentlichen ihre eigenen Portfolios und öffentlichen Veranstaltungen und finden sich auf einer gemeinsamen Mitgliederseite — eine große, geschäftige Werkstatt, die reibungslos auf einer einzigen Plattform läuft."
+    ],
+    "kkvLinkLabel": "stockholm.kkv.nu besuchen",
+    "hojdenTitle": "höjden",
+    "hojdenTags": [
+      "Künstlerisch geführter Raum",
+      "Ressourcenbuchung",
+      "Portfolios"
+    ],
+    "hojden": [
+      "höjden ist ein künstlerisch geführter Raum in Stockholm — Studios, eine Bühne, eine Tanzfläche, eine Galerie und eine Küche, seit 2018 gemeinschaftlich betrieben von der Genossenschaft Släktet.",
+      "Wie KKV nutzt höjden Cocoso, um Buchungen seiner gemeinsamen Räume und Ausrüstung zu verwalten, zusammen mit Mitgliederportfolios und einem öffentlichen Programm aus Workshops, Aufführungen und Vorträgen."
+    ],
+    "hojdenLinkLabel": "hojden.house besuchen",
+    "gerlesborgTitle": "Gerlesborgs Kulturhus",
+    "gerlesborgTags": [
+      "Kulturzentrum",
+      "Öffentliche Veranstaltungen",
+      "Kalender"
+    ],
+    "gerlesborg": [
+      "Gerlesborgs kulturhus ist ein Kulturzentrum in Hamburgsund, Schweden, das Ausstellungen, Konzerte, Workshops und ein Literaturfestival für die umliegende Gemeinschaft veranstaltet.",
+      "Es nutzt Cocoso einfach und effektiv, um sein öffentliches Programm zu veröffentlichen — jede Ausstellung, jedes Konzert und jeder Kurs erscheint direkt im Kalender, ganz ohne separates Veranstaltungstool."
+    ],
+    "gerlesborgLinkLabel": "gerlesborgskulturhus.se besuchen",
+    "minaTitle": "Mina Kocailik",
+    "minaTags": ["Portfolio", "Unabhängige Künstlerin"],
+    "mina": [
+      "Mina Kocailik ist eine unabhängige Künstlerin, die Cocoso schlicht nutzt, um ihr Portfolio zu veröffentlichen: eine klare, selbstverwaltete Präsentation ihrer Arbeit, ohne zusätzlichen Pflegeaufwand.",
+      "Es ist die kleinstmögliche Nutzung von Cocoso — der Beweis, dass dieselbe Plattform, die Föderationen mit Hunderten von Mitgliedern bedient, genauso gut für eine einzelne künstlerische Praxis funktioniert."
+    ],
+    "minaLinkLabel": "Ihr Portfolio besuchen"
   },
   "credits": {
     "title": "Credits",
