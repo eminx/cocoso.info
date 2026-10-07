@@ -7,7 +7,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/de.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/de.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -23,7 +23,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/de/about.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/de/about.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -39,7 +39,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/de/clients.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/de/clients.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -55,7 +55,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/de/contact.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/de/contact.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -71,7 +71,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/de/features.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/de/features.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -87,7 +87,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/en.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/en.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -103,7 +103,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/en/about.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/en/about.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -119,7 +119,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/en/clients.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/en/clients.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -135,7 +135,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/en/contact.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/en/contact.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -151,7 +151,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/en/features.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/en/features.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -167,7 +167,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/es.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/es.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -183,7 +183,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/es/about.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/es/about.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -199,7 +199,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/es/clients.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/es/clients.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -215,7 +215,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/es/contact.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/es/contact.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -231,7 +231,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/es/features.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/es/features.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -247,7 +247,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/pt-BR.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/pt-BR.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -263,7 +263,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/pt-BR/about.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/pt-BR/about.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -279,7 +279,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/pt-BR/clients.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/pt-BR/clients.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -295,7 +295,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/pt-BR/contact.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/pt-BR/contact.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -311,7 +311,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/pt-BR/features.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/pt-BR/features.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -327,7 +327,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/pt-PT.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/pt-PT.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -343,7 +343,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/pt-PT/about.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/pt-PT/about.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -359,7 +359,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/pt-PT/clients.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/pt-PT/clients.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -375,7 +375,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/pt-PT/contact.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/pt-PT/contact.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -391,7 +391,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/pt-PT/features.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/pt-PT/features.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -407,7 +407,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/sv.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/sv.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -423,7 +423,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/sv/about.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/sv/about.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -439,7 +439,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/sv/clients.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/sv/clients.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -455,7 +455,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/sv/contact.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/sv/contact.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -471,7 +471,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/sv/features.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/sv/features.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -487,7 +487,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/tr.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/tr.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -503,7 +503,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/tr/about.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/tr/about.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -519,7 +519,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/tr/clients.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/tr/clients.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -535,7 +535,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/tr/contact.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/tr/contact.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -551,7 +551,7 @@
       "compute": "static",
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/Ih6amJPyctjAuesHQ7FZZ/tr/features.json",
+      "dataRoute": "/_next/data/iiKTSGLeTnVn8oxBX9BaC/tr/features.json",
       "allowHeader": [
         "host",
         "x-matched-path",

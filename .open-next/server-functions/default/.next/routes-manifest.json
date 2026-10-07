@@ -58,23 +58,23 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/Ih6amJPyctjAuesHQ7FZZ/index\\.json$"
+      "dataRouteRegex": "^/_next/data/iiKTSGLeTnVn8oxBX9BaC/index\\.json$"
     },
     {
       "page": "/about",
-      "dataRouteRegex": "^/_next/data/Ih6amJPyctjAuesHQ7FZZ/about\\.json$"
+      "dataRouteRegex": "^/_next/data/iiKTSGLeTnVn8oxBX9BaC/about\\.json$"
     },
     {
       "page": "/clients",
-      "dataRouteRegex": "^/_next/data/Ih6amJPyctjAuesHQ7FZZ/clients\\.json$"
+      "dataRouteRegex": "^/_next/data/iiKTSGLeTnVn8oxBX9BaC/clients\\.json$"
     },
     {
       "page": "/contact",
-      "dataRouteRegex": "^/_next/data/Ih6amJPyctjAuesHQ7FZZ/contact\\.json$"
+      "dataRouteRegex": "^/_next/data/iiKTSGLeTnVn8oxBX9BaC/contact\\.json$"
     },
     {
       "page": "/features",
-      "dataRouteRegex": "^/_next/data/Ih6amJPyctjAuesHQ7FZZ/features\\.json$"
+      "dataRouteRegex": "^/_next/data/iiKTSGLeTnVn8oxBX9BaC/features\\.json$"
     }
   ],
   "i18n": {
