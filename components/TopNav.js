@@ -110,10 +110,10 @@ function TopNav() {
     <>
       {/* Desktop floating pill */}
       <nav className="top-nav--desktop">
-        <Link href="/">
-          <a className="top-nav-logo">
-            <img src="/cocoso-logo-small.png" alt="Cocoso" />
-          </a>
+        <Link href="/" className="top-nav-logo">
+
+          <img src="/cocoso-logo-small.png" alt="Cocoso" />
+
         </Link>
 
         <div className="top-nav-links">
@@ -148,10 +148,10 @@ function TopNav() {
 
       {/* Mobile bar */}
       <nav className="top-nav-mobile-bar">
-        <Link href="/">
-          <a className="top-nav-logo">
-            <img src="/cocoso-logo-small.png" alt="Cocoso" />
-          </a>
+        <Link href="/" className="top-nav-logo">
+
+          <img src="/cocoso-logo-small.png" alt="Cocoso" />
+
         </Link>
 
         <Dropdown

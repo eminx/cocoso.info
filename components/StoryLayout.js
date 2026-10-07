@@ -12,7 +12,11 @@ function buildNavGroups(sections, groupLabels) {
   sections.forEach((s, absoluteIndex) => {
     let group = groups.find((g) => g.key === s.group);
     if (!group) {
-      group = { key: s.group, label: groupLabels?.[s.group] || s.group, items: [] };
+      group = {
+        key: s.group,
+        label: groupLabels?.[s.group] || s.group,
+        items: [],
+      };
       groups.push(group);
     }
     group.items.push({ ...s, absoluteIndex });
@@ -45,34 +49,40 @@ function StoryLayout({
           <div className="hero-inner">
             <img className="hero-logo" src="/cocoso-logo.png" alt="Cocoso" />
             <h1 className="hero-title">{heroTitle}</h1>
-            {heroLead?.map((p) => (
-              <p className="hero-lead" key={p.substring(0, 24)}>
-                {p}
-              </p>
-            ))}
-            {heroTags?.length > 0 && (
-              <div className="tag-row">
-                {heroTags.map((tag, tagIndex) => (
-                  <span
-                    className="tag-chip"
-                    key={tag}
-                    style={{ background: getHSL(heroTags.length, tagIndex) }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
+            {heroLead && Array.isArray(heroLead)
+              ? heroLead.map((p) => (
+                  <p className="hero-lead" key={p.substring(0, 24)}>
+                    {p}
+                  </p>
+                ))
+              : null}
+            {heroTags && Array.isArray(heroTags)
+              ? heroTags.length > 0 && (
+                  <div className="tag-row">
+                    {heroTags.map((tag, tagIndex) => (
+                      <span
+                        className="tag-chip"
+                        key={tag}
+                        style={{
+                          background: getHSL(heroTags.length, tagIndex),
+                        }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )
+              : null}
             {(heroCta || heroCtaSecondary) && (
               <div className="cta-row">
                 {heroCta && (
-                  <Link href={heroCta.href}>
-                    <a className="btn-thick">{heroCta.label}</a>
+                  <Link href={heroCta.href} className="btn-thick">
+                    {heroCta.label}
                   </Link>
                 )}
                 {heroCtaSecondary && (
-                  <Link href={heroCtaSecondary.href}>
-                    <a className="btn-outline">{heroCtaSecondary.label}</a>
+                  <Link href={heroCtaSecondary.href} className="btn-outline">
+                    {heroCtaSecondary.label}
                   </Link>
                 )}
               </div>
@@ -83,7 +93,10 @@ function StoryLayout({
         <div className="features-header-band">
           <div className="features-header-blobs" />
           <div className="features-header-inner">
-            <h1 className="hero-title" style={{ fontSize: "clamp(24px, 4vw, 34px)" }}>
+            <h1
+              className="hero-title"
+              style={{ fontSize: "clamp(24px, 4vw, 34px)" }}
+            >
               {pageTitle}
             </h1>
             {pageLead && <p className="hero-lead">{pageLead}</p>}
@@ -124,7 +137,10 @@ function StoryLayout({
                     className="quick-nav-chip"
                     key={s.title}
                     href={`#${s.title}`}
-                    style={{ background: accent.soft, "--chip-accent": accent.base }}
+                    style={{
+                      background: accent.soft,
+                      "--chip-accent": accent.base,
+                    }}
                   >
                     {s.title}
                   </a>

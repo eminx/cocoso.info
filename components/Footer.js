@@ -18,16 +18,16 @@ function Footer() {
         <div className="footer-col">
           <p className="footer-col-title">{t("footer.exploreTitle")}</p>
           <Link href="/">
-            <a>{t("nav.home")}</a>
+            {t("nav.home")}
           </Link>
           <Link href="/features">
-            <a>{t("nav.features")}</a>
+            {t("nav.features")}
           </Link>
           <Link href="/clients">
-            <a>{t("nav.examples")}</a>
+            {t("nav.examples")}
           </Link>
           <Link href="/contact">
-            <a>{t("nav.contact")}</a>
+            {t("nav.contact")}
           </Link>
         </div>
 

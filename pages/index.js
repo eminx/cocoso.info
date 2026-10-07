@@ -26,8 +26,8 @@ function IndexPage() {
       <StoryLayout
         sections={sections}
         heroTitle={t("brand.slogan")}
-        heroLead={t("home.lead", {}, { returnObjects: true })}
-        heroTags={t("home.leadTags", {}, { returnObjects: true })}
+        heroLead={t("home.lead", { returnObjects: true, defaultValue: [] })}
+        heroTags={t("home.leadTags", { returnObjects: true, defaultValue: [] })}
         afterSections={
           <div className="cta-card">
             <Reveal className="cta-card-inner reveal-fade">
