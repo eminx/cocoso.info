@@ -104,22 +104,25 @@ function TopNav() {
     { label: t("nav.contact"), href: "/contact" },
   ];
 
-  const currentLocale = locales.find((item) => item.value === lang) || locales[0];
+  const currentLocale =
+    locales.find((item) => item.value === lang) || locales[0];
 
   return (
     <>
       {/* Desktop floating pill */}
       <nav className="top-nav--desktop">
         <Link href="/" className="top-nav-logo">
-
           <img src="/cocoso-logo-small.png" alt="Cocoso" />
-
         </Link>
 
         <div className="top-nav-links">
           {navItems.map((item) => (
-            <ActiveLink key={item.href} href={item.href} activeClassName="nav-item-active">
-              <a className="top-nav-link">{item.label}</a>
+            <ActiveLink
+              key={item.href}
+              href={item.href}
+              activeClassName="nav-item-active"
+            >
+              <span className="top-nav-link">{item.label}</span>
             </ActiveLink>
           ))}
         </div>
@@ -149,15 +152,18 @@ function TopNav() {
       {/* Mobile bar */}
       <nav className="top-nav-mobile-bar">
         <Link href="/" className="top-nav-logo">
-
           <img src="/cocoso-logo-small.png" alt="Cocoso" />
-
         </Link>
 
         <Dropdown
           align="right"
           trigger={(toggle, open) => (
-            <button type="button" className="burger-trigger" onClick={toggle} aria-label="Menu">
+            <button
+              type="button"
+              className="burger-trigger"
+              onClick={toggle}
+              aria-label="Menu"
+            >
               <BurgerIcon />
             </button>
           )}
@@ -165,8 +171,12 @@ function TopNav() {
         >
           <div className="mobile-menu-links">
             {navItems.map((item) => (
-              <ActiveLink key={item.href} href={item.href} activeClassName="nav-item-active">
-                <a className="mobile-menu-link">{item.label}</a>
+              <ActiveLink
+                key={item.href}
+                href={item.href}
+                activeClassName="nav-item-active"
+              >
+                <span className="mobile-menu-link">{item.label}</span>
               </ActiveLink>
             ))}
           </div>

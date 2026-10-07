@@ -24,7 +24,9 @@ function StorySection({
         style={{
           ...(sliderImage
             ? { backgroundImage: `url(${sliderImage})` }
-            : { background: `linear-gradient(155deg, ${accent.base}, ${accent.soft})` }),
+            : {
+                background: `linear-gradient(155deg, ${accent.base}, ${accent.soft})`,
+              }),
           "--accent": accent.base,
           "--accent-soft": accent.soft,
           "--accent-deep": accent.deep,
@@ -40,7 +42,7 @@ function StorySection({
           </div>
           <h2 className="story-title">{title}</h2>
 
-          {tags?.length > 0 && (
+          {tags && Array.isArray(tags) && tags.length > 0 && (
             <div className="tag-row">
               {tags.map((tag, tagIndex) => (
                 <span
@@ -64,11 +66,11 @@ function StorySection({
             </div>
           )}
 
-          {content?.map((p) => (
-            <p className="story-text" key={p.substring(0, 24)}>
-              {p}
+          {content && Array.isArray(content) && content.length > 0 && (
+            <p className="story-text" key={content[0].substring(0, 24)}>
+              {content[0]}
             </p>
-          ))}
+          )}
 
           {link && (
             <a

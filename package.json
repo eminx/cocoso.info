@@ -2,8 +2,8 @@
   "name": "cocoso-landing-page",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
+    "dev": "next --webpack",
+    "build": "next build --webpack",
     "start": "next start"
   },
   "author": "Emin Durak <emin@tuta.io>",
@@ -11,7 +11,7 @@
     "grommet": "^2.16.0",
     "grommet-icons": "^4.5.0",
     "next": "16.4.0",
-    "next-translate": "^1.4.0",
+    "next-translate": "^3.2.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "react-grid-system": "^7.0.2",
@@ -20,6 +20,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.11.1"
+    "babel-plugin-styled-components": "^1.11.1",
+    "next-translate-plugin": "^3.2.0"
   }
 }
