@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "next --webpack",
     "build": "next build --webpack",
-    "start": "next start"
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },
   "author": "Emin Durak <emin@tuta.io>",
   "dependencies": {
@@ -19,7 +20,9 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.9",
     "babel-plugin-styled-components": "^1.11.1",
-    "next-translate-plugin": "^3.2.0"
+    "next-translate-plugin": "^3.2.0",
+    "wrangler": "^4.148.0"
   }
 }
