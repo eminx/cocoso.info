@@ -1,0 +1,28 @@
+{
+  "name": "cocoso-landing-page",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next --webpack",
+    "build": "next build --webpack",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+  },
+  "author": "Emin Durak <emin@tuta.io>",
+  "dependencies": {
+    "grommet": "^2.16.0",
+    "grommet-icons": "^4.5.0",
+    "next": "16.4.0",
+    "next-translate": "^3.2.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-scroll": "^1.7.16",
+    "styled-components": "^5.1.1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.9",
+    "babel-plugin-styled-components": "^1.11.1",
+    "next-translate-plugin": "^3.2.0",
+    "wrangler": "^4.148.0"
+  }
+}
