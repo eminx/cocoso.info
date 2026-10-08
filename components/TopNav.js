@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import useTranslation from "next-translate/useTranslation";
-import setLanguage from "next-translate/setLanguage";
+import { useRouter } from "next/router";
+
+import { useTranslation } from "../lib/i18n";
 import ActiveLink from "./ActiveLink";
 
 const locales = [
@@ -54,14 +55,22 @@ function Dropdown({ trigger, align = "right", children, panelClassName = "" }) {
 }
 
 function LanguageOptions({ currentLang }) {
+  const router = useRouter();
+
   return (
     <>
       {locales.map((item) => (
         <button
           key={item.value}
           type="button"
-          className={`lang-option${item.value === currentLang ? " lang-option-active" : ""}`}
-          onClick={async () => await setLanguage(item.value)}
+          className={`lang-option${
+            item.value === currentLang ? " lang-option-active" : ""
+          }`}
+          onClick={() =>
+            router.push(router.asPath, router.asPath, {
+              locale: item.value,
+            })
+          }
         >
           {item.label}
         </button>
