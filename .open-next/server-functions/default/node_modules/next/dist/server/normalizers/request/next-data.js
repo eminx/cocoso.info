@@ -15,7 +15,11 @@ class NextDataPathnameNormalizer {
     constructor(buildID){
         this.suffix = new _suffix.SuffixPathnameNormalizer('.json');
         if (!buildID) {
-            throw new Error('Invariant: buildID is required');
+            throw Object.defineProperty(new Error('Invariant: buildID is required'), "__NEXT_ERROR_CODE", {
+                value: "E200",
+                enumerable: false,
+                configurable: true
+            });
         }
         this.prefix = new _prefix.PrefixPathnameNormalizer(`/_next/data/${buildID}`);
     }

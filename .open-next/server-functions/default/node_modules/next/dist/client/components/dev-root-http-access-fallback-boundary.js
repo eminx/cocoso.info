@@ -26,7 +26,11 @@ const _jsxruntime = require("react/jsx-runtime");
 const _react = /*#__PURE__*/ _interop_require_default._(require("react"));
 const _errorboundary = require("./http-access-fallback/error-boundary");
 function bailOnRootNotFound() {
-    throw new Error('notFound() is not allowed to use in root layout');
+    throw Object.defineProperty(new Error('notFound() is not allowed to use in root layout'), "__NEXT_ERROR_CODE", {
+        value: "E192",
+        enumerable: false,
+        configurable: true
+    });
 }
 function NotAllowedRootHTTPFallbackError() {
     bailOnRootNotFound();

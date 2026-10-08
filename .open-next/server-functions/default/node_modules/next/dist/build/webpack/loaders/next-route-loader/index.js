@@ -57,7 +57,11 @@ function getRouteLoaderEntry(options) {
             }
         default:
             {
-                throw new Error('Invariant: Unexpected route kind');
+                throw Object.defineProperty(new Error('Invariant: Unexpected route kind'), "__NEXT_ERROR_CODE", {
+                    value: "E453",
+                    enumerable: false,
+                    configurable: true
+                });
             }
     }
 }
@@ -105,7 +109,11 @@ const loadPagesAPI = async ({ page, absolutePagePath, preferredRegion, middlewar
  * @returns the loader definition function
  */ const loader = async function() {
     if (!this._module) {
-        throw new Error('Invariant: expected this to reference a module');
+        throw Object.defineProperty(new Error('Invariant: expected this to reference a module'), "__NEXT_ERROR_CODE", {
+            value: "E383",
+            enumerable: false,
+            configurable: true
+        });
     }
     const buildInfo = (0, _getmodulebuildinfo.getModuleBuildInfo)(this._module);
     const opts = this.getOptions();
@@ -120,7 +128,11 @@ const loadPagesAPI = async ({ page, absolutePagePath, preferredRegion, middlewar
             }
         default:
             {
-                throw new Error('Invariant: Unexpected route kind');
+                throw Object.defineProperty(new Error('Invariant: Unexpected route kind'), "__NEXT_ERROR_CODE", {
+                    value: "E453",
+                    enumerable: false,
+                    configurable: true
+                });
             }
     }
 };

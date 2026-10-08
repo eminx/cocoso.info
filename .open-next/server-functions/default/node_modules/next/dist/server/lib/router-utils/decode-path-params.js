@@ -29,7 +29,11 @@ function _interop_require_default(obj) {
             seg = (0, _escapepathdelimiters.default)(decodeURIComponent(seg), true);
         } catch (_) {
             // An improperly encoded URL was provided
-            throw new _utils.DecodeError('Failed to decode path param(s).');
+            throw Object.defineProperty(new _utils.DecodeError('Failed to decode path param(s).'), "__NEXT_ERROR_CODE", {
+                value: "E539",
+                enumerable: false,
+                configurable: true
+            });
         }
         return seg;
     }).join('/');

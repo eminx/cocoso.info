@@ -25,7 +25,11 @@ function handleMiddlewareField(init, headers) {
     var _init_request;
     if (init == null ? void 0 : (_init_request = init.request) == null ? void 0 : _init_request.headers) {
         if (!(init.request.headers instanceof Headers)) {
-            throw new Error('request.headers must be an instance of Headers');
+            throw Object.defineProperty(new Error('request.headers must be an instance of Headers'), "__NEXT_ERROR_CODE", {
+                value: "E119",
+                enumerable: false,
+                configurable: true
+            });
         }
         const keys = [];
         for (const [key, value] of init.request.headers){
@@ -94,7 +98,11 @@ class NextResponse extends Response {
     static redirect(url, init) {
         const status = typeof init === 'number' ? init : (init == null ? void 0 : init.status) ?? 307;
         if (!REDIRECTS.has(status)) {
-            throw new RangeError('Failed to execute "redirect" on "response": Invalid status code');
+            throw Object.defineProperty(new RangeError('Failed to execute "redirect" on "response": Invalid status code'), "__NEXT_ERROR_CODE", {
+                value: "E529",
+                enumerable: false,
+                configurable: true
+            });
         }
         const initObj = typeof init === 'object' ? init : {};
         const headers = new Headers(initObj == null ? void 0 : initObj.headers);

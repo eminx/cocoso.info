@@ -14,7 +14,11 @@ class NodeModuleLoader {
             // Need to `await` to cover the case that route is marked ESM modules by ESM escalation.
             return await (process.env.NEXT_MINIMAL ? __non_webpack_require__(id) : require(id));
         }
-        throw new Error('NodeModuleLoader is not supported in edge runtime.');
+        throw Object.defineProperty(new Error('NodeModuleLoader is not supported in edge runtime.'), "__NEXT_ERROR_CODE", {
+            value: "E25",
+            enumerable: false,
+            configurable: true
+        });
     }
 }
 

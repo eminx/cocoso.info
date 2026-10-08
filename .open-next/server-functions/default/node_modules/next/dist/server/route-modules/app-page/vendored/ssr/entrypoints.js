@@ -97,7 +97,11 @@ function getAltProxyForBindingsDEV(type, pkg) {
         const altPkg = pkg.replace(new RegExp(type, 'gi'), altType.toLowerCase());
         return new Proxy({}, {
             get (_, prop) {
-                throw new Error(`Expected to use ${type} bindings (${pkg}) for React but the current process is referencing '${prop}' from the ${altType} bindings (${altPkg}). This is likely a bug in our integration of the Next.js server runtime.`);
+                throw Object.defineProperty(new Error(`Expected to use ${type} bindings (${pkg}) for React but the current process is referencing '${prop}' from the ${altType} bindings (${altPkg}). This is likely a bug in our integration of the Next.js server runtime.`), "__NEXT_ERROR_CODE", {
+                    value: "E253",
+                    enumerable: false,
+                    configurable: true
+                });
             }
         });
     }

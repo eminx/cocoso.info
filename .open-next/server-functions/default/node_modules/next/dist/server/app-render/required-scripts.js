@@ -25,7 +25,11 @@ function getRequiredScripts(buildManifest, assetPrefix, crossOrigin, SRIManifest
     };
     const files = (((_buildManifest_rootMainFilesTree = buildManifest.rootMainFilesTree) == null ? void 0 : _buildManifest_rootMainFilesTree[pagePath]) || buildManifest.rootMainFiles).map(_encodeuripath.encodeURIPath);
     if (files.length === 0) {
-        throw new Error('Invariant: missing bootstrap script. This is a bug in Next.js');
+        throw Object.defineProperty(new Error('Invariant: missing bootstrap script. This is a bug in Next.js'), "__NEXT_ERROR_CODE", {
+            value: "E459",
+            enumerable: false,
+            configurable: true
+        });
     }
     if (SRIManifest) {
         bootstrapScript.src = `${assetPrefix}/_next/` + files[0] + qs;

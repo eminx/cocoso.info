@@ -27,7 +27,11 @@ const NextServerCSSLoader = function(content) {
         // This check is only for backwards compatibility.
         // TODO: Remove this in the next major version (next 14)
         if (isCSSModule === undefined) {
-            this.emitWarning(new Error("No 'cssModules' option was found for the next-flight-css-loader plugin."));
+            this.emitWarning(Object.defineProperty(new Error("No 'cssModules' option was found for the next-flight-css-loader plugin."), "__NEXT_ERROR_CODE", {
+                value: "E8",
+                enumerable: false,
+                configurable: true
+            }));
             isCSSModule = this.resourcePath.match(/\.module\.(css|sass|scss)$/) !== null;
         }
         const checksum = _crypto.default.createHash('sha1').update(typeof content === 'string' ? Buffer.from(content) : content).digest().toString('hex').substring(0, 12);

@@ -43,11 +43,19 @@ function parse(raw, preferences, options) {
         }
         const params = part.split(';');
         if (params.length > 2) {
-            throw new Error(`Invalid ${options.type} header`);
+            throw Object.defineProperty(new Error(`Invalid ${options.type} header`), "__NEXT_ERROR_CODE", {
+                value: "E77",
+                enumerable: false,
+                configurable: true
+            });
         }
         let token = params[0].toLowerCase();
         if (!token) {
-            throw new Error(`Invalid ${options.type} header`);
+            throw Object.defineProperty(new Error(`Invalid ${options.type} header`), "__NEXT_ERROR_CODE", {
+                value: "E77",
+                enumerable: false,
+                configurable: true
+            });
         }
         const selection = {
             token,
@@ -62,7 +70,11 @@ function parse(raw, preferences, options) {
             const q = params[1];
             const [key, value] = q.split('=');
             if (!value || key !== 'q' && key !== 'Q') {
-                throw new Error(`Invalid ${options.type} header`);
+                throw Object.defineProperty(new Error(`Invalid ${options.type} header`), "__NEXT_ERROR_CODE", {
+                    value: "E77",
+                    enumerable: false,
+                    configurable: true
+                });
             }
             const score = parseFloat(value);
             if (score === 0) {

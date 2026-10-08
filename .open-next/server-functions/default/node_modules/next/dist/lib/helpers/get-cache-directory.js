@@ -42,7 +42,11 @@ function getCacheDirectory(fileDirectory, envPath) {
                 }
             }
             if (!systemCacheDirectory) {
-                console.error(new Error('Unsupported platform: ' + process.platform));
+                console.error(Object.defineProperty(new Error('Unsupported platform: ' + process.platform), "__NEXT_ERROR_CODE", {
+                    value: "E141",
+                    enumerable: false,
+                    configurable: true
+                }));
                 process.exit(0);
             }
         }

@@ -36,7 +36,11 @@ function parseNode(atRule, key) {
     }
     // Nodes do not exists - `@import url('http://') :root {}`
     if (atRule.nodes) {
-        const error = new Error("It looks like you didn't end your @import statement correctly. Child nodes are attached to it.");
+        const error = Object.defineProperty(new Error("It looks like you didn't end your @import statement correctly. Child nodes are attached to it."), "__NEXT_ERROR_CODE", {
+            value: "E341",
+            enumerable: false,
+            configurable: true
+        });
         error.node = atRule;
         throw error;
     }
@@ -44,7 +48,11 @@ function parseNode(atRule, key) {
     // No nodes - `@import ;`
     // Invalid type - `@import foo-bar;`
     if (paramsNodes.length === 0 || paramsNodes[0].type !== 'string' && paramsNodes[0].type !== 'function') {
-        const error = new Error(`Unable to find uri in "${atRule.toString()}"`);
+        const error = Object.defineProperty(new Error(`Unable to find uri in "${atRule.toString()}"`), "__NEXT_ERROR_CODE", {
+            value: "E215",
+            enumerable: false,
+            configurable: true
+        });
         error.node = atRule;
         throw error;
     }
@@ -56,7 +64,11 @@ function parseNode(atRule, key) {
     } else {
         // Invalid function - `@import nourl(test.css);`
         if (paramsNodes[0].value.toLowerCase() !== 'url') {
-            const error = new Error(`Unable to find uri in "${atRule.toString()}"`);
+            const error = Object.defineProperty(new Error(`Unable to find uri in "${atRule.toString()}"`), "__NEXT_ERROR_CODE", {
+                value: "E215",
+                enumerable: false,
+                configurable: true
+            });
             error.node = atRule;
             throw error;
         }
@@ -75,7 +87,11 @@ function parseNode(atRule, key) {
     }
     // Empty url - `@import "";` or `@import url();`
     if (url.trim().length === 0) {
-        const error = new Error(`Unable to find uri in "${atRule.toString()}"`);
+        const error = Object.defineProperty(new Error(`Unable to find uri in "${atRule.toString()}"`), "__NEXT_ERROR_CODE", {
+            value: "E215",
+            enumerable: false,
+            configurable: true
+        });
         error.node = atRule;
         throw error;
     }

@@ -12,7 +12,11 @@ const _prefix = require("./prefix");
 class BasePathPathnameNormalizer extends _prefix.PrefixPathnameNormalizer {
     constructor(basePath){
         if (!basePath || basePath === '/') {
-            throw new Error('Invariant: basePath must be set and cannot be "/"');
+            throw Object.defineProperty(new Error('Invariant: basePath must be set and cannot be "/"'), "__NEXT_ERROR_CODE", {
+                value: "E154",
+                enumerable: false,
+                configurable: true
+            });
         }
         super(basePath);
     }

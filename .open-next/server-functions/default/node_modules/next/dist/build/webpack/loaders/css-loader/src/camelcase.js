@@ -51,7 +51,11 @@ const postProcess = (input, options)=>{
 };
 const camelCase = (input, options)=>{
     if (!(typeof input === 'string' || Array.isArray(input))) {
-        throw new TypeError('Expected the input to be `string | string[]`');
+        throw Object.defineProperty(new TypeError('Expected the input to be `string | string[]`'), "__NEXT_ERROR_CODE", {
+            value: "E613",
+            enumerable: false,
+            configurable: true
+        });
     }
     options = {
         pascalCase: false,

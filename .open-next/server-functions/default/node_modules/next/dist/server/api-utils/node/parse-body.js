@@ -27,7 +27,11 @@ function _interop_require_default(obj) {
     try {
         return JSON.parse(str);
     } catch (e) {
-        throw new _index.ApiError(400, 'Invalid JSON');
+        throw Object.defineProperty(new _index.ApiError(400, 'Invalid JSON'), "__NEXT_ERROR_CODE", {
+            value: "E394",
+            enumerable: false,
+            configurable: true
+        });
     }
 }
 async function parseBody(req, limit) {
@@ -48,9 +52,17 @@ async function parseBody(req, limit) {
         });
     } catch (e) {
         if ((0, _iserror.default)(e) && e.type === 'entity.too.large') {
-            throw new _index.ApiError(413, `Body exceeded ${limit} limit`);
+            throw Object.defineProperty(new _index.ApiError(413, `Body exceeded ${limit} limit`), "__NEXT_ERROR_CODE", {
+                value: "E394",
+                enumerable: false,
+                configurable: true
+            });
         } else {
-            throw new _index.ApiError(400, 'Invalid body');
+            throw Object.defineProperty(new _index.ApiError(400, 'Invalid body'), "__NEXT_ERROR_CODE", {
+                value: "E394",
+                enumerable: false,
+                configurable: true
+            });
         }
     }
     const body = buffer.toString();

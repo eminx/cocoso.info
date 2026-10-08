@@ -107,7 +107,11 @@ function* createIterator(arr) {
                     } else if (Array.isArray(element)) {
                         return element;
                     } else {
-                        throw new Error('predicate must return an absolute path or the result of calling next()');
+                        throw Object.defineProperty(new Error('predicate must return an absolute path or the result of calling next()'), "__NEXT_ERROR_CODE", {
+                            value: "E313",
+                            enumerable: false,
+                            configurable: true
+                        });
                     }
                 } else {
                     return accumulator;

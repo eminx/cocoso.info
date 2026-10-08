@@ -20,10 +20,18 @@ function _interop_require_default(obj) {
 const Module = require('module');
 const resolveFrom = (fromDirectory, moduleId, silent)=>{
     if (typeof fromDirectory !== 'string') {
-        throw new TypeError(`Expected \`fromDir\` to be of type \`string\`, got \`${typeof fromDirectory}\``);
+        throw Object.defineProperty(new TypeError(`Expected \`fromDir\` to be of type \`string\`, got \`${typeof fromDirectory}\``), "__NEXT_ERROR_CODE", {
+            value: "E537",
+            enumerable: false,
+            configurable: true
+        });
     }
     if (typeof moduleId !== 'string') {
-        throw new TypeError(`Expected \`moduleId\` to be of type \`string\`, got \`${typeof moduleId}\``);
+        throw Object.defineProperty(new TypeError(`Expected \`moduleId\` to be of type \`string\`, got \`${typeof moduleId}\``), "__NEXT_ERROR_CODE", {
+            value: "E565",
+            enumerable: false,
+            configurable: true
+        });
     }
     try {
         fromDirectory = (0, _realpath.realpathSync)(fromDirectory);

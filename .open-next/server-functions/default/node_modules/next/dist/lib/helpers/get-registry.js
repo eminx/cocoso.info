@@ -31,8 +31,12 @@ function getRegistry(baseDir = process.cwd()) {
             registry = output.endsWith('/') ? output : `${output}/`;
         }
     } catch (err) {
-        throw new Error(`Failed to get registry from "${pkgManager}".`, {
+        throw Object.defineProperty(new Error(`Failed to get registry from "${pkgManager}".`, {
             cause: err
+        }), "__NEXT_ERROR_CODE", {
+            value: "E508",
+            enumerable: false,
+            configurable: true
         });
     }
     return registry;

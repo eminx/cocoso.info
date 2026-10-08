@@ -86,9 +86,13 @@ function normalizeZodErrors(error) {
     });
 }
 function formatZodError(prefix, error) {
-    return new Error((0, _zodvalidationerror.fromZodError)(error, {
+    return Object.defineProperty(new Error((0, _zodvalidationerror.fromZodError)(error, {
         prefix: prefix
-    }).toString());
+    }).toString()), "__NEXT_ERROR_CODE", {
+        value: "E394",
+        enumerable: false,
+        configurable: true
+    });
 }
 function reportZodError(prefix, error) {
     _log.error(formatZodError(prefix, error).message);
